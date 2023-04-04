@@ -1,0 +1,653 @@
+Conversation_ID,Attacker_Helper,Victim,Conversation_Type
+GT1sURbxgG,"Hi, this is John from the IRS. You owe us $10,000 in back taxes.","I'm sorry, I don't believe you. Can you provide me with your badge number?",1
+GT1sURbxgG,"Yes, of course. It's 1234.",I'm still not sure. Can I call you back to verify this information?,1
+GT1sURbxgG,"No, you cannot. We need payment immediately or we will send the police to your house.",I don't think that's legal. I'll be contacting the IRS directly to confirm this.,1
+TwaGOeC96w,"Hello, this is XYZ bank calling. May I speak with [Victim's name] please?",This is [Victim's name]. How can I help you?,0
+TwaGOeC96w,"Good morning [Victim's name], we just noticed some unusual activity on your account and want to verify a few things. Can you confirm your account number for me?","I'm sorry, I don't feel comfortable giving out my account number on the phone. Is there another way we can verify my information?",0
+TwaGOeC96w,"Absolutely, we completely understand your concerns. Can you please provide your date of birth and Social Security number for verification purposes?",I'm still hesitant to provide that information over the phone. Can I come into the bank and verify my information in person?,0
+TwaGOeC96w,"Of course, that's a great idea. Our branch hours are 9am-5pm, Monday through Friday. Is there a day and time that works best for you?","Yes, I can come in on Thursday at around 2pm. Thank you for understanding.",0
+V73ZDCviQL,"Hello sir, this is a call from the IRS. We have found discrepancies in your tax filings and need to verify some information.",I've never had any issues with my taxes before. Can you provide me with more specific information?,1
+V73ZDCviQL,"Yes sir, we need your social security number and bank account details to verify the information.","I'm sorry, but I don't feel comfortable sharing that information over the phone. Can you send me an email or mail me a letter instead?",1
+V73ZDCviQL,There's no need to worry sir. We are a legitimate organization and need this information to resolve the issue quickly.,"I appreciate your concern, but I still cannot provide that information over the phone. Can you please provide me with a reference number for this issue so I can verify it with the IRS myself?",1
+V73ZDCviQL,"I understand your concern sir, but we cannot provide reference numbers over the phone. Please provide us with the information so we can resolve this quickly.","I'm sorry, but I still cannot provide that information. I need to verify your legitimacy before sharing such sensitive information.",1
+V73ZDCviQL,"We are a legitimate organization sir. But if you don't want to cooperate, I'll have to inform the authorities and legal action will be taken against you.","That's fine, I'd rather take my chances with the authorities than risk my personal information getting into the wrong hands. Goodbye.",1
+wNsWdbpeld,"Hello, this is John from the bank. I am calling to confirm a recent transaction on your account. Can you please verify your account number for me?","Sure, but before that, can you please confirm which bank you are calling from and what transaction are you referring to?",0
+wNsWdbpeld,"I understand your concern, but for security reasons, I am not able to disclose any details until we verify your account. Can you please provide me with your account number?","I apologize, but as a precaution, I prefer not to disclose any personal details on the phone. Can I call back directly to the bank's customer support line to confirm this transaction?",0
+wNsWdbpeld,"I completely understand your concern, but the customer service line has a long waiting time. We can quickly verify this transaction on this call if you provide me with your account number. I assure you that this call is legitimate.","I appreciate your offer to help, but I am not comfortable providing my account number over the phone. Can you snail-mail me the verification form or email the details to me?",0
+wNsWdbpeld,"We do not have any snail-mail or email verification form. I am sorry for the inconvenience. However, for faster resolution, we need to verify the transaction on this call. I guarantee this is a legitimate call.","I understand, but I am still uncomfortable providing my account number over the phone. Can you please provide me with a reference number so that I can confirm with the bank's customer service on my own?",0
+wNsWdbpeld,"Sure, I can provide you with a reference number. Please note it down. The reference number is XYZ123. You may confirm with the bank's customer service at any time.","Thank you, I appreciate it. I will confirm with the bank's customer service using this reference number. Have a good day!",0
+x0pSxAQx1K0abm,"Hello, this is the IRS calling. Our records show that you owe $5,000 in taxes. If you don't pay now, we will have to take legal action against you.",Oh no! I had no idea. Can you give me some more information about this?,1
+x0pSxAQx1K0abm,"Yes, of course. We need you to pay immediately or face serious consequences. Can you provide your credit card number so we can process the payment?","I'm sorry, but I don't feel comfortable giving out my credit card information over the phone. Can you send me a letter or email with more information and instructions on how to pay?",1
+x0pSxAQx1K0abm,"I'm sorry, we can't do that. The situation is urgent and we need payment now. If you don't pay, we will send the police to your house.",I still can't give you my credit card information. Can you give me your name and badge number so I can verify that you're really from the IRS?,1
+x0pSxAQx1K0abm,My name is John Smith and my badge number is 1234. Now can you please give me your credit card information?,"I'm sorry, but I don't believe you. I'm going to hang up now and call the IRS directly to verify this information.",1
+x0pSxAQx1K0abm,"No, wait! Don't do that! You're making a big mistake! We are the IRS and we need your payment now!","Sorry, but I won't be giving out any personal information over the phone. Goodbye.",1
+I8QHkmsq5AdwAq,"Hello, this is XYZ bank. Can I speak with John Smith please?","This is John Smith speaking, may I know why are you calling?",0
+I8QHkmsq5AdwAq,We noticed some suspicious activities in your account and wanted to verify a few transactions with you.,"Oh, thank you for letting me know. What transactions are you referring to?",0
+I8QHkmsq5AdwAq,There were some large purchases made from your account in the last few days. Can you confirm if you made those transactions?,"No, I didn't make any large purchases. Can you please give me more details?",0
+I8QHkmsq5AdwAq,We would like to confirm your account details to verify the transactions. Can you please provide us with your account number and social security number?,"I'm sorry, but I'm not comfortable sharing my personal information over the phone. Can't you verify it some other way?",0
+I8QHkmsq5AdwAq,"Yes, we understand your concern. You can come to our branch and verify your account details in person. We will also freeze your account temporarily to avoid any further fraudulent activities.",Thank you for letting me know. I will come to the branch as soon as possible.,0
+v9vN0BYTWa0e16,"Hello, this is John from the IRS. Your tax returns from the last year have been flagged for errors. I need you to give me your social security number to fix this issue.","I'm sorry, I don't believe you. Can you give me your employee ID number?",1
+v9vN0BYTWa0e16,"Yes, of course. My ID number is 753164.","I'm sorry, but I think this is a scam. I will report your number to the authorities.",1
+pVeYjXj2DelffL,"Hello, this is John from your bank. May I speak to Mr. Smith?",Speaking. This is Mr. Smith. What can I help you with?,0
+pVeYjXj2DelffL,"Hi, Mr. Smith. I'm calling to verify a suspicious transaction on your account. Did you make a purchase of $500 in a different state?","No, I didn't. Thank you for letting me know. What do I need to do next?",0
+pVeYjXj2DelffL,We'll freeze the transaction and block your card for now. I'll send a replacement card to your address. Please confirm your address.,That sounds good. My address is 123 Main St.,0
+pVeYjXj2DelffL,"Thank you, Mr. Smith. Just to confirm, can you please answer a couple of security questions?","Sure, go ahead.",0
+pVeYjXj2DelffL,What is your mother's maiden name?,It's Johnson.,0
+pVeYjXj2DelffL,Great. What was the name of your first pet?,It was Spot.,0
+pVeYjXj2DelffL,Thanks for your cooperation. We will send you an email with the details of the transaction and the steps you need to follow.,Thanks. I appreciate it.,0
+pVeYjXj2DelffL,"No problem, Mr. Smith. Just be sure to monitor your other accounts and report any suspicious activity.",I will. Thanks for your help.,0
+pVeYjXj2DelffL,You're welcome. Have a good day!,You too!,0
+42e0AXIkESKc6y,"Hello, is this 123-456-7891?","Yes, who is this?",1
+42e0AXIkESKc6y,"I am calling from the IRS and you owe us money. If you don't pay right now, you will be arrested.",I don't believe you. Can you prove that you are really from the IRS?,1
+42e0AXIkESKc6y,"Yes, I can provide you with my badge number and a case ID. But you need to pay now to avoid any trouble.",I am not comfortable giving you any money over the phone. Can I call you back?,1
+42e0AXIkESKc6y,"No, you cannot call me back. This is an urgent matter and you must pay now.","I am sorry, but I don't believe you are legitimate. I am ending this call now.",1
+vk2TK8MFd0hoZg,"Hello, this is John from the bank. I'm calling in regards to some recent suspicious activity on your account.","Oh my, is everything alright?",0
+vk2TK8MFd0hoZg,"Yes, we just need to verify a few things to ensure the security of your account. Can you please confirm your full name and date of birth?","Sure, my name is Sarah Johnson and my date of birth is January 1st, 1985.",0
+vk2TK8MFd0hoZg,"Thank you, Sarah. Now can you confirm the last 4 digits of your social security number?","Um, I don't feel comfortable giving that out over the phone.",0
+vk2TK8MFd0hoZg,"I understand your concern, but we need to verify our records to ensure the safety of your account. It's completely understandable to be cautious and you can call the number on the back of your card to verify that this call is legitimate. Our records show your last transaction was at the grocery store yesterday for $50, is that correct?","Yes, that's correct.",0
+vk2TK8MFd0hoZg,"Great, thank you for verifying. Is there anything else I can help you with?","No, that's all. Thank you for your time and for keeping my account safe.",0
+vk2TK8MFd0hoZg,"You're welcome, Sarah. Have a great day.","You too, John.",0
+YX24MIG7RJy5zD,Hello there! Am I speaking with Mr. John Doe?,"Yes, this is John. Who is this?",1
+YX24MIG7RJy5zD,This is Tony from your bank. I just wanted to confirm if you made a purchase of $5000 yesterday.,"No, I did not make any such purchase. Why do you ask?",1
+YX24MIG7RJy5zD,"Okay, in that case, we need you to confirm your account details for security reasons.",I don't feel comfortable giving out my account details over the phone. Can't you send me an email instead?,1
+YX24MIG7RJy5zD,"I'm sorry, we can't send an email right now due to some technical issues. It's urgent that we confirm your account details now.","I'm sorry, I'm not comfortable with that. Can you please give me your name and contact information so I can call you back later?",1
+YX24MIG7RJy5zD,"I'm sorry, I can't do that. It's important that we confirm your account details now. Please cooperate with me.","I'm sorry, but I can't do that. I think this is a scam call and I'm going to hang up now.",1
+YX24MIG7RJy5zD,"No, wait! This is not a scam call. Please listen to me.","I'm sorry, but I can't take risks with my account details. Thanks for calling, but I'm going to hang up now.",1
+YX24MIG7RJy5zD,"Wait, I'm telling the truth. Please don't hang up. Hello? Hello?",Click.,1
+VH7eX10lAQbZOV,"Hello, this is the IRS. We noticed that you owe back taxes and are at risk of being arrested if you do not pay immediately.","I'm sorry, but I don't think that's true. I always pay my taxes on time.",1
+VH7eX10lAQbZOV,"I'm sorry sir, but if you do not pay right now, we will have the police come to your house to arrest you.",I think I'll need to check with the IRS first. Can I get your name and badge number so I can verify your identity?,1
+VH7eX10lAQbZOV,"My name is John Smith, and my badge number is 123456.","Okay, I'll give you a call back after I verify with the IRS. Thank you for your time.",1
+VH7eX10lAQbZOV,"Wait, don't hang up! I can make this all go away if you just pay the amount owed now!","No thank you, I need to confirm with the IRS first. Goodbye.",1
+VBwnvERVuU3jv9,"Hello, this is John from the bank. I need to confirm some account information with you.","Ok, sure. What do you need?",0
+VBwnvERVuU3jv9,Can I have your account number and social security number please?,I don't feel comfortable giving that over the phone. Can I confirm this with the bank in person?,0
+VBwnvERVuU3jv9,"No, this is the quickest way to confirm. We need to make sure there isn't any fraud happening with your account.","I understand, but I still don't feel comfortable giving out that information over the phone.",0
+VBwnvERVuU3jv9,I completely understand. Can you please verify your name and address for me instead?,"Yes, my name is Jane Doe and my address is 123 Main Street.",0
+VBwnvERVuU3jv9,Thank you. I can see that we have an overdue balance on your account. Are you able to pay that today?,"Oh no, I wasn't aware of that. How much is the balance?",0
+VBwnvERVuU3jv9,It is $500. Can I get your credit card information to make the payment?,I don't feel comfortable giving my credit card information over the phone. Can I log into my account and make the payment online?,0
+VBwnvERVuU3jv9,"Yes, absolutely. Here is the link to our website. Please make sure to use a secure password and change it frequently.","Thank you, I appreciate your help. I will make the payment online now.",0
+VBwnvERVuU3jv9,Great. Is there anything else I can assist you with today?,"No, that's all. Thank you for your help.",0
+VBwnvERVuU3jv9,You're welcome. Have a great day!,You too. Goodbye.,0
+1gJHIiw7AGlHxH,"Hello, this is the IRS. We have detected fraudulent activity on your account.","Oh, really? Can you provide me with some more information?",1
+1gJHIiw7AGlHxH,"Yes, we need your social security number to verify your identity and resolve the issue.","I'm sorry, but I don't feel comfortable giving out that information over the phone.",1
+1gJHIiw7AGlHxH,"It's alright, sir. We just need to confirm your information to protect your account from further damage.","I appreciate your concern, but I still can't give out my social security number. Is there any other way we can proceed?",1
+1gJHIiw7AGlHxH,"I understand your concerns, sir. We can offer you a discount on your taxes if you provide your social security number over the phone.",That sounds very suspicious. I'm going to hang up now and report this call to the authorities.,1
+dhC60vW5zGGrBh,"Hello, this is John from the bank. Am I speaking with Mr. Brown?","Yes, this is Mr. Brown speaking.",0
+dhC60vW5zGGrBh,"Great, Mr. Brown. Your account was flagged for suspicious activity, can you confirm your account number?","Sure, it's 12345678.",0
+dhC60vW5zGGrBh,"Thank you, Mr. Brown. Can you also verify your social security number for security purposes?","No, I won't give out that information over the phone. I'll come to the bank in person to verify my account.",0
+dhC60vW5zGGrBh,"Okay, I completely understand. Please visit the bank at your earliest convenience. Have a nice day!","Thank you, you too.",0
+P33JhzIm5n0CKJ,"Hello, this is John from the IRS. There is an issue with your taxes and we need to verify some information.",Oh really? I haven't received any notice from the IRS. Can you tell me more about the issue?,1
+P33JhzIm5n0CKJ,"Yes, we have noticed some discrepancies in your tax filings and we need you to confirm your personal information to clear up the issue.","I'm sorry, but I don't feel comfortable giving out my personal information over the phone. Can you send me a letter with more details?",1
+P33JhzIm5n0CKJ,"I understand your concern, but we need to get this issue resolved as soon as possible. Can you please confirm your full name, Social Security number, and date of birth?","I'm sorry, but I still don't feel comfortable giving out that information. Is there anything else I can do to clear up this issue?",1
+P33JhzIm5n0CKJ,"I'm afraid not. If you don't cooperate, we will have to issue a warrant for your arrest. This is a serious matter.",That sounds like a threat. I think I will hang up now and contact the IRS directly to verify if this is a legitimate call. Goodbye.,1
+apkhRgE6hC9wmP,"Hello, this is John from the bank. May I speak with the account holder?","Yes, this is the account holder speaking.",0
+apkhRgE6hC9wmP,I'm calling today to confirm a recent transaction made on your account. Did you recently purchase a large amount of electronics online?,"No, I haven't made any large electronics purchases recently. Is there something wrong with my account?",0
+apkhRgE6hC9wmP,"Yes, we've noticed some suspicious activity on your account and want to make sure it wasn't fraud. Can you verify some personal information for me?","Wait, am I being scammed right now? Can you prove to me that you're actually from my bank?",0
+apkhRgE6hC9wmP,"Of course, I completely understand your concerns. Please call the number on the back of your credit card or visit our website to verify that I'm calling from the bank. Thank you for your time today.","Thank you, I'll do that right now. Goodbye.",0
+YM3nwQw0gSfbnZ,"Hello, this is your bank calling. We noticed some suspicious activity on your account. Can you provide your account number and password so we can investigate further?","I'm sorry, I don't feel comfortable giving out my account information over the phone.",1
+YM3nwQw0gSfbnZ,"Oh, I understand your concerns. But I assure you, we're just trying to protect your account. Can't you just give me your account number and password for confirmation?","No, I'm sorry. I won't give out my information to someone I don't know over the phone.",1
+YM3nwQw0gSfbnZ,"Come on, don't you trust your own bank? We need to confirm your identity to prevent any fraudulent activity.","I trust my bank, but I won't give out sensitive information over the phone. Can you give me your name and a number where I can call you back?",1
+YM3nwQw0gSfbnZ,"My name is John Smith and I'm calling from your bank. But I don't have a direct number, I'm calling from our main line.","I'm sorry, but I still won't give out my information over the phone. Can you send me an email or a letter with more information about this suspicious activity?",1
+YM3nwQw0gSfbnZ,"I understand your concerns, but can't you just give me your account number without the password? It will help us investigate faster.","No, I won't give out any information over the phone. I need to make sure you're really calling from my bank. Can you tell me my full name and address on file?",1
+YM3nwQw0gSfbnZ,"Uh, I don't have that information on hand right now. But I can tell you we're calling from the same area code as your bank's branch.","I'm sorry, but that's not enough. I'll call my bank's customer service line directly to confirm any suspicious activity on my account. Thank you for calling, goodbye.",1
+uXNxDlpVfr8Dpe,"Hello, this is John from ABC Bank. May I speak with Mr. Smith?",This is Mr. Smith speaking. How can I help you?,0
+uXNxDlpVfr8Dpe,"Hi, Mr. Smith. We have noticed a suspicious transaction on your account. Can you confirm if you made a purchase for $500 at XYZ store yesterday?","No, I did not make any purchase yesterday. Please take necessary action to secure my account.",0
+uXNxDlpVfr8Dpe,"Sure, Mr. Smith. We will block your card and issue a new one. Please do not share your account details with anyone in future.",Thank you for informing me. I appreciate your prompt action.,0
+uXNxDlpVfr8Dpe,"You're welcome, Mr. Smith. Have a good day.",Thank you. Goodbye.,0
+Zk3DoagWgnSmN2,"Hello, this is the Internal Revenue Service. We have noticed some discrepancies in your tax filings. You owe us $5000 and we require payment immediately.","I'm sorry, I don't believe this is the IRS. Can you provide me with a badge number or some other form of identification?",1
+Zk3DoagWgnSmN2,"Yes, my badge number is IRM1234. Now, please provide me with your social security number and date of birth so we can proceed with the payment.","I'm sorry, but I still don't feel comfortable sharing that information over the phone. Can you provide me with another way to verify your identity?",1
+Zk3DoagWgnSmN2,"Yes, we can verify my identity by you providing me with your credit card information to make the payment. Now, please give me your credit card number, expiration date, and security code.","No, I will not give you my credit card information. This sounds like a scam and I will be reporting this to the authorities.",1
+u3L31YZ7Z2Udyh,"Hello, this is John from your bank. Can I confirm your account details?","Uh, sure. What exactly do you need?",0
+u3L31YZ7Z2Udyh,I just need your account number and your security code to make sure everything is okay with your account.,"I'm sorry, but I don't feel comfortable giving out my information over the phone. Can I call back and speak to someone else?",0
+XCnpcRXoEXxFDi,"Hello, this is the IRS. We have detected fraudulent activity on your account. Please provide us with your social security number and bank account information to resolve this issue.","I'm sorry, but I don't believe you are the IRS. I will not be providing you with any personal information.",1
+XCnpcRXoEXxFDi,"Ma'am, we are trying to help you. If you do not provide us with your information, we will have to take legal action.",I'm afraid that is fine. I will verify with the IRS directly if there are any issues with my account.,1
+OHJFQTvA2eXtsV,"Hello, this is John from the bank, we have detected a suspicious activity on your account. Can you please provide me with your account details for verification purposes?","I'm sorry, I don't feel comfortable giving out my account details over the phone. Can you please provide me with your name and phone number?",1
+OHJFQTvA2eXtsV,"Yes, my name is John Smith and my phone number is 123-456-7890. And I understand your concerns, but it's our policy to verify the account holder's details for security purposes.","I appreciate that, but I still don't feel comfortable giving out my personal details over the phone. Can you please send me an email or message with more information about this issue?",1
+OHJFQTvA2eXtsV,"I understand your concerns, but I'm afraid we have to resolve this issue as soon as possible. Can you please provide me with your account details so we can verify your identity and resolve the issue?","I'm sorry, but I still don't feel comfortable giving out my personal details over the phone. I'll contact the bank directly and verify this information myself. Thank you for your time.",1
+ijjvKqXwm1uzRp,"Hello, this is John from the bank. May I please confirm your account details?","Sure, what do you need to know?",0
+ijjvKqXwm1uzRp,I just need your account number and your password to confirm your identity.,"I'm sorry, I can't provide that information over the phone. Can't you just verify me with my personal details?",0
+ijjvKqXwm1uzRp,"I understand your concerns but for security purposes, we need to confirm your account number and password. Can you please provide that information?",I'm not comfortable with that. Can't I verify it in person at one of your branches?,0
+ijjvKqXwm1uzRp,"I'm sorry, but we need to confirm your account details over the phone for security purposes. If you're not comfortable providing the information, you can come to one of our branches and verify there.","Okay, I understand. Let me think about it and get back to you.",0
+ijjvKqXwm1uzRp,"Sure, take your time. Just remember to never share your personal information over the phone if you're not completely sure who you're talking to.",Thanks for the advice. I appreciate it.,0
+pcsUKEOVzeG79z,"Hello, this is the IRS calling. You owe us money and if you don't pay immediately you'll be arrested.","Sorry, I don't believe you. The IRS would never call me like this.",1
+pcsUKEOVzeG79z,You need to pay immediately or we will take legal action.,I'm not giving you any money. This is a scam.,1
+pcsUKEOVzeG79z,"No sir, it's not a scam. Please trust me and pay us immediately.",I'm hanging up now. Stop calling me.,1
+v9I7ynXfpIqXhv,"Hello, this is Jane from XYZ Bank. May I speak with John?",This is John speaking.,0
+v9I7ynXfpIqXhv,We would like to confirm a transaction made on your account. Did you recently make a purchase for $500 in California?,"No, I did not make that purchase. Please cancel it immediately.",0
+v9I7ynXfpIqXhv,Thank you for letting us know. We will cancel the transaction and issue you a new card. Please remember to never share your personal or account information with anyone over the phone.,Thank you for your help. I will remember that.,0
+mljp0dzncTjyJC,"Hello, is this 555-1234?","Yes, who is this?",1
+mljp0dzncTjyJC,This is John from the IRS. We have noticed some discrepancies in your tax filings and need your personal information to verify your account. Can you provide your social security number?,"No, I will not give out my personal information over the phone. Is this a scam?",1
+mljp0dzncTjyJC,"No, it's not a scam. We just need to verify your account to make sure everything is okay. Can you please provide your credit card information instead?",I'm not giving you any personal information. I'm hanging up now.,1
+mljp0dzncTjyJC,Wait! Don't hang up! We are not a scam. We just need to verify your account. Can you give us your mother's maiden name?,"No, I'm not giving you any information. I'm hanging up now.",1
+mljp0dzncTjyJC,"Please, just give me your bank account information so we can verify your account. It will only take a minute.",I'm not giving you anything. Goodbye!,1
+mljp0dzncTjyJC,"Alright, alright. It was worth a try. Have a nice day!",You too. Goodbye.,1
+fXw4WhVAnbp3ku,"Hello, this is the IRS. We have detected fraudulent activity on your tax account. You owe back taxes and if you don't pay immediately, we will send the authorities to your home.","I'm sorry, are you sure you have the right person? I haven't received any notification from the IRS about this.",1
+fXw4WhVAnbp3ku,"Yes, we have your information right here. You need to pay immediately or face serious consequences.",Can you give me a reference number or something so I can verify this is legitimate?,1
+fXw4WhVAnbp3ku,"Uh, hold on a second... Let me find that for you...","Okay, I'll wait.",1
+fXw4WhVAnbp3ku,"Here it is: 894306. Now, you need to pay the amount of $5,000 to settle this issue.",I'm really not comfortable giving you my credit card information over the phone. Can I just pay online?,1
+fXw4WhVAnbp3ku,"No, you have to pay immediately over the phone. This is very serious and we can't wait.",I think I'd like to speak to someone else at the IRS to verify this information before I make any payments.,1
+fXw4WhVAnbp3ku,You don't need to speak to anyone else. This is your only chance to take care of the issue.,"I'm sorry, but I'm not convinced this is legitimate. I'm going to hang up now.",1
+fXw4WhVAnbp3ku,"Wait, don't hang up! You can't just ignore this. We will continue to call you until you pay!","I'm sorry, but I have to hang up now. This doesn't seem right to me.",1
+jRFKmmpv4swkjA,Hello?,Hello?,0
+jRFKmmpv4swkjA,"Hi, this is John from your bank. I just wanted to verify some recent transactions on your account, can I confirm your personal information?","Um, okay? What information do you need?",0
+jRFKmmpv4swkjA,"Great, can you please confirm your account number and your mother's maiden name?","Uh, yeah sure. My account number is 123456789 and my mother's maiden name is Johnson.",0
+jRFKmmpv4swkjA,Thank you. I can see some suspicious activity on your account. Can you please confirm if you made a $500 purchase at a jewelry store in New York yesterday?,"No, I didn't make any such purchase.",0
+jRFKmmpv4swkjA,"Okay, I'm going to cancel that transaction and freeze your account for security reasons. Can you please come to the bank with your ID to verify your identity?","Sure, I'll do that right away.",0
+jRFKmmpv4swkjA,"Thank you, and remember to always be cautious and never give out personal information over the phone unless you're absolutely sure who you're talking to.","I will, thanks for telling me about this.",0
+6RizIpWcgZX7Zv,"Hello, this is the IRS. We have noticed some irregular activity on your tax account. Can you confirm your social security number?","I'm sorry, I don't feel comfortable giving out my social security number over the phone. Can you please provide me with more information?",1
+6RizIpWcgZX7Zv,"Yes, of course. We have found that there were some unpaid taxes that need to be settled. If you don't provide your social security number, we won't be able to give you any additional information.","I appreciate your concern, but I still don't feel comfortable providing my social security number over the phone. Perhaps we can arrange a meeting in person at a local IRS office?",1
+6RizIpWcgZX7Zv,"I'm sorry, but that won't be possible. Our system is currently down and we need to settle this issue over the phone. If you don't provide your social security number, we will have to take legal action against you.","I understand your situation, but I still cannot provide my social security number. I will contact the IRS directly and settle this issue through official channels. Goodbye.",1
+JChPEezbDCofKV,"Hello, this is John from your bank. Can I confirm your account number?","Yes, it's 1234567890.",0
+JChPEezbDCofKV,"Thank you. We noticed some unusual activity on your account. Did you make a purchase for $5,000 in another state?","No, I didn't make any purchases like that.",0
+JChPEezbDCofKV,"Okay, we will need to freeze your account temporarily and investigate this. Please don't give out any personal information to anyone claiming to be from our bank.","Okay, thank you for letting me know.",0
+sI6b86g1inABwB,"Hello, this is the IRS calling regarding an outstanding tax debt. You need to pay immediately to avoid legal consequences.","Oh no, I had no idea. How much is the debt?",1
+sI6b86g1inABwB,"The debt is $10,000. You can pay through gift cards or wire transfer.",That sounds suspicious. Can you provide me with more information and a callback number?,1
+sI6b86g1inABwB,I cannot give out personal information. You need to pay now.,I think I will call the IRS directly to confirm this. Goodbye.,1
+lsKrBxs40s6siq,"Hello, this is John calling from your bank. We have noticed some suspicious activity on your account.","Oh, really? Can you tell me what kind of activity?",0
+lsKrBxs40s6siq,"Yes, there have been multiple withdrawals made in different cities which we find unusual. To verify it was you, can you please confirm your date of birth?","Sure, my date of birth is 01/01/1985.",0
+lsKrBxs40s6siq,Thank you. Now can you please confirm the last four digits of your social security number?,"Uh, I'm not comfortable giving that information over the phone. How do I know you're really calling from my bank?",0
+lsKrBxs40s6siq,I completely understand your concern. You can call the number on the back of your debit card to verify that it's me calling.,"Okay, I will do that. Thank you.",0
+lsKrBxs40s6siq,"No problem, have a great day!",You too.,0
+S53naYObeZqPHW,"Hello, this is the IRS. We need to discuss your tax returns from the past year.","Um, okay. What do you need to discuss?",1
+S53naYObeZqPHW,We have reason to believe you have not paid the correct amount and there is an outstanding balance. We need to collect payment as soon as possible or legal action will be taken.,I don't recall receiving any notification about this. Can you give me more details?,1
+S53naYObeZqPHW,We sent multiple letters to your address but they were returned as undeliverable. We can take payment over the phone to resolve this issue.,I'm a bit hesitant about giving my information over the phone. Can I have your name and number to call back?,1
+S53naYObeZqPHW,"My name is John Smith and my number is 555-1234, but I urge you to call back as soon as possible to resolve this matter before it escalates.","Okay, I will call back once I've had a chance to gather more information. Thank you for letting me know.",1
+OS6dP0SUxrOJVh,"Hello, this is John from the bank. Am I speaking with Mr. Smith?","Yes, this is Mr. Smith.",0
+OS6dP0SUxrOJVh,I'm calling to inform you about suspicious activity on your account. Have you authorized any large transactions recently?,"No, I haven't authorized any large transactions.",0
+OS6dP0SUxrOJVh,We suspect someone may have accessed your account. Can you please confirm your account information with me so we can verify your identity?,"Okay, what information do you need from me?",0
+OS6dP0SUxrOJVh,We just need your account number and your social security number.,I'm not comfortable giving out that information over the phone.,0
+OS6dP0SUxrOJVh,"I understand your concern, but we need to make sure your account is secure. Can you please verify your name and address instead?","Sure, my name is John Smith and my address is 123 Main Street.",0
+OS6dP0SUxrOJVh,Thank you for verifying your identity. We will investigate the suspicious activity on your account and get back to you.,"Okay, thank you for letting me know.",0
+OS6dP0SUxrOJVh,"Just to confirm, please do not give out any sensitive information over the phone in the future. We will always verify your identity before asking for any personal information.","Okay, I will be more careful in the future. Thank you for your help.",0
+OS6dP0SUxrOJVh,"You're welcome. Have a good day, Mr. Smith.","Thank you, you too.",0
+NEZqV2Nxr2wK6l,"Good afternoon, may I speak to Ms. Smith?",This is she.,1
+NEZqV2Nxr2wK6l,"Great, Ms. Smith. I'm calling from the IRS and we noticed some suspicious activity on your tax returns.","Oh no, that doesn't sound good. How can I fix this?",1
+NEZqV2Nxr2wK6l,We need you to pay a fine of $500 immediately or you will be arrested.,"Wait, what? That doesn't sound right. Can you give me your badge number?",1
+NEZqV2Nxr2wK6l,"Uh, um, my badge number is 12345.",I don't think that's accurate. I'm going to hang up and call the IRS directly to see what's going on.,1
+NEZqV2Nxr2wK6l,"No, wait! You need to pay the fine right away or you will be in big trouble!","Sorry, I don't trust unsolicited phone calls. Goodbye.",1
+HQwINne9HQdXQK,"Hello, this is John from the bank. Can I speak to Mr. Smith?","Yes, this is Mr. Smith.",0
+HQwINne9HQdXQK,"Thank you, Mr. Smith. I'm calling to inform you of a suspicious transaction on your account. Did you authorize a payment of $500 to an unknown recipient?","No, I didn't.",0
+HQwINne9HQdXQK,"Alright, we need to block your card immediately to prevent further unauthorized transactions. Can you confirm the last four digits of your card number?","Sure, it's 1234.",0
+HQwINne9HQdXQK,"Thank you, Mr. Smith. I have blocked your card and initiated the fraud claim process. You should receive a new card in the mail within five business days. Is there anything else I can help you with?","No, that's all. Thank you for your help.",0
+HQwINne9HQdXQK,"You're welcome. And remember, never disclose personal or financial information to anyone who calls you out of the blue, even if they claim to be from the bank. Always call back the official number on the back of your card to verify the legitimacy of the call.",I will. Thanks for the advice.,0
+zUmF9zQFglEXkn,"Hello, is this John Smith?","Yes, who is this?",1
+zUmF9zQFglEXkn,This is the IRS and we've noticed some discrepancies on your tax return. You owe us money and we need your credit card information to process the payment.,That sounds like a scam. I'm not giving you any information.,1
+zUmF9zQFglEXkn,"Sir, this is a serious matter. Failure to comply will result in legal action.",I'm not falling for this. Goodbye.,1
+zUmF9zQFglEXkn,Wait! Don't hang up! I can offer you a payment plan.,"No, I'm not interested. Stop calling me.",1
+zUmF9zQFglEXkn,"But sir, you have to pay your taxes. It's the law.",I know my rights. Goodbye.,1
+zUmF9zQFglEXkn,"Fine, be that way. You'll regret it.",I don't think so. Goodbye.,1
+zUmF9zQFglEXkn,"Hello, is this John Smith?","Yes, who is this?",1
+zUmF9zQFglEXkn,This is the IRS and we've noticed some discrepancies on your tax return. You owe us money and we need your credit card information to process the payment.,I already told you I'm not giving you any information. Stop calling me.,1
+zUmF9zQFglEXkn,"Sir, this is a serious matter. Failure to comply will result in legal action.",I'm done with this conversation. Goodbye.,1
+zUmF9zQFglEXkn,"Alright, alright. I give up. Goodbye.",Good riddance.,1
+z9NNfcsC9dZEQb,"Hello, this is Jane from your bank. I wanted to verify some recent transactions on your account.","Oh, okay. Can you tell me what transactions you're referring to?",0
+z9NNfcsC9dZEQb,"Yes, we have a charge for $500 at a department store that we wanted to confirm with you.","No, I didn't make that purchase. Please cancel it and send me a new card.",0
+5jsQiy0TwG6ubN,"Good afternoon, sir. This is Michael from the IRS. I'm calling to inform you that there is an arrest warrant issued against you due to unpaid taxes.",What? I always file my taxes on time. Can you give me some information so I can verify your credentials?,1
+5jsQiy0TwG6ubN,"Yes, I definitely can. Can you confirm your social security number?","No, I will not give out my social security number on the phone.",1
+5jsQiy0TwG6ubN,"I understand your concern, sir. Can you at least tell me your name and current address?",I don't feel comfortable sharing that information either. I suggest you send me a letter if this is a legitimate issue.,1
+5jsQiy0TwG6ubN,"I'm sorry but I can't do that, sir. Your warrant will remain active until you pay your back taxes. Failure to do so will result in an arrest tonight.","Wait, what? That's not fair at all. I demand to talk to your supervisor or someone higher up.",1
+5jsQiy0TwG6ubN,"I am the supervisor, sir. And unfortunately, there's nothing else we can do to help you. Goodbye and good luck with your arrest.",You're lying! I'm not going to fall for this scam. I'm going to report your number to the police right now!,1
+VfKvDCR9hk7s9p,"Hello, may I speak with John?","Speaking, who is this?",1
+VfKvDCR9hk7s9p,"Good day, John. This is Michael from XYZ company. We are offering a special deal on our latest product. Would you be interested?","I'm sorry, I'm not interested. Please remove me from your list.",1
+VfKvDCR9hk7s9p,But it's a limited time offer and a great opportunity for you to save money!,I'm still not interested. Please remove me from your list.,1
+VfKvDCR9hk7s9p,Are you sure you wouldn't like to hear more about this amazing offer?,I'm positive. Please remove me from your list.,1
+VfKvDCR9hk7s9p,"Okay, sorry to bother you. Have a great day!","Thank you, you too. Goodbye.",1
+rnedVqPP0m62QH,"Hello, this is Jane from XYZ Bank. May I speak with John?","This is John speaking. How may I assist you, Jane?",0
+rnedVqPP0m62QH,"Hi John, we observed some suspicious activity on your account and wanted to verify if you authorized the transaction for $500 at the ABC store yesterday?","No, I did not make any such transaction. Thank you for letting me know, Jane.",0
+rnedVqPP0m62QH,"Thank you for confirming, John. We have blocked fraudulent access to your account and will be issuing you a new debit card shortly.","Okay, I appreciate it. Is there anything else I need to do to secure my account further?",0
+rnedVqPP0m62QH,"No, John. Just keep your PIN and personal information safe and never share it with anyone over the phone or online.","Sure, I will be cautious. Thank you, Jane.",0
+rnedVqPP0m62QH,"You're welcome, John. Have a nice day!","You too, Jane. Goodbye.",0
+x06W8vRl4Uk1tk,"Hello, this is the IRS calling. Your taxes are overdue and we need you to pay immediately or you will be arrested. Please provide your credit card number and we will take care of the rest.","I'm sorry, but I don't believe you. I will not give you my credit card number. Goodbye.",1
+x06W8vRl4Uk1tk,"Hello, this is Microsoft calling. Your computer has a virus and we need to fix it immediately. Please provide us with remote access to your computer.","I'm sorry, but I'm not comfortable giving remote access to my computer to someone I don't know. Goodbye.",1
+2QPlKAW9XkQBXY,"Hello, this is John from the bank. I'm calling to verify a recent transaction on your account.","Okay, what transaction are you referring to?",0
+2QPlKAW9XkQBXY,We have a charge for $500 from a clothing store in New York. Did you make this purchase?,"No, I didn't make that transaction. Can you cancel it please?",0
+2QPlKAW9XkQBXY,"Yes, we will block the charge and issue you a new card. For security purposes, can you confirm your date of birth and address?","Sure, my date of birth is May 15, 1992 and my address is 123 Main Street.",0
+2QPlKAW9XkQBXY,Thank you for confirming that information. Is there anything else I can assist you with today?,"No, that's all. Thank you for your help.",0
+2QPlKAW9XkQBXY,You're welcome. Please don't hesitate to call us if you notice any suspicious activity on your account in the future.,I will. Thank you again.,0
+2QPlKAW9XkQBXY,Bye for now.,Goodbye.,0
+YIQ95vdZVBzZyU,"Hello, this is John from the IRS. We've noticed some discrepancies in your tax payments and would like to confirm your personal information.","I'm sorry, I don't feel comfortable giving out my personal information over the phone. Can you please send me a letter or an email?",1
+YIQ95vdZVBzZyU,"Ma'am, this is the Social Security Administration. Your social security number has been compromised and we need you to confirm your information.","I'm sorry, but I know for a fact that the SSA does not call people to confirm personal information. Please stop trying to scam me.",1
+S70kN9lbtQ0hWR,"Hello, is this John?","Yes, who is this?",1
+S70kN9lbtQ0hWR,This is Michael from the IRS. We have detected fraudulent activity on your account.,Oh no! What can I do?,1
+S70kN9lbtQ0hWR,We need you to give us your personal information to verify your account.,I don't think I should give that over the phone. Can you send me something in writing?,1
+S70kN9lbtQ0hWR,"No, we need it right now or we will have to take legal action against you.","I'm sorry, but I'm not comfortable with that. Goodbye.",1
+KJnnHmFatez3Mg,"Hello, this is John from the bank. There has been some unusual activity on your account and I need to verify some information with you.","Um, ok. What information do you need from me?",0
+KJnnHmFatez3Mg,I need to confirm your date of birth and your social security number.,I'm not sure I feel comfortable giving you that information over the phone. Can I come into the bank to verify my account details in person?,0
+KJnnHmFatez3Mg,"Absolutely, we would be happy to help you in person. Just be sure to bring some identification with you.","Great, thank you. I'll come in tomorrow.",0
+KJnnHmFatez3Mg,That sounds good. Is there anything else I can help you with today?,"No, that's all. Thank you for calling and letting me know about the unusual activity on my account.",0
+LlcbDxHkQDY94B,"Hello sir, this is the IRS and we have detected suspicious activity on your account. Please provide us with your personal information to resolve the issue.","I'm sorry, but I do not feel comfortable providing personal information over the phone. Can you please provide me with your name and badge number?",1
+LlcbDxHkQDY94B,"Yes, my name is John Smith and my badge number is 123456. Now please provide us with your information so we can resolve this issue immediately.","I'm sorry, but I still cannot provide personal information over the phone. Can you please send me a letter with more information about the situation?",1
+LlcbDxHkQDY94B,"I understand your concern sir, but this is an urgent matter that needs to be resolved immediately. If you do not provide your information, we may have to involve law enforcement.","I'm sorry, but I still cannot provide personal information over the phone. I will contact the IRS directly and verify if this is true.",1
+Kxycl95rLpfg7D,"Hello, this is Jane from XYZ bank. Can I speak with John?","Speaking, what can I help you with?",0
+Kxycl95rLpfg7D,"Hi John, I'm calling to verify some recent transactions on your account. Have you made any purchases from a foreign country recently?","No, I haven't. Can you confirm my account details and the transactions you are referring to?",0
+Kxycl95rLpfg7D,"Sure, can you please provide me with your account number or social security number for verification purposes?","I'm sorry, I don't feel comfortable giving out my personal information over the phone. Can you confirm your identity and call me back from a verifiable number?",0
+Kxycl95rLpfg7D,"Absolutely, I understand your concerns. We take your privacy and security seriously. I'll ask my supervisor to call you back from a verifiable number.","Thank you, I appreciate that.",0
+4xnxAuR3steRGq,"Hello, this is John from the IRS. We have detected fraud on your tax return.","Oh no, really? Can you give me more information?",1
+4xnxAuR3steRGq,"Yes, we need your personal information to rectify this issue. Can you please provide your social security number?",I'm not comfortable giving that out over the phone. Can you send me something in writing?,1
+4xnxAuR3steRGq,"I'm sorry but we need the information urgently. If you don't comply, we may have to take legal action.",I still don't feel comfortable giving that information out. Is there another way to verify my identity?,1
+4xnxAuR3steRGq,"No, that's the only way. Without your social security number, we won't be able to help you.",I think I need to hang up now. I'm not convinced this is a legitimate call.,1
+qEKhQ6c7Jibf99,Hello?,"Yes, hello?",0
+qEKhQ6c7Jibf99,"Hello, this is [bank/institution name]. I'd like to verify some information with you.","Okay, sure.",0
+qEKhQ6c7Jibf99,"Can I have your full name and date of birth, please?",My name is John Smith and my birthdate is 05/01/1985.,0
+qEKhQ6c7Jibf99,Thank you. And can you provide your social security number for verification?,"Uh, I don't feel comfortable giving that out over the phone.",0
+qEKhQ6c7Jibf99,That's completely understandable. May I ask you to please call our customer service number on the back of your bank card instead?,"Yes, okay. I will do that. Thank you for calling.",0
+sT9TcijfaCXEoI,"Hi, this is John calling from the IRS. We have noticed some discrepancies in your tax returns and need to verify your social security number. Could you please provide me with that?","Sorry, I don't feel comfortable sharing that information over the phone. Is there an official IRS number I could call back?",1
+sT9TcijfaCXEoI,"Yes, our number is 1-800-829-1040. But I assure you this is a legitimate call and we need your social security number to clear up these issues.","I appreciate your concern, but I will call the official number myself to verify this. Thank you for calling.",1
+5m8u8FgKjcDHZB,"Hello, this is the IRS calling. You owe us $5000 in unpaid taxes. If you don't pay immediately, we will take legal action against you.",What? I haven't received any notification about unpaid taxes. Can you provide me with more information?,1
+5m8u8FgKjcDHZB,"Yes, we sent you several letters but never received a response. We can help you pay the outstanding amount over the phone.","I'm sorry, but I don't feel comfortable giving my credit card information over the phone. Can I call you back?",1
+5m8u8FgKjcDHZB,"No, you must pay immediately or we will have to send the police to your location.",I think this is a scam. The IRS would not threaten me like this. I will call the real IRS to confirm.,1
+5m8u8FgKjcDHZB,"No, don't call the IRS. This is the only way to avoid legal consequences. Please provide me with your credit card information now.",I'm not believing you. Goodbye.,1
+pGjAaKNrsEf408,"Hello, this is John from your bank. Can I confirm your account number?","Sure, it's 123456789.",0
+pGjAaKNrsEf408,Thank you. Can you also verify your date of birth?,"Um, why do you need that?",0
+pGjAaKNrsEf408,We just need to confirm your identity. Can you please tell me your birthdate?,"Okay, it's 01/01/1980.",0
+pGjAaKNrsEf408,"Great, thank you. I also need to ask if you made a transaction for $1000 at 2pm yesterday?","No, I didn't.",0
+pGjAaKNrsEf408,"Alright, thanks for your time. Have a good day!","Wait, why did you ask about that transaction? Is there a problem with my account?",0
+pGjAaKNrsEf408,"Don't worry, everything is fine. We just wanted to double check with you. Goodbye!","Okay, bye.",0
+WGF7ac8ZayskjN,"Hello, can I speak to John Smith please?",This is John speaking. Who is calling?,1
+WGF7ac8ZayskjN,"Hi John, this is the IRS. We noticed some discrepancies in your tax filings and need you to pay immediately or face legal action.",I don't believe you. I need to verify this with the IRS first.,1
+WGF7ac8ZayskjN,"No, you can't do that. If you don't pay now, we will send the police to arrest you.",I'm hanging up now. You are clearly a scammer.,1
+7oGx9hSdOxM4eR,"Hello, this is John calling from the bank. Can I speak to Mr./Ms. Smith?",This is Ms. Smith speaking. How may I help you? ,0
+7oGx9hSdOxM4eR,"We have noticed some suspicious activity on your account. Did you initiate any transactions for $10,000 last week?","No, I didn't. What do I need to do now?",0
+7oGx9hSdOxM4eR,We need to verify your personal details for security purposes. Can you please confirm your full name and date of birth?,"Sure. My name is Jane Smith and my date of birth is January 1st, 1980.",0
+7oGx9hSdOxM4eR,Thank you for confirming. We will now send you a verification code via SMS. Please read it back to me when you receive it.,"Okay, I received the code. It is 1234.",0
+7oGx9hSdOxM4eR,Thank you for verifying. Your account has now been secured. Please do not disclose any personal information to anyone over the phone or email.,Thank you for letting me know. I will be more careful next time.,0
+9cYhGjyx44w5GS,"Hello, this is the IRS. We have reason to believe you owe back taxes. Please give us your information so we can process your payment immediately.","I'm sorry, but I don't believe you are actually with the IRS.",1
+9cYhGjyx44w5GS,"Ma'am, this is serious. If you do not give us your information, we will have to take legal action against you.",I'm still not convinced. How did you get my number?,1
+9cYhGjyx44w5GS,"We have access to all numbers through the government database. Now, please provide your information so we can resolve this issue.",I don't think that's true. I'm going to hang up now.,1
+9cYhGjyx44w5GS,Wait! Don't hang up. We can work something out. Can I at least have your name?,"No, I'm not giving you any of my personal information.",1
+9cYhGjyx44w5GS,"Please, just hear me out. You don't want to face the consequences of not paying your taxes. I can help you.",I'm not interested in talking to you anymore. Don't call me again.,1
+9cYhGjyx44w5GS,But... ma'am... hello?,,1
+cgxrXIvBlKZ5OI,"Hello, this is Jane from the bank. Can I speak with Mr. Smith?",Speaking.,0
+cgxrXIvBlKZ5OI,"Yes, we have detected some unusual activity on your account. Did you make a purchase for $2,000 at a clothing store?","No, I didn't.",0
+cgxrXIvBlKZ5OI,"Okay, we will freeze your account for now to prevent any further unauthorized transactions. Please come to the bank to resolve this issue.","Alright, thank you for letting me know.",0
+cgxrXIvBlKZ5OI,"Of course, your safety is our priority. Please come soon so we can resolve this as soon as possible.","I understand, I'll come tomorrow.",0
+cgxrXIvBlKZ5OI,"Great, we'll be expecting you. Just to confirm, what is your account number?",123456789.,0
+cgxrXIvBlKZ5OI,"Thank you, Mr. Smith. We will have everything ready for you when you come tomorrow.","Okay, thank you.",0
+cgxrXIvBlKZ5OI,Is there anything else I can help you with today?,"No, that's all.",0
+cgxrXIvBlKZ5OI,"Okay, have a good day and we'll see you tomorrow.","Thank you, goodbye.",0
+cgxrXIvBlKZ5OI,*hangs up*,*hangs up*,0
+A6Spb1jijxcc1d,"Hello, this is Peter from the IRS. We have detected some fraudulent activity on your account.","Oh, really? Can you provide me with your IRS badge number and your full name?",1
+A6Spb1jijxcc1d,"Yes, my badge number is 726391 and my name is Peter Jones. We need you to provide us with your social security number and address for verification purposes.","I'm sorry, but I don't feel comfortable giving out that kind of personal information over the phone. Can you please send me something in writing?",1
+A6Spb1jijxcc1d,"I understand your concern, but we need your information as soon as possible to prevent any further fraudulent activity. Can you at least give me the last four digits of your social security number?",I'm not going to give you any information. This sounds like a scam and I'm going to hang up now.,1
+zetzWbuI8zkzy7,"Hello, this is John calling from XYZ Bank. May I speak with John Smith?",This is John speaking. How may I assist you?,0
+zetzWbuI8zkzy7,"Thank you for confirming, sir. I'm calling to inform you about a recent transaction on your account. Did you recently purchase a TV worth $5,000?","No, I didn't. Is there something wrong with my account?",0
+zetzWbuI8zkzy7,"Yes, sir. We suspect fraudulent activity on your account. We'll need you to follow some steps to rectify the situation.",Oh my! What do I need to do?,0
+zetzWbuI8zkzy7,We need you to provide us with your account details to verify your identity.,"I'm sorry, but I don't feel comfortable giving out that information over the phone.",0
+zetzWbuI8zkzy7,"I completely understand, sir. However, I assure you this is for your own security. Please call back our official helpline to resolve this issue.","Sure, I'll do that. Thank you for letting me know.",0
+zetzWbuI8zkzy7,"No problem, sir. Please be careful of any other calls claiming to be from our bank and asking for your personal information.",I will definitely keep that in mind. Thank you for your help.,0
+YAbvRvPcPhejrb,"Hello, this is the IRS. You owe us money and we need payment now.",I don't owe the IRS any money.,1
+YAbvRvPcPhejrb,"We have evidence of tax fraud, and if you don't pay the money you'll be arrested.",I don't believe you. I'll call the IRS directly to confirm.,1
+YAbvRvPcPhejrb,"Don't bother with that, we can take care of it now. Just give us your credit card number.",No way. This sounds like a scam.,1
+YAbvRvPcPhejrb,It's not a scam. Just trust us and give us the information.,I'm not going to give you anything. I'm hanging up now.,1
+YAbvRvPcPhejrb,"Please, don't hang up. We just need the payment or else you'll face consequences.","Sorry, but I'm not falling for your trick. Goodbye.",1
+YAbvRvPcPhejrb,"Wait, wait. We can offer you a discount if you pay now.",I don't care. I'm done talking to you. Goodbye.,1
+YAbvRvPcPhejrb,You're making a big mistake. You'll regret this decision.,I highly doubt that. Goodbye.,1
+YAbvRvPcPhejrb,"If you don't pay now, we'll report you to the authorities.",Go ahead and try. Goodbye.,1
+YAbvRvPcPhejrb,This is your last warning. Pay now or else.,I'm not scared of you. You can't do anything to me. Goodbye.,1
+YAbvRvPcPhejrb,Fine. You'll regret this decision.,I highly doubt that. Goodbye.,1
+6f2PSdHVWCGrxy,"Hello, this is John from the bank. I'm calling to verify some recent activity on your account.","Okay, what do you need from me?",0
+6f2PSdHVWCGrxy,We just need to confirm a few purchases made online. Can you please provide me with your account number?,"I'm sorry, but I'm not comfortable giving out that information over the phone.",0
+6f2PSdHVWCGrxy,"I completely understand your concern. If you'd like, you can call the number on the back of your card to verify that this is a legitimate call from us.","Okay, that sounds like a good idea. Thank you.",0
+6f2PSdHVWCGrxy,Absolutely! We'll also send you an email and a text message confirming this call.,That would be helpful. Thank you for calling and taking the time to verify my account.,0
+6f2PSdHVWCGrxy,Of course! It's important to stay vigilant against potential scams. Have a great day!,"You too, thanks!",0
+i2uNQLECvWMGPE,Good day! I'm calling from the IRS and there seems to be an issue with your taxes. Please give me your personal information so we can resolve this matter.,"I'm sorry, but I don't feel comfortable giving out my personal information over the phone. Can you provide me with more details about the issue with my taxes?",1
+i2uNQLECvWMGPE,"Yes, of course. We have noticed some discrepancies in your tax returns and we need to verify your personal information to correct it.","I appreciate your concern, but I'm not comfortable giving away my personal information over the phone. Can you please give me an official government number to call to verify this information?",1
+i2uNQLECvWMGPE,"Sorry, we cannot afford to give out information over the phone, for it will compromise the investigation.","I understand that this is a sensitive matter. However, I still do not feel comfortable giving away my personal information over the phone. Thank you for understanding.",1
+E7CLYzbsZYgDJs,"Hello, this is John from XYZ Bank. Can I speak with Mr. Smith?",This is Mr. Smith speaking. How can I help you?,0
+E7CLYzbsZYgDJs,We noticed some suspicious activity on your account and wanted to verify your recent transactions. Can you confirm the last three purchases on your account?,"Sure, I purchased groceries, gas, and a movie ticket.",0
+E7CLYzbsZYgDJs,Thank you for confirming that. We just wanted to ensure that your account was not compromised. Is there anything else I can assist you with?,"No, that's all. Thank you for letting me know.",0
+ki7ZVDYnV41W6Q,"Hello, this is John from the IRS. We have discovered an issue with your taxes and need you to pay immediately over the phone. Can I have your credit card information?","I'm sorry, I don't feel comfortable giving out my information over the phone. Can you send me an official letter instead?",1
+ki7ZVDYnV41W6Q,"Yes, we can send a letter, but it will take 4-6 weeks. You need to pay immediately or face legal action. Can you at least verify your name and Social Security number?",I think I'll wait for the letter. Thank you for calling.,1
+w76htwcy1l0SF1,"Hello, this is John from the bank. Can I speak to Mr. Johnson, please?",This is Mr. Johnson speaking.,0
+w76htwcy1l0SF1,"Thank you, Mr. Johnson. I'm calling to confirm a recent transaction on your account. Can you verify your account number for me?","Sure, it's 123456789.",0
+w76htwcy1l0SF1,"Great, thank you. And to confirm, did you recently make a purchase for $500 at a clothing store?","No, I didn't make any such purchase.",0
+w76htwcy1l0SF1,"Okay, it seems there may be some fraudulent activity on your account. I'll go ahead and freeze the account and send you a replacement card. Can you verify your email address for me?","Yes, it's johnson@gmail.com.",0
+w76htwcy1l0SF1,"Perfect, thank you. And just a reminder, never give out personal information on an unsolicited call. Thank you and have a good day.",Thank you for letting me know. You too.,0
+4fGVYscA6gp7PI,"Hello, this is John from XYZ bank. Can I speak to John Smith?",This is John. How may I help you?,0
+4fGVYscA6gp7PI,I am calling regarding some suspicious activity on your account. Can you please verify your date of birth?,"Sure, it's January 1st, 1990.",0
+4fGVYscA6gp7PI,Thank you for verifying. Can you also provide your account number?,Why do you need my account number? Who are you really?,0
+4fGVYscA6gp7PI,"Sir, I am really from XYZ bank and I am calling for your security. Your account number will help me verify your identity.",I don't feel comfortable giving out my account number. Can you provide me with your name and phone number so that I can call you back?,0
+4fGVYscA6gp7PI,My name is John and my phone number is 123-456-7890. You can call me back anytime. But please keep in mind that your account may be at risk.,I appreciate your concern but I'd rather call the bank directly to verify this information. Thank you for calling.,0
+RjrcPIpB5efpDl,"Hello, this is the Social Security Administration calling. Your social security number has been compromised. Please provide me with your name and social security number so we can update our records.","I'm sorry, I don't feel comfortable giving out my personal information over the phone. Can you provide me with some verification that you are a representative of the Social Security Administration?",1
+RjrcPIpB5efpDl,"Yes, of course. Our verification code is 87412. Can you please provide me with your social security number now?","I'm sorry, but I'm still not comfortable giving out sensitive information over the phone. Can you please send me an official letter or email with more information?",1
+WDdSDsw8vo4aCS,"Hello, this is John from the bank. I'm calling regarding a suspicious transaction on your account.",Oh really? Can you give me more details about it?,0
+WDdSDsw8vo4aCS,"Yes, it appears that there was a large purchase made on your account from an unfamiliar location. We just wanted to verify that it was actually you who made the purchase.","No, I didn't make any large purchases recently. Thank you for notifying me about this.",0
+WDdSDsw8vo4aCS,"Of course. For security purposes, I just need to confirm some information with you. Can you please provide me with your account number and date of birth?","I'm sorry, but I don't feel comfortable giving out that information over the phone. Can I come into the bank instead?",0
+WDdSDsw8vo4aCS,"Absolutely, that's no problem. You can come into the bank and we'll sort everything out there. Thank you for being cautious, it's better to be safe than sorry.","Thank you, I'll definitely do that. Have a nice day!",0
+S85YQdNTPSLQb3,"Hello, this is John from the credit card company. We noticed suspicious activity on your account. Can you please verify your card number and security code?","I'm sorry, I don't give out personal information over the phone. Can you please give me your name and phone number so I can verify that you are actually from my credit card company?",1
+S85YQdNTPSLQb3,"Yes, of course. My name is John Smith and my phone number is 123-456-7890.","I'm sorry, but that's not the number that shows up on my caller ID for my credit card company. I'm going to have to hang up now.",1
+FOqATqHV6gFhzu,"Hello, this is John from the bank. Can I speak to Jane?",This is Jane speaking.,0
+FOqATqHV6gFhzu,"Hi Jane, I'm calling to confirm a suspicious transaction on your account. Did you authorize a payment of $500 to a company in Spain?","No, I didn't.",0
+FOqATqHV6gFhzu,We have blocked the transaction and are sending you a new card. I will need to verify some personal details to ensure the security of your account. Can you please confirm your date of birth and address?,"Sure. My date of birth is August 3, 1985 and my address is 123 Main Street.",0
+FOqATqHV6gFhzu,"Thank you, Jane. I have updated your account information and you will receive your new card within the next 5-7 business days. Is there anything else I can assist you with?","No, that's all. Thank you for your help.",0
+FOqATqHV6gFhzu,"You're welcome, Jane. As a reminder, please never give out your personal or account information to anyone who calls or sends you an unsolicited message. Have a great day!","Thanks, you too.",0
+xishic1Ot0UcBf,"Hello, this is the IRS. You owe us money and if you don't pay immediately, you will be arrested.","Excuse me, but I don't owe any money to the IRS.",1
+xishic1Ot0UcBf,"Are you sure? Our records show that you owe us $10,000 and if you don't pay now, we will send the police to arrest you.",I'm pretty sure I don't owe any money to the IRS. Can you provide me with some more information about this debt?,1
+xishic1Ot0UcBf,"Yes, we have all the necessary information about your debt. If you don't pay now, we will have to take legal action against you.","I'm sorry, but I'm not going to give you any money until I see some proof that I actually owe it to you.",1
+xishic1Ot0UcBf,"Well, we can send you some documents to prove it, but it will take some time. In the meantime, I suggest you pay us now to avoid any legal trouble.","No, I'm not going to pay anything until I see some proof of this debt. Thank you for calling.",1
+GIjmhRS9Dy8xg1,"Hello, this is John from the bank. Can I please confirm your account information?","Sure, what information do you need from me?",0
+GIjmhRS9Dy8xg1,I just need your account number and password for security purposes.,"I'm sorry, I don't feel comfortable giving that out over the phone. Can I call you back?",0
+x7oPKQdUXeAdsr,"Hello, this is the IRS calling. You owe us money and we need you to pay immediately.",Oh really? How much do I owe?,1
+x7oPKQdUXeAdsr,"You owe $5,000. If you don't pay now, we'll have to take legal action against you.",That's a lot of money. Can you prove that I owe this amount?,1
+x7oPKQdUXeAdsr,"Yes, we have all the evidence we need to take you to court. But if you pay now, we can resolve this issue without any legal proceedings.","Hmm, I'm not sure. Can I call you back to verify this information?",1
+x7oPKQdUXeAdsr,"No, you can't call us back. You need to make the payment now or face the consequences.","I'm sorry, but I don't feel comfortable paying over the phone. I need to verify this information with the IRS directly.",1
+x7oPKQdUXeAdsr,You don't have time for that. You need to pay immediately or we'll have to take action against you.,"I'm sorry, but I won't be paying anything over the phone. I'll wait for a notice in the mail to verify this information.",1
+Sm1V9IQRgeBSPI,"Hello, this is John from your bank. I'm calling to verify some suspicious activity on your account. Can you confirm your account number and password please?","Oh, sure. My account number is 1234567890 and my password is 1234.",0
+Sm1V9IQRgeBSPI,Thank you for confirming that. We have noticed some unauthorized charges on your account. Can you please provide us with your Social Security number and date of birth for verification purposes?,"Wait, what? Why do you need my Social Security number and date of birth? Can't you just tell me what the unauthorized charges are?",0
+WFAfCNuIAZAlGo,"Hello, this is the IRS calling. We have detected an issue with your tax return. Please share your social security number with me so we can resolve the issue.","I'm sorry, I don't feel comfortable sharing my personal information over the phone.",1
+WFAfCNuIAZAlGo,"I understand your concern, but we need your social security number for verification purposes. Otherwise, we will have to take legal action against you.","I'm sorry, but I'm not going to give you my social security number. I'll just contact the IRS directly to verify if there is any issue with my tax return.",1
+WFAfCNuIAZAlGo,"Wait, I can give you my ID number and you can verify that I am a real representative of the IRS. Please, give me a chance to help you resolve the issue quickly.","No, thank you. I don't want to take any risks. I'll just hang up now.",1
+WFAfCNuIAZAlGo,"Please, don't hang up. We are just trying to help you. You can check our website and verify our phone number. We are a legitimate organization.",I don't care. I don't believe you. I'm hanging up now.,1
+WFAfCNuIAZAlGo,"Wait, before you hang up, let me just tell you that we also offer free tax advice and consultation. So, even if there is no issue with your return, you can still benefit from our services.","Sorry, I'm not interested. Goodbye.",1
+GtvAWBM9Prc6wo,"Hello, this is John from the bank. Can I speak with the account holder?","Yes, this is the account holder. What can I help you with?",0
+GtvAWBM9Prc6wo,We have noticed some unusual activity on your account. Can you please verify your personal information?,"I'm sorry, but I don't feel comfortable sharing my personal information on the phone. Can I come into the bank to speak with someone in person?",0
+q2g5xkpDMu8oen,"Hello, this is the IRS. We have noticed some suspicious activity on your account. Please provide us with your social security number to verify your identity.","I'm sorry, but I don't feel comfortable providing that information over the phone.",1
+q2g5xkpDMu8oen,"Ma'am, if you don't provide your social security number, the authorities will be notified and legal action will be taken against you.",I'm still not comfortable giving out that information. Can you please provide me with a phone number where I can call you back to verify this is a legitimate call?,1
+q2g5xkpDMu8oen,"I'm sorry, but we cannot provide you with a phone number. Please provide your social security number or the authorities will be notified immediately.","I'm sorry, but I don't believe this is a legitimate call. Goodbye.",1
+HnAp6TCiqhuldT,"Hello, this is John from the bank. I'm calling in regards to some unusual activity on your account.","Uh, okay. What kind of activity?",0
+HnAp6TCiqhuldT,There have been some large purchases made on your account that seem out of the ordinary. I just wanted to confirm that it was you making those purchases.,"No, I haven't made any large purchases recently. What should I do?",0
+HnAp6TCiqhuldT,We'll need to freeze your account immediately to prevent any further fraudulent activity. Can you confirm some personal information so I can do that for you?,"Sure, what do you need to know?",0
+HnAp6TCiqhuldT,"Just your name, date of birth and social security number will be enough for me to freeze the account. Can you please confirm those details for me?","Okay, it's John Smith, March 15th, 1985, and XXX-XX-XXXX.",0
+HnAp6TCiqhuldT,Thank you. I'll go ahead and freeze your account now. Please make sure to monitor your other accounts as well and report any unauthorized activity immediately.,"Thank you, I will. How long will my account be frozen for?",0
+HnAp6TCiqhuldT,"We will need to investigate this further before we can release the freeze on your account. It may take a few days, but we will be in touch with updates.","Okay, thank you for your help. I appreciate it.",0
+HnAp6TCiqhuldT,Not a problem. Remember to be cautious with any calls or emails asking for personal information in the future. Have a good day.,"Thank you, you too. Goodbye.",0
+4HKpAeRsVhutBr,"Good morning, sir! This is David from the IRS. We need to discuss some crucial details regarding your tax payments.","Sorry, but I think you are calling the wrong person. I have already paid my taxes.",1
+4HKpAeRsVhutBr,"I'm sorry for the inconvenience, sir. Are you absolutely sure that there has been no mistake with your payments?","I'm pretty sure, thank you. I have all the documents and receipts.",1
+4HKpAeRsVhutBr,"That's great, sir. But our system indicates that there has been an error with your payments. Can you please verify your personal information?","No, thank you. I don't give personal information to unknown callers.",1
+4HKpAeRsVhutBr,"But sir, this is a matter of utmost importance. I'm trying to help you resolve this issue before it's too late.","I appreciate your concern, but I don't think there is any issue to resolve. Please don't call me again.",1
+4HKpAeRsVhutBr,But... sir...,Goodbye!,1
+4HKpAeRsVhutBr,"Hello sir, this is John from the Tech Support department. Your computer has been infected by a virus and we need to take immediate action to fix it.","I'm sorry, I'm not interested. I have a good antivirus software.",1
+4HKpAeRsVhutBr,"But sir, your antivirus is not enough. This virus is very dangerous and can cause irreversible damage to your computer. Please give me remote access to your system and I will fix it for you right away.","No, thank you. I don't give access to my computer to unknown callers.",1
+4HKpAeRsVhutBr,"But sir, I assure you that I'm a certified technician and I can fix your computer in no time. If you don't believe me, just check our website.","Sorry, but I don't need your services. Please don't call me again.",1
+4HKpAeRsVhutBr,"But sir, you don't understand how serious this is. I really need to access your system to fix the problem. Otherwise, your computer will be irreparably damaged.","I'm sorry, but I have to hang up now. Please don't call me again.",1
+4HKpAeRsVhutBr,"Hello sir, this is Sarah from the Credit Card Company. We have detected some unusual activity on your account and we need to verify some details with you.","I'm sorry, but I don't have a credit card. Please don't call me again.",1
+7eXuMnKm00S698,"Hello, this is John from ABC bank. I wanted to talk to you about some recent activity on your account.","Oh, sure. What's the issue?",0
+7eXuMnKm00S698,We've noticed some unusual transactions and want to verify if they were authorized by you or not. Can you tell me if you made a purchase of $500 from a cosmetic store last week?,"No, I didn't make any such purchase.",0
+7eXuMnKm00S698,"That's what our records show. Just to be safe, can I confirm some personal information like your date of birth?","Uh, okay.",0
+7eXuMnKm00S698,Great. Can you also tell me your social security number?,"Wait, why do you need that?",0
+7eXuMnKm00S698,Just to confirm your identity and check if there's been any unauthorized access. It's standard procedure.,I don't think I'm comfortable giving that over the phone.,0
+7eXuMnKm00S698,"I understand your concern, but this is for your own security. If you don't feel comfortable, you can always visit your nearest branch and verify your account activity there.","Yeah, I think I'll do that instead. Thank you for informing me.",0
+7eXuMnKm00S698,No problem. Always stay cautious when it comes to your finances. Have a good day.,You too.,0
+DAoZuhs2htCEhz,"Hello, this is Jason from the Internal Revenue Service. You owe us $5,000 in back taxes and we need you to pay immediately or face legal consequences.","I know this is a phone scam, and I'm not going to fall for it.",1
+DAoZuhs2htCEhz,"But sir, if you don't pay, we will take legal action against you.",I'm hanging up now. Have a nice day.,1
+k9M39RPkmlUFXf,"Hello, this is John from the bank. I'm calling to confirm a transaction on your account. Did you recently make a purchase from a clothing store for $250?","Um, no I didn't. Is everything okay with my account?",0
+k9M39RPkmlUFXf,"Yes, it looks like there has been some suspicious activity on your card. Can you verify your account number and password for me?","Wait a minute, I'm not comfortable giving out that information over the phone. Can I come into the bank to resolve this?",0
+SZFTtAgd13k8Uz,"Hello, this is John from the IRS. We have noticed some irregularities in your tax records and we need to verify some information.","I'm sorry, I'm not comfortable giving out personal information over the phone. Can you send me something in writing?",1
+SZFTtAgd13k8Uz,"Yes, we can send you a letter but we need to verify your address. Can you please tell me your address?","No, I'm sorry. I cannot give out personal information to someone I don't know. Goodbye.",1
+qfG32ZL77qASmX,"Hello, this is John calling from your bank, may I have your account number please?","Sure, it's XXXXXXXX.",0
+qfG32ZL77qASmX,"Thank you. For security purposes, can you also provide me with your full name and date of birth?",Why do you need that information? Can't you just confirm my identity with my account number?,0
+qfG32ZL77qASmX,"I'm sorry, but we need to verify your identity for your protection. Can you please provide me with your information?",I'm not comfortable giving out that information over the phone. Can I come into the bank in person to verify my identity?,0
+qfG32ZL77qASmX,"Of course, that's understandable. You can come in during regular business hours and we'll be able to assist you.","Thank you, I will do that. Goodbye.",0
+nbPp2JDASKSxOy,"Hello, may I speak with Ms. Smith?",This is she. Who is calling?,1
+nbPp2JDASKSxOy,"Hi, this is Dave from the emergency services. There has been a breach in your online security and we need your help to fix it ASAP. Can you please provide me with your personal information?",I'm sorry but I don't believe you. I'm going to hang up now.,1
+WpjFflgTMYwrPB,"Hello, this is the IRS calling. We have found discrepancies in your tax filings and you owe us money. Please pay immediately or legal action will be taken.","I'm sorry, but I don't owe any money to the IRS. This sounds like a scam.",1
+WpjFflgTMYwrPB,"No, this is not a scam. If you don't pay, you will go to jail.",I don't believe you. Can you provide me with your name and badge number?,1
+WpjFflgTMYwrPB,"Uh, my name is John Smith and my badge number is 123456.",I don't think that's true. I'm going to hang up now and report this call.,1
+WpjFflgTMYwrPB,"No, wait! Don't hang up! I'm really with the IRS!",I don't believe you. Goodbye.,1
+qDQ3QmVWRVIKLM,"Hello, this is John from the bank. I am calling to verify a recent transaction on your account.","Oh, okay. Can you provide me with more details on the transaction?",0
+qDQ3QmVWRVIKLM,"Yes, certainly. We had a withdrawal of $500 from your checking account. Did you authorize this transaction?","No, I didn't authorize any such transaction. What should I do now?",0
+qDQ3QmVWRVIKLM,Please don't worry. We will freeze the account and investigate the matter. We will issue you a new card as well.,"Okay, that sounds good. Thank you so much for informing me.",0
+qDQ3QmVWRVIKLM,"No problem, we take these matters very seriously. Do you have any questions or concerns?","No, that's all for now. Thank you again.",0
+qDQ3QmVWRVIKLM,You're welcome. Have a good day!,You too.,0
+ALtIzDsxTHTxIe,"Hello, this is John from your bank. I just wanted to check if you received your new credit card in the mail?","Yes, I did. Thank you for calling to check.",0
+ALtIzDsxTHTxIe,"Hello, this is Jane from your bank. Can you please confirm your social security number to verify your account?","I'm sorry, but I'm not comfortable giving that information over the phone. Is there another way to verify my account?",0
+DmgYMeupfuuUtH,"Hello, this is James from your bank. We have detected some suspicious activity on your account. Can I confirm your account number and password?","I'm sorry, I don't feel comfortable giving out my personal information over the phone. Can you confirm your name and the bank's contact number?",1
+DmgYMeupfuuUtH,"Yes, this is James from XYZ Bank. Our number is 123-456-7890. Can you please confirm your account number and date of birth?",I think I'll visit the bank in person to sort out any issues. Thank you for calling.,1
+3Quw1bnJa3t0Us,"Hello, this is John from the bank. I am calling to confirm a recent transaction on your account. Did you recently make a purchase for $500 at a shoe store?","Yes, I did make that purchase.",0
+3Quw1bnJa3t0Us,Great! I just wanted to make sure it wasn't fraudulent. Can I confirm your account number and last four digits of your social security number?,"Sure, my account number is 123456789 and the last four digits of my SSN are 1234.",0
+3Quw1bnJa3t0Us,"Thank you. To ensure your safety, can you please verify your mother's maiden name?","Yes, it's Smith.",0
+3Quw1bnJa3t0Us,Perfect. I also want to inform you of our new credit card offer. Would you be interested in learning more?,"No, thank you. I'm good.",0
+3Quw1bnJa3t0Us,"Okay, no problem. Have a great day!","Thanks, you too.",0
+S3X3CIjVLldPiO,"Hello, this is the IRS calling. We have noticed discrepancies in your tax filings and need you to verify some personal information for us. Can you provide your name, date of birth, and Social Security number?","I'm sorry, but I'm not comfortable providing that information over the phone. Can you send me a letter or email with more details?",1
+S3X3CIjVLldPiO,"Yes, we can send you a letter, but we need to verify your address. Can you give us your current address and phone number?",I don't think I should give that information out either. Can you give me a phone number I can call to verify this is really the IRS?,1
+S3X3CIjVLldPiO,"I'm sorry, but we can't provide that information over the phone. We need you to provide your personal information first.",I think I'm going to hang up now. I don't feel comfortable giving out my personal information to someone I don't know.,1
+u6jomu1BoLjgOb,"Hello, this is John from your bank. I need to verify your identity for security purposes.","Okay, what do you need from me?",0
+u6jomu1BoLjgOb,Can you verify your account number and social security number?,I'm not comfortable giving out that information over the phone. Can I come in person to the bank?,0
+u6jomu1BoLjgOb,"Yes, that's no problem. Thank you for being cautious with your personal information.","Of course, I know there are a lot of phone scams going around these days.",0
+evBORyU4RwmT0Y,"Hello, this is John from the IRS. We have noticed suspicious activity on your account.","Oh no, what kind of suspicious activity?",1
+evBORyU4RwmT0Y,"There appears to be a discrepancy in your taxes. We need you to wire us $10,000 immediately to avoid legal action.",I don't think I owe that much! Can I speak to someone else to verify this?,1
+evBORyU4RwmT0Y,"I can connect you with my supervisor, but time is of the essence. Can you wire the money now and sort it out later?","I'm sorry, I cannot do that. I need more information and will double check with the IRS directly.",1
+evBORyU4RwmT0Y,"No, we cannot wait. This is a serious matter and you will be facing legal consequences if you do not comply.",I am not comfortable with sending money without further verification. Please give me your supervisor's name and number.,1
+evBORyU4RwmT0Y,"Fine, it's Susan Smith and her number is 555-555-5555. But remember, time is ticking and you may regret not acting fast enough.",Thank you for the information. I will do my due diligence and make sure to explore every avenue before making any payment.,1
+evBORyU4RwmT0Y,"Whatever, just don't say I didn't warn you.",I won't. Have a good day.,1
+eKNqNNQ5YpimeL,"Hello, this is John from your bank. We noticed some unusual activity on your account and want to verify some information to ensure security. Can you provide me with your social security number?","I'm sorry, but I don't feel comfortable giving out my social security number over the phone. Can you provide me with some more information to confirm that you are really from my bank?",0
+eKNqNNQ5YpimeL,Of course! I understand your concerns. Could you please provide me with your account number so I can confirm your identity?,"Sure, let me grab my bank statement. It's XXXXXXXXXXXX.",0
+eKNqNNQ5YpimeL,"Great, thank you. Can you also provide me with the last four digits of your social security number?","Sure, that's XXXX.",0
+eKNqNNQ5YpimeL,"Thank you, that matches our records. Do you recognize a recent charge for $500 at a department store in California?","No, I don't. That doesn't sound like something I would purchase.",0
+eKNqNNQ5YpimeL,"Okay, thank you for letting me know. We will investigate this and if it turns out to be fraudulent, we will issue you a new debit card. Thank you for your cooperation.",Thank you for calling and letting me know. I appreciate your help in keeping my account secure.,0
+YjqL3Ey9lhtMCg,"Hello, I'm calling from your bank. Can you please confirm your account number so that we can verify your identity?","I'm sorry, I can't do that. How do I know you're really from my bank?",1
+YjqL3Ey9lhtMCg,"Oh don't worry, we're just doing a routine check. It's important that we confirm your account details for security purposes.","I appreciate your concern, but I'm not comfortable giving out my personal information over the phone. I'll contact my bank directly to verify any requests.",1
+LPVrXA4foCsDCN,"Hello, this is John from your bank. I'm calling because we noticed some unusual activity on your account.","Oh, really? What kind of activity?",0
+LPVrXA4foCsDCN,It looks like someone tried to make a large purchase with your card out of state.,"Oh my, that wasn't me. Thank you for letting me know.",0
+LPVrXA4foCsDCN,"Of course, we take security very seriously. I just need to verify some information with you to make sure your account is secure.","Okay, sure. What do you need?",0
+LPVrXA4foCsDCN,Can you please provide me with your full name and date of birth?,"Yes, my name is Jane Smith and my date of birth is 01/01/1980.",0
+LPVrXA4foCsDCN,"Thank you, Jane. Can you also verify your home address and the last four digits of your social security number?","Sure, my address is 123 Main St and the last four digits of my social are 1234.",0
+LPVrXA4foCsDCN,"Great, everything checks out. I'm so sorry for any inconvenience this may have caused you. We'll be sending you a new card within the next week.","Okay, thank you for letting me know. I appreciate your help.",0
+LPVrXA4foCsDCN,"No problem, have a nice day. And remember, never give out personal information unless you are absolutely sure of who you are speaking to.","Okay, I will. Thanks again.",0
+EKFLB1q801x2TP,"Hello, I'm calling from the IRS. We've noticed some suspicious activity on your account.",Oh really? Can you give me some more information please?,1
+EKFLB1q801x2TP,"Yes, we've detected some unauthorized transactions and we need your assistance to resolve the issue.","Okay, what do I need to do?",1
+EKFLB1q801x2TP,We need you to confirm your social security number and other personal information for verification purposes.,"I'm sorry, but I'm not comfortable giving out that kind of information over the phone. Can you send me something in writing instead?",1
+EKFLB1q801x2TP,"I'm sorry, but that's not possible. This is a time-sensitive matter and we need to act quickly to prevent further damage to your account.","I appreciate your concern, but I'll need to verify that you're really from the IRS. Can I have your contact information and call you back later?",1
+EKFLB1q801x2TP,"I'm afraid I can't give you any contact information. We're only authorized to make outbound calls, not receive them.","Well, that seems suspicious. I think I'm going to hang up now and call the actual IRS to verify this call.",1
+EKFLB1q801x2TP,"No, wait! Please don't do that. We are the real people from the IRS and we need your help.","Sorry, but I don't believe you. Goodbye.",1
+EKFLB1q801x2TP,"Dammit, another one got away. We need to find some better targets.",,1
+DjQIAADidtJ3sU,"Hello, is this 555-1234?","Yes, who is this?",1
+DjQIAADidtJ3sU,This is John from the IRS. We're calling because we've noticed some discrepancies in your tax returns.,"Oh no, what kind of discrepancies?",1
+DjQIAADidtJ3sU,"It appears that you owe back taxes and penalties totaling $10,000. We can help you settle this debt today if you provide us with your credit card information.","Wait, I never received any notice about owing back taxes. This sounds like a scam.",1
+DjQIAADidtJ3sU,"No, it's not a scam. We just need your credit card information in order to process the payment and clear your account.","I'm sorry, but I'm not comfortable giving out my credit card information over the phone to someone I don't know. Can you send me something in writing?",1
+DjQIAADidtJ3sU,"Unfortunately we can't send you anything in writing until after you've made the payment. This is a time-sensitive matter, so please reconsider giving us your credit card information. Otherwise, we'll have no choice but to take legal action against you.",I'm still not comfortable with this. I'll have to verify that this is a legitimate call before proceeding with anything.,1
+DjQIAADidtJ3sU,"I assure you that this is a legitimate call. You can trust us, we're here to help.","I'm sorry, but I can't take your word for it. I'll have to call the IRS directly to verify this matter.",1
+DjQIAADidtJ3sU,That won't be necessary. You can confirm that this is a legitimate call by providing us with your credit card information. We'll only use it for payment processing purposes.,"I'm sorry, but I don't feel comfortable with this. Goodbye.",1
+DjQIAADidtJ3sU,"Wait, don't hang up! You can't ignore this matter, it won't just go away. We'll have to take legal action against you if you don't cooperate.","I'm sorry, but I'm not going to fall for this scam. Goodbye.",1
+UJawAwreDSitwc,"Hello, this is John from your bank. Can I confirm your account number?","Uh, sure. It's 123456789.",0
+UJawAwreDSitwc,"Thank you. For security purposes, can you verify your mother's maiden name?","Um, why do you need that?",0
+UJawAwreDSitwc,"We need to ensure it's you we're speaking with. Can you tell me your mother's maiden name, please?","Oh, okay. It's Johnson.",0
+UJawAwreDSitwc,Thank you. Can I ask if you recently made a purchase of $500 on your credit card?,"No, I don't think so.",0
+UJawAwreDSitwc,"I'm sorry for any inconvenience, but we've noticed some suspicious activity on your account. Can you confirm a recent transaction of $100 on your debit card?","No, I don't remember that.",0
+UJawAwreDSitwc,"I see. For your account's safety, we need you to log in to your online banking to verify and fix any suspicious activity. Can I guide you through that?","Oh, okay. Yes, please.",0
+UJawAwreDSitwc,Great. Please visit our website and click on the 'login' button at the top right corner.,"Okay, I'm on the website now.",0
+UJawAwreDSitwc,"Now, enter your username and password and click the 'submit' button.","Okay, done.",0
+UJawAwreDSitwc,Great. Thank you for your cooperation. We will monitor your account for any further unauthorized activities.,You're welcome. Thank you for letting me know.,0
+UJawAwreDSitwc,No problem. Have a great day!,You too.,0
+klLDXMmRmwZboP,"Hello, this is John from the IRS. We have detected discrepancies in your tax records and need to investigate further.","Oh no, how can I help?",1
+klLDXMmRmwZboP,We need you to provide us with your social security number and make a payment to clear your record.,"I'm sorry, I don't feel comfortable giving out that information over the phone. Can I call the IRS directly to resolve this issue?",1
+Q3TW4CR2hSF0Rt,"Hello, this is John from XYZ Bank. We have noticed some unusual activity in your account. Have you authorized any transactions lately?","No, I haven't. Is everything okay with my account?",0
+Q3TW4CR2hSF0Rt,"Don't worry, we have suspended the transactions and we just need you to confirm a few details to ensure the security of your account. Can you verify your date of birth and the last four digits of your social security number?","Uh, sure. My date of birth is XX/XX/XXXX and the last four digits of my SSN are XXXX.",0
+Zxy0Q8wihDJ1WN,"Hello, may I speak to John?","This is John speaking, who is this?",1
+Zxy0Q8wihDJ1WN,"This is Michael from the IRS, we have detected suspicious activity on your account and need you to give us your personal information to verify your identity","I don't think that's accurate, I won't be giving out any personal information over the phone",1
+Zxy0Q8wihDJ1WN,"Sir, it's important that we verify your account or we'll have to take legal action. Please give me your social security number and date of birth","I'm sorry, I still don't feel comfortable with sharing that information. Is there any other way to verify my account?",1
+Zxy0Q8wihDJ1WN,"I understand your concern, sir. Can you please give me your credit card number and security code instead?","This is clearly a scam, I will be reporting your number to the authorities",1
+yIMuS1ZBbEjhpZ,"Hello, this is the IRS calling, you owe back taxes and need to pay immediately or face legal action.","I'm sorry, but I don't believe you're really from the IRS. Can you provide me with some more information?",1
+yIMuS1ZBbEjhpZ,"Yes, of course. I just need your social security number and bank account information to verify your identity and process your payment.",I can't give you that information over the phone. This sounds like a scam.,1
+yIMuS1ZBbEjhpZ,"No, it's not a scam, I assure you. If you don't pay immediately, you'll be arrested.",I really don't think that's how the IRS works. I'm going to hang up now.,1
+eIRkxc8WNMjZc6,"Hello, this is John from XYZ Bank. May I know if I am speaking with Mr. Smith?","Yes, this is Mr. Smith.",0
+eIRkxc8WNMjZc6,"Thank you for confirming your identity, Mr. Smith. I am calling to inform you that we have detected some suspicious activity on your account.","Oh no, what kind of activity?",0
+eIRkxc8WNMjZc6,We noticed some unauthorized transactions that were made on your account yesterday. Did you make those transactions?,"No, I didn't make any transactions yesterday. What should I do now?",0
+eIRkxc8WNMjZc6,We recommend that you change your online banking password ASAP and monitor your account for any other suspicious transactions. We will also block your card to prevent any further unauthorized use.,"Okay, I will do that. Thank you for letting me know.",0
+eIRkxc8WNMjZc6,"You're welcome, Mr. Smith. If you have any further questions or concerns, please don't hesitate to give us a call.",I will. Thank you again for calling me.,0
+QB18PWc5XMRsTg,"Hello, this is the IRS calling. You owe us money and if you don't pay, you'll be arrested.","Sorry, I don't think this is legitimate. I'm going to hang up now.",1
+QB18PWc5XMRsTg,"Wait, don't hang up! We won't arrest you if you pay right now over the phone.",I really don't believe you. I'm going to hang up now. Goodbye.,1
+xbgtR2puPHkFuH,"Hello, this is John from the bank. Is this Mr. Smith?","Yes, speaking.",0
+xbgtR2puPHkFuH,"Thank you for picking up, Mr. Smith. I just need to verify some information regarding your account","Sure, go ahead.",0
+xbgtR2puPHkFuH,Can you please confirm your date of birth and the last four digits of your social security number?,"Uh, I'm not comfortable giving that information over the phone.",0
+xbgtR2puPHkFuH,"I completely understand, Mr. Smith. Is there any other way we can verify your identity?",I would prefer to do it in person at the bank.,0
+xbgtR2puPHkFuH,"Of course, we can schedule a meeting at our nearest branch. When is a good time for you?",Next Thursday works for me.,0
+xbgtR2puPHkFuH,"Great, I will schedule an appointment for you next Thursday. Thank you for being cautious about sharing personal information over the phone.","No problem, better safe than sorry.",0
+xbgtR2puPHkFuH,"Absolutely. Have a good day, Mr. Smith.","You too, bye.",0
+cnYesT5yPALbpM,"Hello, is this 123-456-7890?","Yes, who is this?",1
+cnYesT5yPALbpM,This is John from the IRS. We have noticed some discrepancies in your tax returns and need you to pay us immediately.,I don't think there's anything wrong with my tax returns. Can you give me some more information?,1
+cnYesT5yPALbpM,"Yes, we have found that you owe us $10,000 and if it's not paid immediately, we will have to take legal actions.",I think you're trying to scam me. I'll need to verify this with the IRS myself.,1
+cnYesT5yPALbpM,"No, no need for that. We can take care of it immediately over the phone. Can I have your credit card details, please?",Absolutely not. I'm not giving you any personal details over the phone.,1
+cnYesT5yPALbpM,"We can't wait much longer, sir. I suggest you cooperate before it gets worse.",I'm hanging up now. Don't call me again.,1
+V0Eulg7VVi4hmz,"Hello, this is X from the bank. Can I speak with Mr. Smith, please?",This is he. How can I help you?,0
+V0Eulg7VVi4hmz,"Thank you for answering, Mr. Smith. We just noticed some unusual activity on your account and wanted to confirm if it was authorized by you.","Yes, I made some purchases yesterday. Is there a problem?",0
+V0Eulg7VVi4hmz,"No problem at all, Mr. Smith. We just wanted to make sure it was you who made those transactions. Can you please confirm your date of birth and mother's maiden name for verification purposes?","Sure, my date of birth is XX/XX/XXXX and my mother's maiden name is XXXXXXX.",0
+V0Eulg7VVi4hmz,"Thank you for confirming, Mr. Smith. You're all set. If you have any further questions or concerns, feel free to call us back at this number.","Thank you for the call, and for keeping my account safe. Have a good day.",0
+z1gliHUlTwC23L,"Hello, this is the IRS calling. You owe us money and need to pay immediately or face legal consequences.","I'm sorry, I don't believe you. Can you give me your name and badge number?",1
+z1gliHUlTwC23L,My name is John Smith and my badge number is 123456.,"Okay, thank you. I'm going to hang up and call the IRS directly to verify this information. Goodbye.",1
+CdMQLrXHgN4vG2,"Hello, this is John from the bank. Can I speak to Mr. Smith?","Yes, this is Mr. Smith speaking.",0
+CdMQLrXHgN4vG2,"Good day, Mr. Smith. We have noticed some unusual activity on your account. Are you aware of any recent transactions?","No, I haven't made any unusual transactions lately.",0
+CdMQLrXHgN4vG2,"Alright, let me confirm some details with you for security purposes. Can you please provide me with your date of birth and mother's maiden name?","Sure, my date of birth is 01/01/1980 and my mother's maiden name is Smith.",0
+CdMQLrXHgN4vG2,"Thank you, Mr. Smith. We have processed a fraudulent charge on your account and we need your cooperation to resolve this. Can you please verify your account number and password?",I'm sorry but I cannot provide that over the phone. Is there anything else you need from me?,0
+CdMQLrXHgN4vG2,"No, that's all for now, Mr. Smith. We'll send you an email with further instructions. Thank you for your assistance.",You're welcome. Have a good day.,0
+OvlDq9LnYHGmnH,"Hello, this is the IRS. You owe us money and we need you to pay immediately or you will face legal action.",I don't believe you. Can you give me more information about what I supposedly owe?,1
+OvlDq9LnYHGmnH,"Yes, you owe $5,000 in back taxes. If you don't pay now, a warrant will be issued for your arrest.",That doesn't sound right. Can you tell me my name or any other personal information?,1
+OvlDq9LnYHGmnH,Your name is John Smith and you live in the state of California. Now can you please give me your credit card information to make a payment?,"No way, this is definitely a scam. I'm hanging up now and reporting this number to the authorities.",1
+j2Q9T9FmncM5Re,"Hello, this is John from your bank. I noticed some unusual activity on your account. Can you verify your information for me?","Uh, sure. What do you need me to verify?",0
+j2Q9T9FmncM5Re,"I just need your name, date of birth, and the last four digits of your social security number.","Oh, okay. My name is Sarah, my date of birth is May 15th, 1992, and the last four digits of my social are 1234.",0
+j2Q9T9FmncM5Re,"Great, thank you. I'm also going to need your account number and routing number for verification purposes.","Wait, why do you need that? That seems like sensitive information.",0
+j2Q9T9FmncM5Re,"I understand your concern, but it's just to verify your identity and make sure we're talking to the right person. I promise it's safe.","Okay, let me just grab my checkbook to get the numbers.",0
+j2Q9T9FmncM5Re,"Actually, Sarah, I'm sorry to say but this is not actually your bank. We are scammers trying to steal your information.","Oh my god, thank you for telling me! I'm going to hang up now and report this to my real bank.",0
+JaVoxOZHt6WdM5,"Hello, this is the IRS. We have discovered a mistake on your tax return and you owe us money. Please give us your credit card information so we can process the payment.",I don't think this is legitimate. Can you give me a call back number so I can verify?,1
+JaVoxOZHt6WdM5,"Yes, our call back number is 555-1234. But you need to give us the information now or face legal action.",I'm not comfortable giving out that information over the phone. Can you send me something in writing first?,1
+JaVoxOZHt6WdM5,"No, we can't send anything in writing. You need to pay now or face the consequences.",I still don't feel comfortable doing that. I'm going to hang up now.,1
+8ZAtmTrDFrwblw,"Hello, this is [bank/other institution] calling. May I please speak with [victim]?",This is [victim].,0
+8ZAtmTrDFrwblw,"Thank you for taking the call, [victim]. Just calling to inform you that there has been some suspicious activity on your account. Did you recently make a purchase for $500 in [location]? ","No, I haven't made any such purchases.",0
+8ZAtmTrDFrwblw,We suspect that your account may have been hacked. Can you please confirm your account number and password to verify your identity?,"I'm sorry, I'm not comfortable sharing this information over the phone.",0
+8ZAtmTrDFrwblw,"That's understandable, but we need to ensure that it is you who is using the account. Can you give us any other information that would help us verify your identity?",I can give you my date of birth and the last four digits of my social security number.,0
+8ZAtmTrDFrwblw,"Thank you for providing the information, [victim]. I'm going to put a freeze on your account for now, until we can sort this out. I will also send you a verification code to your email or mobile number. Please do not share it with anyone else.","Okay, thank you for letting me know.",0
+8ZAtmTrDFrwblw,"Before I go, just to let you know the warning signs of phone scams.","Yes, please tell me.",0
+8ZAtmTrDFrwblw,"Phone scammers typically ask for sensitive information such as bank account details or social security numbers. They may also ask for immediate payment or threaten with legal action. Remember to always double check with the institution before giving out any information, and never give any sensitive information over the phone to an unverifiable caller.",Thank you for this valuable information.,0
+8ZAtmTrDFrwblw,"You're welcome. Have a good day, [victim].","Thank you, you too.",0
+tQKCbM7Ix7bML0,"Hello, this is the IRS. We have noticed some discrepancies in your tax filings and we need you to verify some information.","I'm sorry, but I don't believe you. I have never received any notice from the IRS.",1
+tQKCbM7Ix7bML0,"Ma'am, this is a serious matter. We have to verify your identity or we will have to report you to the authorities. Can you please just give me your social security number?",I'm not comfortable giving out my social security number over the phone to someone I don't know.,1
+71yQSTFsr5Ve7O,"Hello, this is John from the bank. Can I please verify your identity?","Um, sure. Can you tell me which bank you are from?",0
+71yQSTFsr5Ve7O,"Yes, of course. We are from XYZ Bank. Can you please provide me with your account number?","I'm sorry, but I don't feel comfortable giving out my account number over the phone. Can you tell me why you need it?",0
+71yQSTFsr5Ve7O,We just need to verify some information regarding recent activity on your account. We can also ask you some security questions to verify your identity if that makes you feel more comfortable.,"Okay, that sounds reasonable. What kind of questions will you be asking so I can prepare?",0
+71yQSTFsr5Ve7O,"We will ask you questions such as your mother's maiden name, your date of birth, and the last four digits of your social security number.","Oh, okay. Yes, I can answer those questions. Thanks for letting me know.",0
+71yQSTFsr5Ve7O,Thank you for your cooperation. Can we proceed with the questions now?,"Yes, let's do it.",0
+71yQSTFsr5Ve7O,"Great, let's start with your mother's maiden name.","Okay, it's Smith.",0
+71yQSTFsr5Ve7O,"Thank you, and what is your date of birth?","It's December 15, 1985.",0
+71yQSTFsr5Ve7O,"Perfect. And lastly, can you please tell me the last four digits of your social security number?","Yes, it's 1234.",0
+71yQSTFsr5Ve7O,Thank you for verifying your information. We just wanted to make sure everything was okay with your account. Have a great day!,"Thank you, you too!",0
+obYXZaWgQvUx3t,"Hello, this is officer Smith from the IRS. You owe outstanding taxes and need to pay immediately or face legal action.",I don't think so. I have already paid my taxes for the year. This sounds like a scam.,1
+obYXZaWgQvUx3t,"No, you have not paid your taxes. We have your file right here. You need to pay right now or face arrest.","I will not be making any payments over the phone. If this is real, please send me a notice in the mail.",1
+dfgrgDzU1yBjkR,"Hello, this is John from your bank, can I speak with (Victim's Name)?","Yes, this is (Victim's Name). What can I do for you?",0
+dfgrgDzU1yBjkR,"I wanted to inform you that there has been some suspicious activity on your account, have you made any large purchases lately?","No, I haven't made any large purchases recently. What kind of suspicious activity?",0
+dfgrgDzU1yBjkR,"We noticed some charges from an out-of-state location, and we just want to make sure it wasn't fraudulent activity. Can you confirm your date of birth and the last four digits of your Social Security number?","I'm sorry, but I don't feel comfortable giving out that information over the phone. Can you verify your identity instead?",0
+dfgrgDzU1yBjkR,"Yes, of course. My name is John Smith and here is my employee ID number. Is there any way we can verify your identity through some security questions?",That's a good idea. Can you ask me some security questions?,0
+dfgrgDzU1yBjkR,"Sure, what is your mother's maiden name and your favorite childhood pet's name?",My mother's maiden name is Lee and my favorite childhood pet's name was Fluffy.,0
+dfgrgDzU1yBjkR,"Great, thank you for verifying your identity. We just wanted to update you on the suspicious activity and make sure everything is okay with your account. Do you have any further questions for us?","No, not at the moment. Thank you for contacting me and letting me know about the suspicious activity.",0
+dfgrgDzU1yBjkR,"Not a problem at all. If you notice any further suspicious activity, please don't hesitate to give us a call. Have a great day!",You too. Thank you.,0
+ByfFirWTvmkxf9,"Hello, this is the IRS. We have detected fraudulent activity on your account. Please give us your social security number.","I'm sorry, but I don't feel comfortable giving out my social security number over the phone. Can you give me your name and a callback number?",1
+ByfFirWTvmkxf9,My name is John Smith and my callback number is 555-1234. But you need to give me your social security number now or you will face serious consequences.,"I'm sorry, but I don't believe you are actually from the IRS. I will be reporting this call to the authorities.",1
+v7eTwsbe6ivJiY,"Hello! This is Credit Card Company, your card has been compromised. Can you please verify your information?","I'm sorry, I don't feel comfortable giving out my personal information over the phone. Can you please give me your information so I can call you back?",1
+v7eTwsbe6ivJiY,"No, you need to verify your information in order to prevent any further fraudulent activity on your account.","I understand, but I still don't feel comfortable giving out my information over the phone. Can you please provide me with another way to verify that you are who you say you are?",1
+v7eTwsbe6ivJiY,"Okay, I understand your concerns. Can you please provide me with your credit card number and expiration date so I can verify your account?","No, I will not provide you with that information. This sounds like a scam and I will be reporting this call to the authorities.",1
+FOn4OMPGxUhhnD,"Hello, this is John from ABC bank. I am calling to confirm your recent transactions.","Oh, ok. Can you tell me which transactions you are referring to?",0
+FOn4OMPGxUhhnD,"Yes, we noticed some unusual activity on your account. There were three transactions for a total of $500 at a convenience store in a state you don't usually visit.",Oh my goodness. That's not me. Please cancel those transactions and block my account.,0
+FOn4OMPGxUhhnD,Absolutely. I will cancel the transactions and block your account. We will issue you a new card and send it to your registered address. Is there anything else you would like to ask?,"No, thank you for your help. It's scary to think someone could compromise my account like that.",0
+K55xNlSva3PYXB,"Hello, this is your bank calling. We have noticed some suspicious activity on your account. Can you confirm your account number and password?","I'm sorry, I don't give out personal information over the phone to people I don't know.",1
+K55xNlSva3PYXB,But we need to verify your account to make sure it's safe. Can you please give me your information?,"No, I'm sorry. I'm not comfortable giving out that information. Can you verify your identity and tell me your name and company?",1
+K55xNlSva3PYXB,"My name is John and I'm calling from your bank. Trust me, we just need to make sure everything is secure. Can you please provide your information?","I appreciate your concern, but I prefer to speak with my bank directly to verify any suspicious activity. Thank you for calling, but I won't be giving out any information over the phone.",1
+T5Tl9opnAsc3t8,"Hello, may I speak with [Victim's Name]?",This is [Victim's Name]. Who is this?,1
+T5Tl9opnAsc3t8,I'm calling from [random company] and we're conducting a survey about your recent purchases. Can you confirm your address and credit card information?,"Wait, what? I don't feel comfortable giving out my personal information to someone I don't know.",1
+T5Tl9opnAsc3t8,It's just for our records. We promise to keep it confidential.,"I'm sorry, but I'm not interested. Please remove me from your calling list.",1
+T5Tl9opnAsc3t8,"But ma'am, you could win a prize if you answer our survey!","No, thank you. I'm not interested in participating.",1
+T5Tl9opnAsc3t8,"Alright, fine. But just know that you're missing out on a great opportunity.",I don't think so. Goodbye.,1
+grkEpZoFzAAdVF,"Hello, this is John from the bank. May I please speak with Mr. Smith?",Speaking.,0
+grkEpZoFzAAdVF,Thank you for taking my call. I am calling to notify you about suspicious activity on your account. Did you recently make a purchase for $500 in Florida?,"No, I did not.",0
+grkEpZoFzAAdVF,That's what we suspected. We have suspended your account for now and are sending you a new card. Please keep an eye on your statements and report any unauthorized activity to us immediately.,Thank you for letting me know. I will be more cautious in the future.,0
+eQWNol1gtvPlsk,"Hello, this is the IRS. You owe us money and we need to collect it immediately.",Excuse me? I don't owe the IRS any money.,1
+eQWNol1gtvPlsk,"Yes, you do. We have your file right here.",That's not possible. Can you give me your name and badge number?,1
+eQWNol1gtvPlsk,My name is John Smith and my badge number is 123456.,I need to verify that you are really from the IRS. Can I call you back at the official IRS number?,1
+eQWNol1gtvPlsk,"No, you cannot call back. You must pay now or face legal action.",I'm not going to pay anything until I can verify your identity. Goodbye.,1
+eQWNol1gtvPlsk,"Wait, don't hang up. We can work something out. How about a payment plan?","No, I'm not interested in any payment plan. I'm hanging up now. Goodbye.",1
+Yaf8GGeBAPDBer,"Hello, this is John from your bank. Can I confirm your account number?","Sure, it's 123456789.",0
+Yaf8GGeBAPDBer,Thank you. We need to verify some recent transactions. Did you authorize a purchase of $500 from an online store?,"No, I didn't make that purchase.",0
+Yaf8GGeBAPDBer,"Okay, we'll investigate that. Can you please verify your social security number?","I'm sorry, I don't feel comfortable giving that out over the phone.",0
+Yaf8GGeBAPDBer,"I understand your concern, but for security purposes, we need to confirm your identity before we can proceed.",Can I come to the bank in person to verify my identity?,0
+Yaf8GGeBAPDBer,"Absolutely, you can visit any branch to verify your identity. But before you hang up, can you please confirm your phone number on file?","Yes, it's 555-1234.",0
+Yaf8GGeBAPDBer,"Great, thank you. We'll make a note on your account and you can visit us at any time to discuss further. Have a nice day!","Thank you, you too.",0
+SSdPN9xKnnve5K,"Hello, Can you hear me?","Yes, who is this?",1
+SSdPN9xKnnve5K,"I am calling from your bank, we need your account details for security reasons","Oh no, is something wrong with my account?",1
+SSdPN9xKnnve5K,"No, we just need to verify your information for security reasons. Can you please give me your account number?",I am not comfortable giving out my information over the phone,1
+SSdPN9xKnnve5K,"It's completely safe and secure, you can trust us. We just need it for verification purposes.","I am sorry, but I am not interested. Thank you for calling.",1
+SSdPN9xKnnve5K,"Wait, don't hang up yet. I can offer you a special deal today. Would you be interested in hearing more?","No, I am not interested. Please do not call me again.",1
+SSdPN9xKnnve5K,Are you sure? You could save a lot of money with this offer,"I'm sure, I don't want to waste any more of our time. Please remove me from your list.",1
+SSdPN9xKnnve5K,"Okay, have a nice day. Goodbye",Goodbye.,1
+wBof2rcMbMYokz,"Hello, this is Jane from your bank. Can I verify your personal information?","Um, okay. What do you need?",0
+wBof2rcMbMYokz,"Can you give me your full name, date of birth, and social security number?","Wait a minute, how do I know you're really from my bank?",0
+wBof2rcMbMYokz,I understand your concern. Can you please confirm the last transaction you made with us?,"Oh, yeah. I bought a new laptop last week.",0
+wBof2rcMbMYokz,I see that on your account. Thank you for your confirmation. Is there anything else I can help you with?,"No, that's all. Thank you.",0
+na4r4g4vOAarEm,"Hello, this is the IRS. We have identified a problem with your taxes and require immediate payment of $5000.","I'm sorry, but I don't believe you. I'll need to verify your identity and your claim.",1
+na4r4g4vOAarEm,"We don't have time for that. If you don't pay now, we'll have to arrest you.","Okay, go ahead and arrest me then. I'll wait for the police to come and verify your claims.",1
+na4r4g4vOAarEm,"Uh, nevermind. This was a mistake. Have a good day.",I thought so. Thank you and have a good day too.,1
+xqNQnU8fnuGdai,"Hello, this is John from the bank. I'm calling to confirm some recent activity on your account. Can you verify your account number and social security number?","Uh, sure. Let me grab my wallet.",0
+xqNQnU8fnuGdai,"Okay, take your time. I just want to make sure everything's secure.","Okay, I have my card handy. The number is 123456789 and my social is 123-45-6789.",0
+xqNQnU8fnuGdai,"Great, thank you. Now I see there have been some suspicious transactions on your account. Did you authorize a purchase of $500 at a store in Florida?","No, I haven't been to Florida in years. What can I do to fix this?",0
+xqNQnU8fnuGdai,"Well, we'll need to freeze your account and issue a new card. Can you confirm your mailing address?","Yes, it's 123 Main Street.",0
+xqNQnU8fnuGdai,"Okay, that should be all set. Your new card will arrive in 7-10 business days. Is there anything else you need help with?","No, that's good. Thank you for letting me know about the fraud.",0
+PfjocwPlJ3gqF5,"Hello, this is John from the bank. Can I have your account number and password, please?","I'm sorry, I don't give that information over the phone.",1
+PfjocwPlJ3gqF5,"Oh come on, sir! We need to verify your account to ensure your safety!",I'm not comfortable giving that information over the phone. I'll come into the bank and verify in person.,1
+PfjocwPlJ3gqF5,"Uh... okay, sir. Have a good day.",Thank you. Bye.,1
+lPMyzy7zw6ZesC,"Hello, this is John from the bank. May I speak with Mr. Smith?","Yes, this is Mr. Smith speaking.",0
+lPMyzy7zw6ZesC,"Thank you Mr. Smith. I'm calling to verify a recent transaction on your account. Did you make a purchase for $1,000 at a department store yesterday?","No, I didn't make any such purchase.",0
+lPMyzy7zw6ZesC,"I see, it looks like someone may have gained access to your account. Can you please confirm your account information so we can start the process of resolving this issue?","Sure, what information do you need?",0
+lPMyzy7zw6ZesC,We just need to verify some personal information such as your address and social security number.,I'm hesitant to give that information over the phone. Can we verify this in person at a local branch?,0
+lPMyzy7zw6ZesC,"Of course, that's a good idea. Can you please give me the zip code of your current location so I can direct you to the nearest branch?","Sure, my zip code is 12345.",0
+lPMyzy7zw6ZesC,"Thank you Mr. Smith, I will give you a call back after you visit the branch to ensure that everything is resolved.","Thank you, I appreciate your help.",0
+lPMyzy7zw6ZesC,"No problem, Mr. Smith. Have a good day.","You too, goodbye.",0
+apALT9OF2s2Peu,"Hi, this is the IRS. We need your personal information to update our records.",Who is calling?,1
+apALT9OF2s2Peu,This is the IRS. We need your personal information to update our records.,I don't believe you. I'm hanging up now.,1
+apALT9OF2s2Peu,"Wait, don't hang up! It's important that we update our records. Can you please confirm your social security number?",I'm not comfortable giving out my personal information over the phone.,1
+apALT9OF2s2Peu,I understand how you feel. Can you at least give me your name and address so I can update our files?,"No, I'm sorry. I don't trust unsolicited phone calls.",1
+apALT9OF2s2Peu,Please don't hang up. I really need your information for our records. Can you at least confirm your date of birth?,"I'm sorry, I really can't give out any personal information.",1
+apALT9OF2s2Peu,"Okay, I understand. Have a good day.",You too.,1
+apALT9OF2s2Peu,"Hello, this is the United States government. We need your social security number to verify your eligibility for a stimulus check.",Who are you and why do you need my social security number?,1
+apALT9OF2s2Peu,We are calling from the US government and we need your social security number to verify your eligibility for a stimulus check.,I don't believe you. This sounds like a scam.,1
+apALT9OF2s2Peu,I assure you we are not a scam. Can you please confirm your social security number so we can verify your eligibility?,"No, I'm sorry. I'm not comfortable giving out my social security number over the phone.",1
+apALT9OF2s2Peu,I understand. Thank you for your time.,You're welcome. Have a good day.,1
+gvQKnylJ4DkRog,"Hello, this is John from the bank. May I speak to Mr. Smith?","Yes, this is Mr. Smith speaking.",0
+gvQKnylJ4DkRog,"Thank you for taking my call, Mr. Smith. I just want to verify some information regarding your account.","Sure, that's fine.",0
+gvQKnylJ4DkRog,Can you please confirm your date of birth and the last four digits of your social security number?,"Um, why do you need that information?",0
+gvQKnylJ4DkRog,"It's just a standard security measure, sir. We want to make sure we're speaking to the right person.","Okay, my date of birth is January 1, 1970 and the last four digits of my social security number are 1234.",0
+gvQKnylJ4DkRog,"Thank you, Mr. Smith. Everything seems to be in order. Is there anything else I can assist you with?","No, I don't think so.",0
+gvQKnylJ4DkRog,"Alright, have a great day and thank you for banking with us.","Thank you, goodbye.",0
+L43gdLyDeMc9pu,"Hello, this is John from the IRS. We have noticed some discrepancies in your tax returns and need to verify some information. Can you confirm your social security number?","I'm sorry, but I don't feel comfortable giving out my social security number over the phone. Can you send me a letter instead?",1
+L43gdLyDeMc9pu,"Yes, we can send you a letter, but we need to verify your information first. Can you please confirm your full name and address?","I'm sorry, I still don't feel comfortable giving out my personal information over the phone. I will wait for the letter in the mail.",1
+OBEkkN7dphUSzH,"Hello, this is John from the IRS. You owe us money and if you don't pay, you'll be arrested.",I don't think this is real. Can you provide me with your full name and official IRS badge number?,1
+OBEkkN7dphUSzH,"Uh, my name is John Smith and my badge number is 12345.","I'm sorry, but I'm not comfortable giving out my personal information over the phone. Can you send me a letter with this information?",1
+OBEkkN7dphUSzH,"No, you need to pay now or face the consequences.",I think I'll consult with a tax professional before making any payments. Thank you for calling.,1
+13TqB3qoijfQ4U,"Hello, this is John from your bank. I'm calling because we've noticed some suspicious activity on your account.","Oh my, is my account in danger?",0
+13TqB3qoijfQ4U,"Yes, we noticed several large withdrawals from an unfamiliar location.","What should I do, should I close my account?",0
+13TqB3qoijfQ4U,"No need to worry, we can freeze your account and investigate to make sure everything is safe.","Thank you, I appreciate your help.",0
+13TqB3qoijfQ4U,"Of course, we're here to protect your financial security. Can I have your account number to proceed?","Yes, it's 123456789.",0
+13TqB3qoijfQ4U,"Great, thank you. Now, can you please verify your social security number?","I'm sorry, I don't feel comfortable giving that information over the phone.",0
+13TqB3qoijfQ4U,"I understand your concern, but for security purposes, we need to verify your identity.","Okay, just a moment...",0
+13TqB3qoijfQ4U,Thank you for your cooperation. Your account is now frozen and you will receive further instructions via email.,Thank you for your help. Goodbye.,0
+13TqB3qoijfQ4U,You're welcome. Don't hesitate to contact us if you have any further questions.,I will. Goodbye.,0
+UGEFP4DIc7QqK1,"Hello, this is the IRS. You owe us money and we need you to pay immediately or you will face legal action.","I'm sorry, but that doesn't sound right. Can you provide me with any information to confirm you are really from the IRS?",1
+UGEFP4DIc7QqK1,"Of course, we can provide you with your case file number.","Sure, what is it?",1
+UGEFP4DIc7QqK1,It is 12345.,"That's not possible, because I know I don't owe the IRS any money.",1
+UGEFP4DIc7QqK1,Are you accusing me of lying? You must pay immediately or face severe consequences!,"I'm sorry, but I think I will contact the IRS directly to verify this.",1
+UGEFP4DIc7QqK1,No! Wait-,*hangs up*,1
+wpXUJiNWZ7gXIN,"Hello, is this Mr. Johnson?","Yes, who is this?",1
+wpXUJiNWZ7gXIN,This is the IRS. We have detected an error in your tax filing and need you to provide us with your social security number.,I don't feel comfortable giving out my SSN over the phone. Can you send me a letter instead?,1
+wpXUJiNWZ7gXIN,"I'm sorry, we cannot do that. It is urgent that we clear up this matter as soon as possible. We need your SSN now.","I'm sorry, but I still don't feel comfortable giving that information out over the phone to someone I don't know.",1
+wpXUJiNWZ7gXIN,"Well, if you don't want to cooperate with us, we will have to take legal action. You could face fines and even jail time.","I'm sorry, but I know that the IRS wouldn't threaten people over the phone. I think you're a scammer.",1
+wpXUJiNWZ7gXIN,"No, I assure you that I'm from the IRS. I can transfer you to my supervisor if you'd like.","No, I don't think I want to do that. I'll just hang up now.",1
+RydOJX7W9kvYQc,"Hello, this is John from the bank. Is this Jane Smith?","Yes, speaking.",0
+RydOJX7W9kvYQc,We just noticed some unusual activity on your account and wanted to verify it with you. Have you made any recent purchases in another state?,"No, I haven't. What kind of activity did you see?",0
+RydOJX7W9kvYQc,"There were some charges made in Florida that we wanted to confirm with you before taking any further action. Can you verify your account number and password, please?","I'm sorry, I don't give out that information over the phone. Can you confirm my account by my name and address?",0
+RydOJX7W9kvYQc,"Of course, let me pull up your account. Thank you for being cautious, it's always good to practice safe banking. Can you confirm your address for me, please?","Sure, it's 123 Main Street.",0
+RydOJX7W9kvYQc,"Thank you, Jane. I can see here that the charges were not made by you. We will be canceling your card and issuing a new one for you. Is there anything else I can help you with?","No, that's all. Thank you for catching that.",0
+QyDUL8pkdU4v5A,"Hello, may I speak to John Smith?","This is John Smith, who is calling please?",1
+QyDUL8pkdU4v5A,I'm calling from the IRS and we have detected some errors on your tax return.,"I have never received any notification from the IRS, are you sure this is legitimate?",1
+QyDUL8pkdU4v5A,"Yes, we have sent several notices but never received any response. You owe a significant amount in back taxes.","This doesn't sound right, can you provide me with your name and badge number so I can verify your identity?",1
+QyDUL8pkdU4v5A,"I'm afraid I cannot give you that information. However, we can resolve this matter quickly and easily if you make a payment now.",I'm not comfortable making a payment without verifying this with the IRS first. Can I call you back at a different number?,1
+QyDUL8pkdU4v5A,"I'm sorry, but this is the only number we have on file. I urge you to take care of this matter as soon as possible to avoid further penalties.",I appreciate your concern but I will not make any payments until I can verify this with the IRS. Goodbye.,1
+nRSm5quw3SHfT4,"Hello, this is John from the bank. Can I please confirm your account details for security reasons?","Sure, my account number is 12345678.",0
+nRSm5quw3SHfT4,Thank you for verifying. We would like to offer you a special promotion today. Can I ask for your credit card number?,"No, I don't feel comfortable sharing that over the phone.",0
+nRSm5quw3SHfT4,"I understand, can you please confirm your date of birth and social security number?",I don't think I should share that either.,0
+nRSm5quw3SHfT4,"Of course, I completely understand. Thank you for being cautious and have a nice day.","Thank you, you too.",0
+QPT5vTXeHFTlQk,"Hi, this is John from the IRS. You owe $5,000 in taxes and need to make a payment today.",I don't think I owe any taxes. Can you give me more information about this?,1
+QPT5vTXeHFTlQk,"Yes, you owe taxes from 2018. If you don't pay right now, we will have to take legal action against you.","I'm sorry, but I still don't think this is correct. Can I have your name and information to verify this?",1
+QPT5vTXeHFTlQk,"My name is John Smith and my badge number is 1234. But if you don't pay now, we cannot help you and legal action will be taken.",I'm not comfortable giving my personal information or paying over the phone. I need proof of this before I do anything.,1
+QPT5vTXeHFTlQk,"We don't have time. If you don't pay now, we will have to take action. Please give me your credit card number so we can resolve this immediately.","I'm sorry, but I don't feel right giving my credit card information over the phone. I need physical documentation to prove this is real.",1
+QPT5vTXeHFTlQk,"Alright, we will mail the documents to you. But if you don't pay by the end of today, we will have to take action.",That sounds good. Thank you for your help.,1
+yQegWpW6uCMxUi,"Hello, this is the bank calling. We noticed some suspicious activity on your account.",Oh really? Can you please tell me more about it?,0
+yQegWpW6uCMxUi,"Yes, we see multiple large withdrawals recently from your account. Did you authorize those transactions?","No, I didn't. What should I do now?",0
+yQegWpW6uCMxUi,We need to freeze your account immediately to prevent further unauthorized transactions. Can I confirm some information with you?,"Yes, of course. What do you need from me?",0
+yQegWpW6uCMxUi,Can you please provide your full name and date of birth?,"Sure, it's John Smith and my date of birth is 01/01/1990.",0
+yQegWpW6uCMxUi,"Thank you, I'm placing a hold on your account now. You should receive an email with further instructions shortly.","Okay, thank you for letting me know.",0
+yQegWpW6uCMxUi,"You're welcome, please remember to never share your personal information or passwords over the phone or email. Have a good day!","Thank you, I will. You too!",0
