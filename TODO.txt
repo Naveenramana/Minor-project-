@@ -1,9 +1,0 @@
-1) Create a powerpoint presentation (elevator presentation) providing analysis on the subject.
-	
-	a) What is the problem
-	b) What are the established ways for social networks to deal with cyber bullying
-	c) Which social networks might we focus on
-	d) Possible implementations
-	e) What is the competitive advantage of our implementation
-
-2) Create an excel with all the papers gathered for the dissertation
