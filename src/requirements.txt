@@ -1,3 +1,9 @@
 numpy
 pandas
 openai
+nltk
+stemming
+spacy
+re
+greek-stemmer-pos
+cltk
