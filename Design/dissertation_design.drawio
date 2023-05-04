@@ -1,0 +1,298 @@
+<mxfile host="Electron" modified="2023-04-30T13:56:40.632Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="aB5MAuXeELm4oHYDO6cS" version="21.2.1" type="device">
+  <diagram name="Page-1" id="ctzv5fyDCn10Qhlh1byY">
+    <mxGraphModel dx="2363" dy="1367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=51;exitPerimeter=0;entryX=0.96;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-53" target="K1V9EkRKCvGRuE5wwpo5-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="779" />
+              <mxPoint x="1030" y="820" />
+              <mxPoint x="730" y="820" />
+              <mxPoint x="730" y="744" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-53" value="" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;jettyWidth=112;jettyHeight=34;fillColor=none;flipH=0;flipV=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="560" width="320" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-1" target="K1V9EkRKCvGRuE5wwpo5-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-1" value="Speaker Input&lt;br&gt;1.&amp;nbsp;What the user is hearing from the speaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="170" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-2" target="K1V9EkRKCvGRuE5wwpo5-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-2" value="Microphone Input&lt;br&gt;1.&amp;nbsp;What the user is saying in the microphone" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="240" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-12" value="Client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="508" y="672" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="640" />
+              <mxPoint x="454" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-18" value="Speech To Text Class&lt;br&gt;1. recognize_speech_stream&lt;br&gt;2. _preprocess_transcripts (preprocesses the text from the api)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="670" width="209" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="K1V9EkRKCvGRuE5wwpo5-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="548.5" y="774" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="549" y="800" />
+              <mxPoint x="275" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.88;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=119;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-19" target="K1V9EkRKCvGRuE5wwpo5-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="690" />
+              <mxPoint x="790" y="790" />
+              <mxPoint x="950" y="790" />
+              <mxPoint x="950" y="711" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-19" value="Google Cloud" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="660" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-26" value="Microphone / Speaker Input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="610" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-27" value="Streaming Text Output" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="770" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-30" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="880" as="sourcePoint" />
+            <mxPoint x="120" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-32" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="880" as="sourcePoint" />
+            <mxPoint x="680" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-33" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="600" as="sourcePoint" />
+            <mxPoint x="680" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-34" value="1. Return a transcript_list (contains the preprocesses text from the api)&lt;br&gt;2. Requires a private_key_file_path to work (The local path to the credentials of the google cloud api)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="820" width="560" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-36" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Speech To Text Module&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="560" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-37" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Dissertation Project Architecture&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-38" target="K1V9EkRKCvGRuE5wwpo5-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-38" value="Cloud Speech-To-Text API&lt;br&gt;1. Version: v1p1beta1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="640" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-39" target="K1V9EkRKCvGRuE5wwpo5-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="570" />
+              <mxPoint x="940" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-39" value="Cloud Build&lt;br&gt;Fully-managed continuous integration&lt;br&gt;platform" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="530" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=28.80945108961392;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-40" target="K1V9EkRKCvGRuE5wwpo5-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-40" value="Container Registry&lt;br&gt;(Contains Registered containers for functionality)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="585" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-55" value="Request" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-57" value="Response&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="770" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-59" value="Cloud Run" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="580" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-60" value="Load Balancer&lt;br&gt;(Probably)" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="665" width="120" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-63" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.356;exitY=0.43;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.025;entryY=0.338;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-53" target="K1V9EkRKCvGRuE5wwpo5-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="650" as="sourcePoint" />
+            <mxPoint x="930" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-64" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=116.19054891038608;exitPerimeter=0;entryX=0.347;entryY=0.181;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-60" target="K1V9EkRKCvGRuE5wwpo5-53">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="650" as="sourcePoint" />
+            <mxPoint x="930" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-65" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="880" as="sourcePoint" />
+            <mxPoint x="680" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-67" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="880" as="sourcePoint" />
+            <mxPoint x="760" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-68" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1430" y="880" as="sourcePoint" />
+            <mxPoint x="1430" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-69" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="520" as="sourcePoint" />
+            <mxPoint x="1430" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-70" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="880" as="sourcePoint" />
+            <mxPoint x="1430" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-71" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Google Cloud Platform&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="980" y="480" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-74" value="Request To Google Cloud" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="790" y="758" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-75" value="Response From Google Cloud" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="775" y="818" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=240;exitDy=50;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=75;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-76" target="K1V9EkRKCvGRuE5wwpo5-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-76" value="&lt;b&gt;Speech To Text Module&lt;/b&gt; Instance&lt;br&gt;1. This instance will hear only what the speaker is outputting" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="170" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=240;exitDy=50;exitPerimeter=0;entryX=-0.012;entryY=0.641;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-77" target="K1V9EkRKCvGRuE5wwpo5-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-77" value="&lt;b&gt;Speech To Text Module&lt;/b&gt; Instance&lt;br&gt;1. This instance will hear only what the microphone is inputting" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="280" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-78" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="400" as="sourcePoint" />
+            <mxPoint x="425" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-79" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="745" y="400" as="sourcePoint" />
+            <mxPoint x="745" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-80" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="400" as="sourcePoint" />
+            <mxPoint x="745" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-81" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="140" as="sourcePoint" />
+            <mxPoint x="745" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-82" value="Observers&lt;br&gt;1. Permanently Open??" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="100" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=240;exitDy=95;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-85" target="K1V9EkRKCvGRuE5wwpo5-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-85" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Pre-Prediction Engine&lt;/font&gt;&lt;/b&gt;&lt;br&gt;1. Will preprocess the input streams (that are already stemmed and mildly prepared)&lt;br&gt;2. Will output a single vector that the machine learning models can understand" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="185" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-91" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="400" as="sourcePoint" />
+            <mxPoint x="120" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-92" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="399.40999999999997" y="400" as="sourcePoint" />
+            <mxPoint x="399.40999999999997" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-93" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="400" as="sourcePoint" />
+            <mxPoint x="400" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-96" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="140" as="sourcePoint" />
+            <mxPoint x="400" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-97" value="Alerting Screen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=285;exitDy=130;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-98" target="K1V9EkRKCvGRuE5wwpo5-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-98" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;A.I Engine&lt;br&gt;&lt;/b&gt;Various ML and DL models.&lt;br&gt;1. TF-IDF&lt;br&gt;2. Bag of words&lt;br&gt;3. Word2Vec&lt;br&gt;4. Doc2Vec&lt;br&gt;5. Deep Learning Models&lt;br&gt;6. SVM&lt;br&gt;7. KMP&lt;br&gt;8. LSA&lt;br&gt;&lt;/font&gt;" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="160" width="285" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="K1V9EkRKCvGRuE5wwpo5-98">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-101" value="Input Vector ( Will probably &lt;b&gt;Vary &lt;/b&gt;&lt;br&gt;according to the machine learning algorithm)" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="240" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="K1V9EkRKCvGRuE5wwpo5-104" target="K1V9EkRKCvGRuE5wwpo5-97">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1965" y="450" />
+              <mxPoint x="255" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-104" value="Post - Prediction Logic&lt;br&gt;1. Will check what the certainty of the prediciton is, act accordingly&lt;br&gt;2. Above 80-90% certainty logic. (Aims to avoid false positives)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="200" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-108" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Result&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="410" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K1V9EkRKCvGRuE5wwpo5-109" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Machine Learning Model Training&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="480" width="310" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
