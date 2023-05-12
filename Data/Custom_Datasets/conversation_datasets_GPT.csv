@@ -651,3 +651,11 @@ yQegWpW6uCMxUi,We need to freeze your account immediately to prevent further una
 yQegWpW6uCMxUi,Can you please provide your full name and date of birth?,"Sure, it's John Smith and my date of birth is 01/01/1990.",0
 yQegWpW6uCMxUi,"Thank you, I'm placing a hold on your account now. You should receive an email with further instructions shortly.","Okay, thank you for letting me know.",0
 yQegWpW6uCMxUi,"You're welcome, please remember to never share your personal information or passwords over the phone or email. Have a good day!","Thank you, I will. You too!",0
+mAdPlFW47GkrZC,"Hello sir, this is the IRS. We noticed some irregularities in your tax filings and need to verify some information.",What? I never received any notices or warnings from the IRS. This sounds like a scam.,1
+mAdPlFW47GkrZC,"No sir, this is not a scam. We just need to verify some information to clear up any misunderstandings.",I don't think so. I'll be contacting the real IRS to confirm this. Goodbye.,1
+1SdN1ZMpinFNWg,"Hello, this is John from the bank. I noticed some suspicious activity on your account and want to verify some information for security purposes.","Oh, okay. What information do you need?",0
+1SdN1ZMpinFNWg,Can you please verify your date of birth and your mother's maiden name?,"Sure, my date of birth is March 12, 1985 and my mother's maiden name is Johnson.",0
+1SdN1ZMpinFNWg,Thank you for verifying that information. Is there anything else I can assist you with today?,"No, that's all. Thank you for letting me know about the suspicious activity.",0
+yNnnjxq76JFJ6R,"Hello, I am calling from your bank. We need your account information to update our records.",I highly doubt that. How about you give me your name and number so I can call you back after confirming with my bank?,1
+yNnnjxq76JFJ6R,That won't be necessary. Just give me your account number and I will take care of everything.,I am not comfortable sharing my account number with someone who just called me out of the blue. I will call my bank myself to sort this out.,1
+yNnnjxq76JFJ6R,But this is an urgent matter. Your account might be suspended if we don't update it immediately.,"I appreciate your concern, but my bank has never asked me for my account information over the phone. I will stick to my decision and call my bank myself.",1

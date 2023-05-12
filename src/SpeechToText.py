@@ -74,7 +74,7 @@ class SpeechToText:
         return final_transcript
 
     def recognize_speech_stream(self):
-
+        
         # Setting up PyAudio for capturing microphone input signals
         FORMAT = pyaudio.paInt16  # Good choice for trade-off between precision and memory usage
 
@@ -121,9 +121,7 @@ class SpeechToText:
 
                         self.transcript_list.append(transcript)
 
-                        print("\nTranscript_List:\t", self.transcript_list)
-                        print("Non modified Transcript_List:\t",
-                              self.non_modified_transcript_list)
+                        yield self.transcript_list, self.non_modified_transcript_list
 
         except KeyboardInterrupt:
             self.stop_flag = True
@@ -132,6 +130,7 @@ class SpeechToText:
         stream.stop_stream()
         stream.close()
         audio.terminate()
+    
 
 
 if __name__ == "__main__":
@@ -139,4 +138,10 @@ if __name__ == "__main__":
     private_key_file_path = 'Environment\speech-to-text.json'
 
     speechToText = SpeechToText(private_key_file_path)
-    transcript_list = speechToText.recognize_speech_stream()
+    
+    try:
+        for transcript_list, non_modified_transcript_list in speechToText.recognize_speech_stream():
+            print("\nTranscript_List:\t", transcript_list)
+            print("Non modified Transcript_List:\t", non_modified_transcript_list)
+    except KeyboardInterrupt:
+        print("\nStopping...")
