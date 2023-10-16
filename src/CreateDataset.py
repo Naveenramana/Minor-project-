@@ -1,12 +1,9 @@
 import openai
 import pandas
-import numpy
 import concurrent.futures
 import string
 import json
 import random
-import time
-from tqdm import trange
 import asyncio
 
 

@@ -131,6 +131,10 @@ def validate_language(dataframe, column_name):
         return language
     except:
         return 'Unknown language'
+    
+    
+def string_to_list_of_words(input_string):
+    return input_string.split() if input_string else []
 
 
 def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
@@ -152,9 +156,10 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
             if column == 'Conversation_ID':
                 conversation_data[column] = conversation_id
             elif column in conversation_columns:
-                conversation_data[column] = preprocess_strings(conversation_dictionary[column])
-                conversation_data[column] = remove_stopwords(conversation_data[column], language)
-                conversation_data[column] = stem_strings(conversation_data[column], language)
+                preprocessed_string = preprocess_strings(conversation_dictionary[column])
+                without_stopwords = remove_stopwords(preprocessed_string, language)
+                stemmed_string = stem_strings(without_stopwords, language)
+                conversation_data[column] = [string_to_list_of_words(s) for s in stemmed_string]
             else:
                 conversation_data[column] = conversation_dictionary[column]
 

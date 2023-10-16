@@ -132,7 +132,6 @@ class SpeechToText:
         audio.terminate()
     
 
-
 if __name__ == "__main__":
 
     private_key_file_path = 'Environment\speech-to-text.json'
