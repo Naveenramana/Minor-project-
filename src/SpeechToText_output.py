@@ -89,7 +89,7 @@ class SpeechToText:
         audio = pyaudio.PyAudio()
 
         stream = audio.open(format=FORMAT, channels=self.CHANNELS,
-                            rate=self.RATE, input=True, frames_per_buffer=CHUNK, input_device_index=self.device_index)
+                            rate=self.RATE, output=True, frames_per_buffer=CHUNK, output_device_index=self.device_index)
 
         print("Start ... (Press Ctrl+C to stop)")
 
@@ -141,7 +141,7 @@ if __name__ == "__main__":
     private_key_file_path = 'Environment\speech-to-text.json'
 
     microphone_speech_to_text = SpeechToText(
-        private_key_file_path=private_key_file_path, CHANNELS=1, RATE=44100, device_index=1)
+        private_key_file_path=private_key_file_path, CHANNELS=2, RATE=44100, device_index=3)
 
     # print(microphone_speech_to_text.get_output_device_info())
 

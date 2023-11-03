@@ -45,8 +45,8 @@ def preprocess_strings(input_data):
     if isinstance(input_data, str):
         if pd.isnull(input_data):
             return ''
-        input_data = re.sub(r'\d', 'X', input_data)
-        input_data = ''.join(c for c in input_data if c.isalpha() or c == 'X' or c == ' ')
+        input_data = re.sub(r'\d', 'x', input_data)
+        input_data = ''.join(c for c in input_data if c.isalpha() or c == 'x' or c == ' ')
         input_data = input_data.lower()
         return input_data
     elif isinstance(input_data, (list, np.ndarray)):
