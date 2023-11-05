@@ -7,6 +7,9 @@ import nltk
 from pyspark.ml.classification import *
 from pyspark.sql import SparkSession
 import findspark
+import sys
+
+sys.path.append("G:\Dissertation_Project")
 
 
 def initializer():
@@ -28,6 +31,8 @@ def initializer():
     # Get SparkContext from the SparkSession
     sc = spark.sparkContext
 
+    from src.CustonTransformers import FlattenTransformer
+
     print("\n----------------------INITIALIZATION COMPLETED----------------------\n")
 
 
@@ -35,7 +40,8 @@ def load_prediction_model(model_id):
     models = {
         "LogisticRegression_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\LogisticRegression\\bestModel",
         "RandomForest_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\RandomForest\\bestModel",
-        "GradientBoosted_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\GradientBoostedTrees\\bestModel"
+        "GradientBoosted_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\GradientBoostedTrees\\bestModel",
+        "SupportVectorMachine_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\SupportVectorMachine\\bestModel"
     }
 
     print("<--LOADING PREDICTION MODEL : {} , From location : {}-->\n".format(
@@ -59,6 +65,10 @@ def load_prediction_model(model_id):
 
             case "GradientBoosted_TFIDF":
                 model = GBTClassificationModel.load(models[model_id])
+                return model
+
+            case "SupportVectorMachine_TFIDF":
+                model = LinearSVCModel.load(model[model_id])
                 return model
 
             case _:
@@ -87,6 +97,10 @@ def process_stream(private_key_file_path, processed_transcripts, preprocessing_m
             transcript_words = word_tokenize(transcript)
 
         ############################### Further Preprocessing of choice. ##################################
+
+        if (preprocessing_mode == 1):
+            # TF - IDF
+            pass
 
         # Add the one-hot encoded vectors to the queue
         processed_transcripts.put((transcript_words, non_modified_transcript))

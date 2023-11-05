@@ -9,7 +9,7 @@ import asyncio
 
 # Setting the api key for openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 def generate_random_id(length=8):
@@ -164,6 +164,6 @@ async def functionality_runner(threads):
 
 if __name__ == "__main__":
 
-    threads = 2
+    threads = 10
 
     asyncio.run(functionality_runner(threads))

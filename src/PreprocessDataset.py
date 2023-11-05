@@ -10,6 +10,7 @@ import nltk
 # nltk.download('punkt')
 # nltk.download('stopwords')
 
+
 def read_csv_and_return_info(file_path):
     # Read the CSV file and store it in a pandas DataFrame
     df = pd.read_csv(file_path)
@@ -36,7 +37,8 @@ def search_dataframe(df, column_name, specific_value, specific_columns=None):
             result_dict[column] = filtered_df[column].tolist()
         else:
             unique_value = filtered_df[column].unique()
-            result_dict[column] = unique_value[0] if len(unique_value) == 1 else unique_value.tolist()
+            result_dict[column] = unique_value[0] if len(
+                unique_value) == 1 else unique_value.tolist()
 
     return result_dict
 
@@ -46,7 +48,8 @@ def preprocess_strings(input_data):
         if pd.isnull(input_data):
             return ''
         input_data = re.sub(r'\d', 'x', input_data)
-        input_data = ''.join(c for c in input_data if c.isalpha() or c == 'x' or c == ' ')
+        input_data = ''.join(
+            c for c in input_data if c.isalpha() or c == 'x' or c == ' ')
         input_data = input_data.lower()
         return input_data
     elif isinstance(input_data, (list, np.ndarray)):
@@ -56,16 +59,19 @@ def preprocess_strings(input_data):
                 processed_data.append('')
             elif isinstance(item, str):
                 item = re.sub(r'\d', 'X', item)
-                item = ''.join(c for c in item if c.isalpha() or c == 'X' or c == ' ')
+                item = ''.join(c for c in item if c.isalpha()
+                               or c == 'x' or c == ' ')
                 item = item.lower()
                 processed_data.append(item)
             else:
-                raise TypeError("Input data must be a string or a list/array of strings")
+                raise TypeError(
+                    "Input data must be a string or a list/array of strings")
         return processed_data
     else:
-        raise TypeError("Input data must be a string or a list/array of strings")
-    
-    
+        raise TypeError(
+            "Input data must be a string or a list/array of strings")
+
+
 def remove_stopwords(input_data, language):
     english_stopwords = set(stopwords.words("english"))
     greek_stopwords = set(stopwords.words("greek"))
@@ -99,7 +105,8 @@ def remove_stopwords(input_data, language):
     elif isinstance(input_data, (list, np.ndarray)):
         return [process_text(text) for text in input_data]
     else:
-        raise TypeError("Input data must be a string or a list/array of strings")
+        raise TypeError(
+            "Input data must be a string or a list/array of strings")
 
 
 def stem_strings(input_data, language):
@@ -109,9 +116,11 @@ def stem_strings(input_data, language):
         words = nltk.word_tokenize(s)
 
         if language == 'en':
-            stemmed_words = [english_stemmer.stem(word).lower() for word in words]
+            stemmed_words = [english_stemmer.stem(
+                word).lower() for word in words]
         elif language == 'el':
-            stemmed_words = [stemmer.stem_word(word, 'vbg').lower() for word in words]
+            stemmed_words = [stemmer.stem_word(
+                word, 'vbg').lower() for word in words]
         else:
             raise ValueError("Unsupported language detected")
 
@@ -131,8 +140,8 @@ def validate_language(dataframe, column_name):
         return language
     except:
         return 'Unknown language'
-    
-    
+
+
 def string_to_list_of_words(input_string):
     return input_string.split() if input_string else []
 
@@ -143,12 +152,14 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
     # Setting the conversation columns to be used further down the road.
     conversation_columns = ['Attacker_Helper', 'Victim']
 
-    language = validate_language(dataframe=dataframe, column_name='Attacker_Helper')
+    language = validate_language(
+        dataframe=dataframe, column_name='Attacker_Helper')
 
     result_data = []
 
     for conversation_id in dataframe['Conversation_ID'].unique():
-        conversation_dictionary = search_dataframe(dataframe, 'Conversation_ID', conversation_id, conversation_columns)
+        conversation_dictionary = search_dataframe(
+            dataframe, 'Conversation_ID', conversation_id, conversation_columns)
 
         conversation_data = {}
 
@@ -156,10 +167,13 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
             if column == 'Conversation_ID':
                 conversation_data[column] = conversation_id
             elif column in conversation_columns:
-                preprocessed_string = preprocess_strings(conversation_dictionary[column])
-                without_stopwords = remove_stopwords(preprocessed_string, language)
+                preprocessed_string = preprocess_strings(
+                    conversation_dictionary[column])
+                without_stopwords = remove_stopwords(
+                    preprocessed_string, language)
                 stemmed_string = stem_strings(without_stopwords, language)
-                conversation_data[column] = [string_to_list_of_words(s) for s in stemmed_string]
+                conversation_data[column] = [
+                    string_to_list_of_words(s) for s in stemmed_string]
             else:
                 conversation_data[column] = conversation_dictionary[column]
 
@@ -174,9 +188,8 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
     return result_dataframe
 
 
-
 if __name__ == '__main__':
     file_path = 'Data/Custom_Datasets/conversation_datasets_GPT.csv'
     output_file_path = 'Data/Preprocessed_Datasets/GPT_dataset_preprocessed.csv'
-    resulting_dataframe = execute_complete_preprocess_workflow(file_path, output_file_path=output_file_path)
-
+    resulting_dataframe = execute_complete_preprocess_workflow(
+        file_path, output_file_path=output_file_path)
