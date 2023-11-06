@@ -8,6 +8,7 @@ from pyspark.ml.classification import *
 from pyspark.sql import SparkSession
 import findspark
 import sys
+from tensorflow.keras.models import load_model
 
 sys.path.append("G:\Dissertation_Project")
 
@@ -41,7 +42,8 @@ def load_prediction_model(model_id):
         "LogisticRegression_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\LogisticRegression\\bestModel",
         "RandomForest_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\RandomForest\\bestModel",
         "GradientBoosted_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\GradientBoostedTrees\\bestModel",
-        "SupportVectorMachine_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\SupportVectorMachine\\bestModel"
+        "SupportVectorMachine_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\SupportVectorMachine\\bestModel",
+        "NeuralNetwork_TFIDF": "G:\\Dissertation_Project\\src\Models\\Trained_Models\\NeuralNetwork_TFIDF\\NeuralNetwork_TFIDF.keras"
     }
 
     print("<--LOADING PREDICTION MODEL : {} , From location : {}-->\n".format(
@@ -71,6 +73,10 @@ def load_prediction_model(model_id):
                 model = LinearSVCModel.load(model[model_id])
                 return model
 
+            case "NeuralNetwork_TFIDF":
+                model = load_model(models[model_id])
+                return model
+
             case _:
                 model = LogisticRegressionModel.load(
                     models["LogisticRegression_TFIDF"])
@@ -81,9 +87,9 @@ def load_prediction_model(model_id):
         raise
 
 
-def process_stream(private_key_file_path, processed_transcripts, preprocessing_mode):
+def process_stream(private_key_file_path, processed_transcripts, preprocessing_mode, CHANNELS, RATE, device_index):
 
-    stt = SpeechToText(private_key_file_path, 1)
+    stt = SpeechToText(private_key_file_path, CHANNELS, RATE, device_index)
 
     for transcript, non_modified_transcript in stt.recognize_speech_stream():
 
@@ -101,6 +107,9 @@ def process_stream(private_key_file_path, processed_transcripts, preprocessing_m
         if (preprocessing_mode == 1):
             # TF - IDF
             pass
+        elif (preprocessing_mode == 2):
+            # Neural Network specific together with TF - IDF
+            pass
 
         # Add the one-hot encoded vectors to the queue
         processed_transcripts.put((transcript_words, non_modified_transcript))
@@ -110,7 +119,8 @@ if __name__ == "__main__":
 
     # This map is for help only not for usage
     preprocessing_modes = {
-        "TF-IDF": 1
+        "TF_IDF": 1,
+        "Neural_Network_TF_IDF": 2
     }
 
     # Initializing spark and other things necessary
@@ -120,7 +130,7 @@ if __name__ == "__main__":
 
     processed_transcripts = Queue()
 
-    model = load_prediction_model("RandomForest_TFIDF")
+    model = load_prediction_model("NeuralNetwork_TFIDF")
 
     ################################################## TESTING ###########################################################
 
@@ -128,7 +138,7 @@ if __name__ == "__main__":
 
     # Start the SpeechToText thread
     # stt_thread = threading.Thread(target=process_stream, args=(
-    #     private_key_file_path, processed_transcripts, 1))
+    #     private_key_file_path, processed_transcripts, 1, 44100, 1))
     # stt_thread.start()
 
     # try:

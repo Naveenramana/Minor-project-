@@ -9,3 +9,5 @@ cltk
 google-cloud-speech
 pyaudio
 google-auth
+keras
+tensorflow
