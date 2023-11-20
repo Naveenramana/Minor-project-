@@ -169,9 +169,9 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
             elif column in conversation_columns:
                 preprocessed_string = preprocess_strings(
                     conversation_dictionary[column])
-                without_stopwords = remove_stopwords(
-                    preprocessed_string, language)
-                stemmed_string = stem_strings(without_stopwords, language)
+                # without_stopwords = remove_stopwords(
+                #     preprocessed_string, language)
+                stemmed_string = stem_strings(preprocessed_string, language)
                 conversation_data[column] = [
                     string_to_list_of_words(s) for s in stemmed_string]
             else:

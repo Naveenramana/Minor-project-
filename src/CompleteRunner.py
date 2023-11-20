@@ -147,15 +147,15 @@ if __name__ == "__main__":
     ################################################## TESTING ###########################################################
 
     # Start the SpeechToText thread for the first stream.
-    # stt_thread_microphone = threading.Thread(target=process_stream, args=(
-    #     private_key_file_path, microphone_queue, 1, 44100, 1))
-    # stt_thread_microphone.daemon = True
-    # stt_thread_microphone.start()
-    # print("Opening MIC Thread -- SUCCESS\n")
+    stt_thread_microphone = threading.Thread(target=process_stream, args=(
+        private_key_file_path, microphone_queue, 1, 44100, 1))
+    stt_thread_microphone.daemon = True
+    stt_thread_microphone.start()
+    print("Opening MIC Thread -- SUCCESS\n")
 
     # Start the SpeechToText thread for the second stream.
     stt_thread_loopback = threading.Thread(target=process_stream, args=(
-        private_key_file_path, loopback_queue, 2, 48000, 1))
+        private_key_file_path, loopback_queue, 2, 48000, 2))
     stt_thread_loopback.daemon = True
     stt_thread_loopback.start()
     print("Opening LOOP Thread -- SUCCESS\n")
@@ -164,11 +164,11 @@ if __name__ == "__main__":
         while stt_thread_loopback.is_alive():
             # stt_thread_microphone.is_alive() and
             # Check if there is a preprocessed transcript in the queue
-            # if not microphone_queue.empty():
-            #     (transcript_mic, non_modified_transcript_mic) = microphone_queue.get()
-            #     print("Microphone preprocessed transcript:\n", transcript_mic)
-            #     print("Microphone bare transcript:",
-            #           non_modified_transcript_mic)
+            if not microphone_queue.empty():
+                (transcript_mic, non_modified_transcript_mic) = microphone_queue.get()
+                print("Microphone preprocessed transcript:\n", transcript_mic)
+                print("Microphone bare transcript:",
+                      non_modified_transcript_mic)
 
             if not loopback_queue.empty():
                 (transcript_loop, non_modified_transcript_loop) = loopback_queue.get()
@@ -184,11 +184,15 @@ if __name__ == "__main__":
             elif (preprocessing_mode == 2):
                 # Neural Network specific together with TF - IDF
                 pass
+            elif (preprocessing_mode == 3):
+                pass
+
+            # model prediction
 
     except KeyboardInterrupt:
         print("Stopping...")
         stop_threads = True
-        # stt_thread_microphone.join()
+        stt_thread_microphone.join()
         stt_thread_loopback.join()
         # try:
         #     # Attempt to stop Spark

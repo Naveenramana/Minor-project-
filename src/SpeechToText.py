@@ -74,10 +74,10 @@ class SpeechToText:
         tokenized_words = word_tokenize(processed_string)
 
         # Remove stopwords
-        removed_stopwords = remove_stopwords(words=tokenized_words)
+        # removed_stopwords = remove_stopwords(words=tokenized_words)
 
         # Stem the words
-        stemmed_words = stem_words(words=removed_stopwords)
+        stemmed_words = stem_words(words=tokenized_words)
 
         final_transcript = ' '.join(stemmed_words)
 
