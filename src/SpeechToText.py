@@ -29,7 +29,10 @@ class SpeechToText:
 
         credentials = service_account.Credentials.from_service_account_info(
             json.loads(api_key_json))
-        self.client = speech.SpeechClient(credentials=credentials)
+        try:
+            self.client = speech.SpeechClient(credentials=credentials)
+        except Exception as e:
+            raise e
 
     # Private Function
     def _read_json_file(self, file_path):
