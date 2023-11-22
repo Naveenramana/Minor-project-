@@ -6,7 +6,7 @@ from pyspark.ml.classification import *
 from SpeechToText import SpeechToText
 from PreprocessDataset import *
 import threading
-from queue import Queue
+from multiprocessing import Queue
 from multiprocessing import Process
 from nltk.tokenize import word_tokenize
 import nltk
@@ -14,7 +14,6 @@ import nltk
 # nltk.download('stopwords')
 
 sys.path.append("G:\Dissertation_Project")
-global stop_threads
 
 
 def initializer():
@@ -103,28 +102,30 @@ def load_prediction_model(model_id):
 
 
 def process_stream(private_key_file_path, output_queue, CHANNELS, RATE, device_index):
-
     stt = SpeechToText(private_key_file_path, CHANNELS, RATE, device_index)
 
-    global stop_threads
-    while not stop_threads:
+    for transcript, non_modified_transcript in stt.recognize_speech_stream():
+        # If transcript is a list of strings, join them into a single string
+        if isinstance(transcript, list) and all(isinstance(s, str) for s in transcript):
+            transcript = ' '.join(transcript)
+        # Check if transcript is a non-empty string
+        if isinstance(transcript, str) and len(transcript) > 0:
+            transcript_words = word_tokenize(transcript)
 
-        for transcript, non_modified_transcript in stt.recognize_speech_stream():
+        output_queue.put((transcript_words, non_modified_transcript))
 
-            # If transcript is a list of strings, join them into a single string
-            if isinstance(transcript, list) and all(isinstance(s, str) for s in transcript):
-                transcript = ' '.join(transcript)
 
-            # Check if transcript is a non-empty string
-            if isinstance(transcript, str) and len(transcript) > 0:
-                transcript_words = word_tokenize(transcript)
-
-            # Add the one-hot encoded vectors to the queue
-            output_queue.put((transcript_words, non_modified_transcript))
+def run_process_stream(private_key_file_path, output_queue, CHANNELS, RATE, device_index):
+    try:
+        process_stream(private_key_file_path, output_queue,
+                       CHANNELS, RATE, device_index)
+    except KeyboardInterrupt:
+        print(f"Stopping process for device {device_index}")
+    except Exception as e:
+        print(f"Exception in process for device {device_index}: {e}")
 
 
 if __name__ == "__main__":
-    stop_threads = False
 
     # This map is for help only not for usage
     preprocessing_modes = {
@@ -144,37 +145,28 @@ if __name__ == "__main__":
     # model = load_prediction_model("LogisticRegression_TFIDF")
     preprocessing_mode = 1
 
-    ################################################## TESTING ###########################################################
+    process_microphone = Process(target=run_process_stream, args=(
+        private_key_file_path, microphone_queue, 1, 44100, 1,))
 
-    # Start the SpeechToText thread for the first stream.
-    stt_thread_microphone = threading.Thread(target=process_stream, args=(
-        private_key_file_path, microphone_queue, 1, 44100, 1))
-    stt_thread_microphone.daemon = True
-    stt_thread_microphone.start()
-    print("Opening MIC Thread -- SUCCESS\n")
+    process_loopback = Process(target=run_process_stream, args=(
+        private_key_file_path, loopback_queue, 1, 44100, 3,))
 
-    # Start the SpeechToText thread for the second stream.
-    stt_thread_loopback = threading.Thread(target=process_stream, args=(
-        private_key_file_path, loopback_queue, 2, 48000, 2))
-    stt_thread_loopback.daemon = True
-    stt_thread_loopback.start()
-    print("Opening LOOP Thread -- SUCCESS\n")
+    process_microphone.start()
+    process_loopback.start()
 
     try:
-        while stt_thread_loopback.is_alive():
-            # stt_thread_microphone.is_alive() and
-            # Check if there is a preprocessed transcript in the queue
+        while True:
             if not microphone_queue.empty():
-                (transcript_mic, non_modified_transcript_mic) = microphone_queue.get()
+                transcript_mic, non_modified_transcript_mic = microphone_queue.get()
                 print("Microphone preprocessed transcript:\n", transcript_mic)
                 print("Microphone bare transcript:",
                       non_modified_transcript_mic)
 
             if not loopback_queue.empty():
-                (transcript_loop, non_modified_transcript_loop) = loopback_queue.get()
-                print("Loopback preprocessed transcript:\n", transcript_loop)
+                transcript_loopback, non_modified_transcript_loopback = loopback_queue.get()
+                print("Loopback preprocessed transcript:\n", transcript_loopback)
                 print("Loopback bare transcript:",
-                      non_modified_transcript_loop)
+                      non_modified_transcript_loopback)
 
             ############################### Further Preprocessing of choice. ##################################
 
@@ -191,9 +183,6 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         print("Stopping...")
-        stop_threads = True
-        stt_thread_microphone.join()
-        stt_thread_loopback.join()
         # try:
         #     # Attempt to stop Spark
         #     spark.stop()
@@ -201,4 +190,8 @@ if __name__ == "__main__":
         # except Exception as e:
         #     # Handle the error or ignore it
         #     print("Error stopping Spark:", e)
-        print("Threads have been stopped and joined successfully.")
+    process_microphone.terminate()
+    process_loopback.terminate()
+    process_microphone.join()
+    process_loopback.join()
+    print("Processes have been stopped and joined successfully.")

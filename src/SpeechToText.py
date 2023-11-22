@@ -25,6 +25,7 @@ class SpeechToText:
         self.transcript_list = []
         self.non_modified_transcript_list = []
         self.device_index = device_index
+        self.stop_flag = False
         api_key_json = self._read_json_file(private_key_file_path)
 
         credentials = service_account.Credentials.from_service_account_info(
@@ -98,8 +99,16 @@ class SpeechToText:
 
         def stream_generator():
             while not self.stop_flag:
-                data = stream.read(CHUNK)
-                yield speech.StreamingRecognizeRequest(audio_content=data)
+                try:
+                    # Add exception_on_overflow parameter
+                    data = stream.read(CHUNK, exception_on_overflow=False)
+                    if not data:
+                        print("No data read from stream")
+                        break
+                    yield speech.StreamingRecognizeRequest(audio_content=data)
+                except Exception as e:
+                    print(f"Error reading from stream: {e}")
+                    break
 
         self.stop_flag = False
         requests = stream_generator()
@@ -144,7 +153,7 @@ if __name__ == "__main__":
     private_key_file_path = 'Environment\speech-to-text.json'
 
     microphone_speech_to_text = SpeechToText(
-        private_key_file_path=private_key_file_path, CHANNELS=1, RATE=44100, device_index=1)
+        private_key_file_path=private_key_file_path, CHANNELS=1, RATE=44100, device_index=3)
 
     # print(microphone_speech_to_text.get_output_device_info())
 
