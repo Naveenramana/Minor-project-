@@ -1,31 +1,39 @@
 {
-    "achievementId": "String",
+    "statistics"/"metadata"/"resources",
+    “assignedAchievementId": "string",
     "completionValue": 0,
-    "eventIdProduced": 0,
-    "startDate": "2023-10-23T12: 12: 26.534Z",
-    "endDate": "2023-10-23T12: 12: 26.534Z",
-    "rewards": "ItemItemTypeDTO[]",
-    "tournamentIds": "String[]",
-    "userAchievement": {
-      "useAchievementId": "String",
-      "achievementId": "String",
+    “producedEventTypeId": 0,
+    "activeFrom": "2023-10-23T12:12:26.534Z",
+    "activeTo": "2023-10-23T12:12:26.534Z",
+    "completionTypeId": 0,
+    "itemIdForResourceLookup": "string",
+    "itemTypeIdForResourceLookup": 0,
+    "userAssignedAchievements": {
+      "statistics"/"metadata"/"resources",
+      “id": "string",
       "completionValue": 0,
       "progressSoFar": 0,
-      "numOfTimesAchieved": 0,
       "count": 0,
       "lastUpdate": "2023-10-23T12: 12: 26.534Z",
-      "cancel": "False",
-      "missionStartDate": "2023-10-23T12: 12: 26.534Z",
-      "missionEndDate": "2023-10-23T12: 12: 26.534Z",
-      "missionStatus": 0,
-      "acknowledged": "False",
-      "completed": "False",
-      "eventAchievementActions": {
-        "recId": "String",
-        "eventTypeId": 0,
-        "achievementActionType": 0,
-        "eventProperties": "String",
-        "completed": "False"
-      }
+      "startedOn": "2023-10-23T12: 12: 26.534Z",
+      "endedOn": "2023-10-23T12: 12: 26.534Z",
+      "statusId": 0,
+      "acknowledged": false,
+      "itemIdForResourceLookup": "string",
+      "itemTypeIdForResourceLookup": 0,
+      “actions": [
+        {
+          "statistics"/"metadata"/"resources",
+          “actionId": "string",
+          “actionTypeId": 0,
+          "activeFrom": "2023-10-23T12: 12: 26.534Z",
+          "activeTo": "2023-10-23T12: 12: 26.534Z",
+          "eventTypeId": 0,
+          "dateValidity": 0,
+          “statusId": 0,
+          "itemIdForResourceLookup": "string",
+          "itemTypeIdForResourceLookup": 0
+        }
+      ]
     }
   }
