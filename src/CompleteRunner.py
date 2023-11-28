@@ -3,12 +3,13 @@ import sys
 import findspark
 from pyspark.sql import SparkSession
 from pyspark.ml.classification import *
-from SpeechToText import SpeechToText
-from PreprocessDataset import *
-import threading
-from multiprocessing import Queue
-from multiprocessing import Process
-from nltk.tokenize import word_tokenize
+from pyspark.sql.functions import *
+
+from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
+from pyspark.sql.types import StructType, StructField, StringType
+
+
+from scipy.sparse import hstack
 import nltk
 # nltk.download('punkt')
 # nltk.download('stopwords')
@@ -101,97 +102,33 @@ def load_prediction_model(model_id):
         raise
 
 
-def process_stream(private_key_file_path, output_queue, CHANNELS, RATE, device_index):
-    stt = SpeechToText(private_key_file_path, CHANNELS, RATE, device_index)
-
-    for transcript, non_modified_transcript in stt.recognize_speech_stream():
-        # If transcript is a list of strings, join them into a single string
-        if isinstance(transcript, list) and all(isinstance(s, str) for s in transcript):
-            transcript = ' '.join(transcript)
-        # Check if transcript is a non-empty string
-        if isinstance(transcript, str) and len(transcript) > 0:
-            transcript_words = word_tokenize(transcript)
-
-        output_queue.put((transcript_words, non_modified_transcript))
-
-
-def run_process_stream(private_key_file_path, output_queue, CHANNELS, RATE, device_index):
-    try:
-        process_stream(private_key_file_path, output_queue,
-                       CHANNELS, RATE, device_index)
-    except KeyboardInterrupt:
-        print(f"Stopping process for device {device_index}")
-    except Exception as e:
-        print(f"Exception in process for device {device_index}: {e}")
-
-
 if __name__ == "__main__":
 
-    # This map is for help only not for usage
-    preprocessing_modes = {
-        "TF_IDF": 1,
-        "Neural_Network_TF_IDF": 2,
-        "LSTM_Neural_Network_TF_IDF": 3
-    }
-
     # Initializing spark and other things necessary
-    # spark = initializer()
+    spark = initializer()
 
-    private_key_file_path = 'Environment\speech-to-text.json'
+    # Define the schema of the data
+    schema = StructType([
+        StructField("Attacker_Helper", ArrayType(StringType())),
+        StructField("Victim", ArrayType(StringType()))
+    ])
 
-    microphone_queue = Queue()
-    loopback_queue = Queue()
+    raw_stream_df = spark.readStream \
+        .format("socket") \
+        .option("host", "localhost") \
+        .option("port", 9999) \
+        .load()
 
-    # model = load_prediction_model("LogisticRegression_TFIDF")
-    preprocessing_mode = 1
+    # Parse the JSON strings
+    parsed_df = raw_stream_df.select(
+        from_json(col("value"), schema).alias("data")).select("data.*")
 
-    process_microphone = Process(target=run_process_stream, args=(
-        private_key_file_path, microphone_queue, 1, 44100, 1,))
+    # Output the result to the console (for debugging purposes)
+    query = parsed_df.writeStream \
+        .outputMode("append") \
+        .format("console") \
+        .option("truncate", False) \
+        .start()
 
-    process_loopback = Process(target=run_process_stream, args=(
-        private_key_file_path, loopback_queue, 1, 44100, 3,))
-
-    process_microphone.start()
-    process_loopback.start()
-
-    try:
-        while True:
-            if not microphone_queue.empty():
-                transcript_mic, non_modified_transcript_mic = microphone_queue.get()
-                print("Microphone preprocessed transcript:\n", transcript_mic)
-                print("Microphone bare transcript:",
-                      non_modified_transcript_mic)
-
-            if not loopback_queue.empty():
-                transcript_loopback, non_modified_transcript_loopback = loopback_queue.get()
-                print("Loopback preprocessed transcript:\n", transcript_loopback)
-                print("Loopback bare transcript:",
-                      non_modified_transcript_loopback)
-
-            ############################### Further Preprocessing of choice. ##################################
-
-            if (preprocessing_mode == 1):
-                # TF - IDF
-                pass
-            elif (preprocessing_mode == 2):
-                # Neural Network specific together with TF - IDF
-                pass
-            elif (preprocessing_mode == 3):
-                pass
-
-            # model prediction
-
-    except KeyboardInterrupt:
-        print("Stopping...")
-        # try:
-        #     # Attempt to stop Spark
-        #     spark.stop()
-        #     print("Spark stopped successfully.")
-        # except Exception as e:
-        #     # Handle the error or ignore it
-        #     print("Error stopping Spark:", e)
-    process_microphone.terminate()
-    process_loopback.terminate()
-    process_microphone.join()
-    process_loopback.join()
-    print("Processes have been stopped and joined successfully.")
+    # Await termination to keep the streaming application running
+    query.awaitTermination()

@@ -11,3 +11,4 @@ pyaudio
 google-auth
 keras
 tensorflow
+scikit-learn
