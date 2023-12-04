@@ -1,1 +1,0 @@
-{"class":"src.CustonTransformers.FlattenTransformer","timestamp":1701160033156,"sparkVersion":"3.5.0","uid":"FlattenTransformer_681663087ae3","paramMap":{},"defaultParamMap":{"outputCol":"Attacker_Helper","inputCol":"Attacker_Helper"}}

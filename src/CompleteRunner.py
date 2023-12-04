@@ -4,6 +4,7 @@ import findspark
 from pyspark.sql import SparkSession
 from pyspark.ml.classification import *
 from pyspark.sql.functions import *
+from pyspark.ml import PipelineModel
 
 from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
 from pyspark.sql.types import StructType, StructField, StringType
@@ -104,31 +105,53 @@ def load_prediction_model(model_id):
 
 if __name__ == "__main__":
 
-    # Initializing spark and other things necessary
-    spark = initializer()
+    try:
+        # Initializing spark and other things necessary
+        spark = initializer()
 
-    # Define the schema of the data
-    schema = StructType([
-        StructField("Attacker_Helper", ArrayType(StringType())),
-        StructField("Victim", ArrayType(StringType()))
-    ])
+        # Loading the preprocessing pipeline
+        pipeline_path = "G:\\Dissertation_Project\\src\\Models\\Pipelines\\Prediction_Pipeline"
+        pipeline_model = PipelineModel.load(pipeline_path)
 
-    raw_stream_df = spark.readStream \
-        .format("socket") \
-        .option("host", "localhost") \
-        .option("port", 9999) \
-        .load()
+        # Loading the prediction model
+        prediction_model = load_prediction_model("LogisticRegression_TFIDF")
 
-    # Parse the JSON strings
-    parsed_df = raw_stream_df.select(
-        from_json(col("value"), schema).alias("data")).select("data.*")
+        # Define the schema of the data
+        schema = StructType([
+            StructField("Attacker_Helper", ArrayType(StringType())),
+            StructField("Victim", ArrayType(StringType()))
+        ])
 
-    # Output the result to the console (for debugging purposes)
-    query = parsed_df.writeStream \
-        .outputMode("append") \
-        .format("console") \
-        .option("truncate", False) \
-        .start()
+        raw_stream_df = spark.readStream \
+            .format("socket") \
+            .option("host", "localhost") \
+            .option("port", 9999) \
+            .load()
 
-    # Await termination to keep the streaming application running
-    query.awaitTermination()
+        # Parse the JSON strings
+        parsed_df = raw_stream_df.select(
+            from_json(col("value"), schema).alias("data")).select("data.*")
+
+        preprocessed_df = pipeline_model.transform(parsed_df)
+
+        # Prediction
+
+        predictions = prediction_model.transform(
+            preprocessed_df).select("Prediction", "probability")
+
+        # Output the result to the console (for debugging purposes)
+        query = predictions.writeStream \
+            .outputMode("append") \
+            .format("console") \
+            .option("truncate", False) \
+            .start()
+
+        # Await termination to keep the streaming application running
+        query.awaitTermination()
+
+    except KeyboardInterrupt:
+        print("Keyboard Interrupt received. Stopping the streaming query.")
+        query.stop()
+
+    finally:
+        spark.stop()
