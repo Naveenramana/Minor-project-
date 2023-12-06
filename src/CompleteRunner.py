@@ -5,6 +5,7 @@ from pyspark.sql import SparkSession
 from pyspark.ml.classification import *
 from pyspark.sql.functions import *
 from pyspark.ml import PipelineModel
+import logging
 
 from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
 from pyspark.sql.types import StructType, StructField, StringType
@@ -21,6 +22,11 @@ sys.path.append("G:\Dissertation_Project")
 def initializer():
 
     print("\n\n-----------------------INITIALIZATION RUNNING----------------------\n")
+
+    log_format = "%(asctime)s - %(name)s - %(message)s"
+    logging.basicConfig(filename="G:\\Dissertation_Project\\Logs\\performance_logs.log",
+                        level=logging.INFO, format=log_format)
+    logger = logging.getLogger("Dissertation_Project")
 
     findspark.init()
     print("Spark location => " + findspark.find())
@@ -45,7 +51,7 @@ def initializer():
 
     print("\n----------------------INITIALIZATION COMPLETED----------------------\n")
 
-    return spark
+    return spark, logger
 
 
 def load_prediction_model(model_id):
@@ -107,7 +113,7 @@ if __name__ == "__main__":
 
     try:
         # Initializing spark and other things necessary
-        spark = initializer()
+        spark, logger = initializer()
 
         # Loading the preprocessing pipeline
         pipeline_path = "G:\\Dissertation_Project\\src\\Models\\Pipelines\\Prediction_Pipeline"
@@ -146,6 +152,7 @@ if __name__ == "__main__":
             .option("truncate", False) \
             .start()
 
+        logger.info("CompleteRunner - received data from streaming server")
         # Await termination to keep the streaming application running
         query.awaitTermination()
 

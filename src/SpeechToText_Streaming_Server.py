@@ -3,6 +3,7 @@ from PreprocessDataset import *
 from multiprocessing import Queue
 from multiprocessing import Process
 import socket
+import logging
 from threading import Thread
 
 
@@ -33,7 +34,7 @@ def run_process_stream(private_key_file_path, output_queue, CHANNELS, RATE, devi
 # Function to handle client connections and send data
 
 
-def client_handler(connection, microphone_queue, loopback_queue):
+def client_handler(connection, microphone_queue, loopback_queue, logger):
     while True:
         # TODO: FIX the issue where data from queues need to leave at the same time.
         microphone_data = microphone_queue.get()
@@ -46,6 +47,10 @@ def client_handler(connection, microphone_queue, loopback_queue):
 
         print(
             f"Sending data to PySpark Structured Streaming application: {combined_data}")
+
+        logger.info(
+            "-----------------------------------------------------------------------------------------------------\nSpeechToText_Streaming_Server - sending data: %s", combined_data)
+
         message = str(combined_data) + '\n'
         connection.sendall(message.encode())
 
@@ -53,6 +58,12 @@ def client_handler(connection, microphone_queue, loopback_queue):
 
 
 def start_server(host, port, microphone_queue, loopback_queue):
+
+    # Setting up the logging
+    log_format = "%(asctime)s - %(name)s - %(message)s"
+    logging.basicConfig(filename="G:\\Dissertation_Project\\Logs\\performance_logs.log",
+                        level=logging.INFO, format=log_format)
+    logger = logging.getLogger("Dissertation_Project")
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
@@ -65,10 +76,11 @@ def start_server(host, port, microphone_queue, loopback_queue):
         print(
             f"----------------------Accepted connection from {addr}----------------------")
         Thread(target=client_handler, args=(
-            conn, microphone_queue, loopback_queue)).start()
+            conn, microphone_queue, loopback_queue, logger)).start()
 
 
 if __name__ == "__main__":
+
     private_key_file_path = 'Environment\speech-to-text.json'
 
     microphone_queue = Queue()
