@@ -6,6 +6,9 @@ from pyspark.ml.classification import *
 from pyspark.sql.functions import *
 from pyspark.ml import PipelineModel
 import logging
+from pyspark.sql.functions import udf, col
+from pyspark.sql.types import BooleanType
+import ctypes
 
 from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
 from pyspark.sql.types import StructType, StructField, StringType
@@ -109,6 +112,16 @@ def load_prediction_model(model_id):
         raise
 
 
+def raise_alert_on_scam_detection(prediction, probability_vector):
+    # Check if the prediction is 1 and the second element in the probability vector is greater than 0.9
+    if prediction == 1 and probability_vector[1] > 0.9:
+        # Windows alert
+        ctypes.windll.user32.MessageBoxW(
+            0, "High Probability Alert!", "Alert", 1)
+        return True
+    return False
+
+
 if __name__ == "__main__":
 
     try:
@@ -141,12 +154,17 @@ if __name__ == "__main__":
         preprocessed_df = pipeline_model.transform(parsed_df)
 
         # Prediction
-
         predictions = prediction_model.transform(
             preprocessed_df).select("Prediction", "probability")
 
+        # Register the UDF
+        alert_udf = udf(raise_alert_on_scam_detection, BooleanType())
+
+        predictions_with_alert = predictions.withColumn(
+            "Alert", alert_udf(col("Prediction"), col("probability")))
+
         # Output the result to the console (for debugging purposes)
-        query = predictions.writeStream \
+        query = predictions_with_alert.writeStream \
             .outputMode("append") \
             .format("console") \
             .option("truncate", False) \
