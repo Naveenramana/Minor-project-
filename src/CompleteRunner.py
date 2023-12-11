@@ -6,9 +6,8 @@ from pyspark.ml.classification import *
 from pyspark.sql.functions import *
 from pyspark.ml import PipelineModel
 import logging
-from pyspark.sql.functions import udf, col
-from pyspark.sql.types import BooleanType
 import ctypes
+import pandas
 
 from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
 from pyspark.sql.types import StructType, StructField, StringType
@@ -30,6 +29,10 @@ def initializer():
     logging.basicConfig(filename="G:\\Dissertation_Project\\Logs\\performance_logs.log",
                         level=logging.INFO, format=log_format)
     logger = logging.getLogger("Dissertation_Project")
+    logger.setLevel(logging.INFO)
+
+    py4j_logger = logging.getLogger('py4J')
+    py4j_logger.setLevel(logging.ERROR)
 
     findspark.init()
     print("Spark location => " + findspark.find())
@@ -124,7 +127,18 @@ def raise_alert_on_scam_detection(prediction, probability_vector):
 
 if __name__ == "__main__":
 
+    spark = None
+    query = None
+    console_query = None
+
+    preprocessing_modes = {
+        "TF_IDF": 1,
+        "NN_TF_IDF": 2,
+        "LSTM_NN_TF_IDF": 3
+    }
+
     try:
+        preprocessing_mode = 2
         # Initializing spark and other things necessary
         spark, logger = initializer()
 
@@ -133,7 +147,7 @@ if __name__ == "__main__":
         pipeline_model = PipelineModel.load(pipeline_path)
 
         # Loading the prediction model
-        prediction_model = load_prediction_model("LogisticRegression_TFIDF")
+        prediction_model = load_prediction_model("NeuralNetwork_TFIDF")
 
         # Define the schema of the data
         schema = StructType([
@@ -151,32 +165,76 @@ if __name__ == "__main__":
         parsed_df = raw_stream_df.select(
             from_json(col("value"), schema).alias("data")).select("data.*")
 
-        preprocessed_df = pipeline_model.transform(parsed_df)
+        if preprocessing_mode == 1:
 
-        # Prediction
-        predictions = prediction_model.transform(
-            preprocessed_df).select("Prediction", "probability")
+            def process_and_log_batch(batch_df, batch_id):
+                logger.info(
+                    f"Batch ID: {batch_id}, --Data has been received--")
 
-        # Register the UDF
-        alert_udf = udf(raise_alert_on_scam_detection, BooleanType())
+                if batch_df:
+                    # Log the batch
+                    batch_string = batch_df._jdf.showString(1, 20, False)
+                    logger.info(f"Batch ID: {batch_id}, Data:\n{batch_string}")
 
-        predictions_with_alert = predictions.withColumn(
-            "Alert", alert_udf(col("Prediction"), col("probability")))
+                    # Print to console
+                    batch_df.show(truncate=False)
 
-        # Output the result to the console (for debugging purposes)
-        query = predictions_with_alert.writeStream \
-            .outputMode("append") \
-            .format("console") \
-            .option("truncate", False) \
-            .start()
+            preprocessed_df = pipeline_model.transform(parsed_df)
 
-        logger.info("CompleteRunner - received data from streaming server")
+            # Prediction
+            predictions = prediction_model.transform(
+                preprocessed_df).select("Prediction", "probability")
+
+            query = predictions.writeStream \
+                .outputMode("append") \
+                .foreachBatch(process_and_log_batch) \
+                .start()
+
+        elif preprocessing_mode == 2:
+
+            @pandas_udf('array<float>', PandasUDFType.SCALAR)
+            def predict_udf(feature_series):
+                # Convert the feature_series (which is a Pandas Series of lists) to a 2D numpy array
+                feature_array = np.stack(feature_series)
+                # Get predictions from the Keras model, assuming it returns probabilities
+                predictions = prediction_model.predict(feature_array)
+                # Return predictions as a Pandas Series of arrays
+                return pandas.Series(list(predictions))
+
+            def process_and_log_batch(batch_df, batch_id):
+
+                logger.info(
+                    f"Batch ID: {batch_id}, --Data has been received--")
+
+                if batch_df:
+                    # This will create a column of arrays where each array contains class probabilities
+                    predictions_df = batch_df.withColumn(
+                        'probabilities', predict_udf(col('combined_features')))
+
+                    # Log the batch
+                    batch_string = predictions_df._jdf.showString(1, 20, False)
+                    logger.info(f"Batch ID: {batch_id}, Data:\n{batch_string}")
+
+                    # Print to console
+                    predictions_df.show(truncate=False)
+
+            preprocessed_df = pipeline_model.transform(parsed_df)
+
+            query = preprocessed_df.writeStream \
+                .outputMode("append") \
+                .foreachBatch(process_and_log_batch) \
+                .start()
+        else:
+            pass
+
         # Await termination to keep the streaming application running
         query.awaitTermination()
 
     except KeyboardInterrupt:
-        print("Keyboard Interrupt received. Stopping the streaming query.")
-        query.stop()
+        print(
+            "Keyboard Interrupt received. Stopping the streaming queries and Spark session.")
+        if query:
+            query.stop()
 
-    finally:
-        spark.stop()
+        if spark:
+            spark.stop()

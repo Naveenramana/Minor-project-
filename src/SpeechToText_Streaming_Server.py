@@ -49,7 +49,7 @@ def client_handler(connection, microphone_queue, loopback_queue, logger):
             f"Sending data to PySpark Structured Streaming application: {combined_data}")
 
         logger.info(
-            "-----------------------------------------------------------------------------------------------------\nSpeechToText_Streaming_Server - sending data: %s", combined_data)
+            "SpeechToText_Streaming_Server - sending data: %s", combined_data)
 
         message = str(combined_data) + '\n'
         connection.sendall(message.encode())
