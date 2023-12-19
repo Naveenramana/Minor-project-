@@ -141,11 +141,9 @@ class SpeechToText:
 
         except KeyboardInterrupt:
             self.stop_flag = True
-            print("\nStopping...")
-
-        stream.stop_stream()
-        stream.close()
-        audio.terminate()
+            stream.stop_stream()
+            stream.close()
+            audio.terminate()
 
 
 if __name__ == "__main__":

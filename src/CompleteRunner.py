@@ -1,22 +1,20 @@
-from tensorflow.keras.models import load_model
-import sys
+from SpeechToText import SpeechToText
+from PreprocessDataset import *
+from multiprocessing import Queue
+from multiprocessing import Process
+from threading import Thread
 import findspark
 from pyspark.sql import SparkSession
-from pyspark.ml.classification import *
 from pyspark.sql.functions import *
-from pyspark.ml import PipelineModel
-import logging
-import ctypes
-import pandas
-
-from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
 from pyspark.sql.types import StructType, StructField, StringType
-
-
-from scipy.sparse import hstack
-import nltk
-# nltk.download('punkt')
-# nltk.download('stopwords')
+from pyspark.ml.classification import *
+from pyspark.ml import PipelineModel
+from tensorflow.keras.models import load_model
+import pandas
+import socket
+import logging
+import json
+import sys
 
 sys.path.append("G:\Dissertation_Project")
 
@@ -25,6 +23,7 @@ def initializer():
 
     print("\n\n-----------------------INITIALIZATION RUNNING----------------------\n")
 
+    # Setting up logging
     log_format = "%(asctime)s - %(name)s - %(message)s"
     logging.basicConfig(filename="G:\\Dissertation_Project\\Logs\\performance_logs.log",
                         level=logging.INFO, format=log_format)
@@ -34,6 +33,7 @@ def initializer():
     py4j_logger = logging.getLogger('py4J')
     py4j_logger.setLevel(logging.ERROR)
 
+    # Finding spark
     findspark.init()
     print("Spark location => " + findspark.find())
 
@@ -49,11 +49,6 @@ def initializer():
     # Get SparkContext from the SparkSession
     sc = spark.sparkContext
     sc.setLogLevel("WARN")
-
-    try:
-        from src.CustonTransformers import FlattenTransformer
-    except ImportError as e:
-        print(f"Error importing FlattenTransformer: {e}")
 
     print("\n----------------------INITIALIZATION COMPLETED----------------------\n")
 
@@ -115,22 +110,44 @@ def load_prediction_model(model_id):
         raise
 
 
-def raise_alert_on_scam_detection(prediction, probability_vector):
-    # Check if the prediction is 1 and the second element in the probability vector is greater than 0.9
-    if prediction == 1 and probability_vector[1] > 0.9:
-        # Windows alert
-        ctypes.windll.user32.MessageBoxW(
-            0, "High Probability Alert!", "Alert", 1)
-        return True
-    return False
+def process_stream(private_key_file_path, output_queue, CHANNELS, RATE, device_index):
+    stt = SpeechToText(private_key_file_path, CHANNELS, RATE, device_index)
+
+    for transcript, non_modified_transcript in stt.recognize_speech_stream():
+        # If transcript is a list of strings, join them into a single string
+        if isinstance(transcript, list) and all(isinstance(s, str) for s in transcript):
+            transcript = ' '.join(transcript)
+        # Check if transcript is a non-empty string
+        if isinstance(transcript, str) and len(transcript) > 0:
+            transcript_words = word_tokenize(transcript)
+
+        stemmed_words = stem_strings(transcript_words, 'en')
+        output_queue.put(stemmed_words)
 
 
-if __name__ == "__main__":
+def run_process_stream(private_key_file_path, output_queue, CHANNELS, RATE, device_index):
+    try:
+        process_stream(private_key_file_path, output_queue,
+                       CHANNELS, RATE, device_index)
+    except KeyboardInterrupt:
+        print(f"Stopping process for device {device_index}")
+    except Exception as e:
+        print(f"Exception in process for device {device_index}: {e}")
 
-    spark = None
-    query = None
-    console_query = None
 
+def connect_to_middleware_server(host, port):
+    socket_connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    socket_connection.connect((host, port))
+    return socket_connection
+
+
+def send_data_to_server(socket_connection, data):
+    message = json.dumps(data) + '\n'
+    socket_connection.sendall(message.encode())
+
+
+def initiate_spark_streaming():
+    # For help, not to be used in code
     preprocessing_modes = {
         "TF_IDF": 1,
         "NN_TF_IDF": 2,
@@ -138,7 +155,7 @@ if __name__ == "__main__":
     }
 
     try:
-        preprocessing_mode = 2
+        preprocessing_mode = 1
         # Initializing spark and other things necessary
         spark, logger = initializer()
 
@@ -147,7 +164,7 @@ if __name__ == "__main__":
         pipeline_model = PipelineModel.load(pipeline_path)
 
         # Loading the prediction model
-        prediction_model = load_prediction_model("NeuralNetwork_TFIDF")
+        prediction_model = load_prediction_model("LogisticRegression_TFIDF")
 
         # Define the schema of the data
         schema = StructType([
@@ -238,3 +255,46 @@ if __name__ == "__main__":
 
         if spark:
             spark.stop()
+
+
+def run_main_application():
+    private_key_file_path = 'Environment\speech-to-text.json'
+
+    microphone_queue = Queue()
+    loopback_queue = Queue()
+
+    process_microphone = Process(target=run_process_stream, args=(
+        private_key_file_path, microphone_queue, 1, 44100, 1,))
+
+    process_loopback = Process(target=run_process_stream, args=(
+        private_key_file_path, loopback_queue, 1, 44100, 3,))
+
+    process_microphone.start()
+    process_loopback.start()
+
+    # Connect to middleware server
+    socket_connection = connect_to_middleware_server('localhost', 9999)
+
+    while True:
+        if not microphone_queue.empty() and not loopback_queue.empty():
+            microphone_data = microphone_queue.get()
+            loopback_data = loopback_queue.get()
+
+            # constructing the request object
+            data_for_prediction = {
+                "Attacker_Helper": loopback_data,
+                "Victim": microphone_data
+            }
+
+            send_data_to_server(
+                socket_connection=socket_connection, data=data_for_prediction)
+
+
+if __name__ == "__main__":
+
+    # Starting streaming thread
+    spark_streaming_thread = Thread(target=initiate_spark_streaming)
+    spark_streaming_thread.start()
+
+    # Run main application
+    run_main_application()

@@ -1,0 +1,747 @@
+2023-12-18 19:02:58,939 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:02:58,939 - py4j.java_gateway - Socket listening on ('127.0.0.1', 15386)
+2023-12-18 19:03:00,100 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:03:00,100 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:03:00,102 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:03:00,339 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:03:05,459 - Dissertation_Project - Registered streaming application from ('127.0.0.1', 15275)
+2023-12-18 19:03:10,841 - Dissertation_Project - Closed connection: ('127.0.0.1', 15275)
+2023-12-18 19:04:14,195 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:04:14,198 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:04:14,205 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:04:14,205 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:04:14,205 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:04:14,211 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:04:14,241 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:04:52,465 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:04:52,465 - py4j.java_gateway - Socket listening on ('127.0.0.1', 15590)
+2023-12-18 19:04:53,614 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:04:53,614 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:04:53,616 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:04:53,870 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:05:00,978 - Dissertation_Project - Registered streaming application from ('127.0.0.1', 15480)
+2023-12-18 19:05:07,025 - Dissertation_Project - Middleware_Server - streaming data back: b'SSTT:{"Attacker_Helper": ["astra", "motor", "pretti", "la", "maceta"], "Victim": ["best", "remot", "to", "speedi", "la", "maceta"]}\n'
+2023-12-18 19:05:12,143 - Dissertation_Project - Middleware_Server - streaming data back: b'SSTT:{"Attacker_Helper": ["astra", "motor", "pretti", "la", "maceta", "i", "miss", "etta"], "Victim": ["best", "remot", "to", "speedi", "la", "maceta", "guy", "miss", "etta"]}\n'
+2023-12-18 19:05:25,183 - Dissertation_Project - Middleware_Server - streaming data back: b'SSTT:{"Attacker_Helper": ["astra", "motor", "pretti", "la", "maceta", "i", "miss", "etta", "motor", "speed", "aikido"], "Victim": ["best", "remot", "to", "speedi", "la", "maceta", "guy", "miss", "etta", "yeah", "motor", "speed", "aikido"]}\n'
+2023-12-18 19:05:51,069 - Dissertation_Project - Closed connection: ('127.0.0.1', 15591)
+2023-12-18 19:05:51,066 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:05:51,069 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:05:51,076 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:05:51,076 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:05:51,077 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:05:51,083 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:05:51,113 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:05:51,247 - Dissertation_Project - Closed connection: ('127.0.0.1', 15480)
+2023-12-18 19:25:20,573 - Dissertation_Project - Connection from ('127.0.0.1', 16369) registered.
+2023-12-18 19:25:48,048 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:25:48,048 - py4j.java_gateway - Socket listening on ('127.0.0.1', 16487)
+2023-12-18 19:25:48,938 - Dissertation_Project - Connection from ('127.0.0.1', 16523) registered.
+2023-12-18 19:25:49,119 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:25:49,119 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:25:49,121 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:25:49,372 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:25:55,374 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test"], "Victim": ["test", "test", "test"]}\n'
+2023-12-18 19:26:08,841 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "best"], "Victim": ["test", "test", "test", "fast"]}\n'
+2023-12-18 19:26:51,244 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "best", "test", "test", "test", "test"], "Victim": ["test", "test", "test", "fast", "test", "test", "test", "test"]}\n'
+2023-12-18 19:27:38,636 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:27:38,638 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:27:38,644 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:27:38,645 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:27:38,645 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:27:38,653 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:27:38,685 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:30:28,527 - Dissertation_Project - Connection from ('127.0.0.1', 16677) registered.
+2023-12-18 19:30:39,453 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:30:39,454 - py4j.java_gateway - Socket listening on ('127.0.0.1', 16786)
+2023-12-18 19:30:40,360 - Dissertation_Project - Connection from ('127.0.0.1', 16788) registered.
+2023-12-18 19:30:40,594 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:30:40,595 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:30:40,597 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:30:40,831 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:30:47,472 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test"], "Victim": ["test", "test", "test"]}\n'
+2023-12-18 19:30:54,834 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "im", "go", "to", "speed", "it", "up"], "Victim": ["test", "test", "test", "a", "motor", "speed", "is", "a", "bracket"]}\n'
+2023-12-18 19:31:07,339 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "im", "go", "to", "speed", "it", "up", "tom", "griffin", "mcelroy"], "Victim": ["test", "test", "test", "a", "motor", "speed", "is", "a", "bracket", "dont", "go", "for", "mccoy"]}\n'
+2023-12-18 19:33:45,283 - Dissertation_Project - Closed connection with ('127.0.0.1', 16788)
+2023-12-18 19:33:45,280 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:33:45,283 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:33:45,290 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:33:45,291 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:33:45,291 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:33:45,298 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:33:45,350 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:33:45,499 - Dissertation_Project - Closed connection with ('127.0.0.1', 16677)
+2023-12-18 19:36:11,196 - Dissertation_Project - Connection from ('127.0.0.1', 17011) registered.
+2023-12-18 19:36:38,303 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:36:38,303 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17128)
+2023-12-18 19:36:39,192 - Dissertation_Project - Connection from ('127.0.0.1', 17163) registered.
+2023-12-18 19:36:39,372 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:36:39,372 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:36:39,374 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:36:39,614 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:36:44,179 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "hello"], "Victim": ["test", "test", "hello"]}\n'
+2023-12-18 19:36:44,179 - Dissertation_Project - Error sending to one of the clients from ('127.0.0.1', 17011): can't concat str to bytes
+2023-12-18 19:38:11,205 - Dissertation_Project - Closed connection with ('127.0.0.1', 17163)
+2023-12-18 19:38:11,206 - Dissertation_Project - Closed connection with ('127.0.0.1', 17011)
+2023-12-18 19:38:43,207 - Dissertation_Project - Connection from ('127.0.0.1', 17244) registered.
+2023-12-18 19:38:54,145 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:38:54,145 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17357)
+2023-12-18 19:38:55,059 - Dissertation_Project - Connection from ('127.0.0.1', 17358) registered.
+2023-12-18 19:38:55,289 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:38:55,289 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:38:55,292 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:38:55,541 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:39:24,452 - Dissertation_Project - Closed connection with ('127.0.0.1', 17358)
+2023-12-18 19:39:24,449 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:39:24,452 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:39:24,459 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:39:24,459 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:39:24,459 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:39:24,467 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:39:24,500 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:39:24,640 - Dissertation_Project - Closed connection with ('127.0.0.1', 17244)
+2023-12-18 19:40:21,270 - Dissertation_Project - Connection from ('127.0.0.1', 17418) registered.
+2023-12-18 19:40:32,156 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:40:32,156 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17528)
+2023-12-18 19:40:33,118 - Dissertation_Project - Connection from ('127.0.0.1', 17529) registered.
+2023-12-18 19:40:33,353 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:40:33,353 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:40:33,354 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:40:33,628 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:40:37,591 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["stair", "stair", "stair"], "Victim": ["that", "that", "that"]}\n'
+2023-12-18 19:40:44,809 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["stair", "stair", "stair", "yeah", "motor", "speedway"], "Victim": ["that", "that", "that", "yeah", "motor", "speedway"]}\n'
+2023-12-18 19:40:50,803 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["stair", "stair", "stair", "yeah", "motor", "speedway", "remot", "hospit"], "Victim": ["that", "that", "that", "yeah", "motor", "speedway", "promot", "fatigu", "issu"]}\n'
+2023-12-18 19:41:19,628 - Dissertation_Project - Closed connection with ('127.0.0.1', 17529)
+2023-12-18 19:41:19,625 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:41:19,628 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:41:19,635 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:41:19,635 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:41:19,635 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:41:19,643 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:41:19,674 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:41:19,817 - Dissertation_Project - Closed connection with ('127.0.0.1', 17418)
+2023-12-18 19:41:36,373 - Dissertation_Project - Connection from ('127.0.0.1', 17565) registered.
+2023-12-18 19:41:47,444 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:41:47,444 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17676)
+2023-12-18 19:41:48,396 - Dissertation_Project - Connection from ('127.0.0.1', 17677) registered.
+2023-12-18 19:41:48,649 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:41:48,649 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:41:48,651 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:41:48,905 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:41:54,325 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "test"], "Victim": ["halo", "test"]}\n'
+2023-12-18 19:42:51,960 - Dissertation_Project - Connection from ('127.0.0.1', 17706) registered.
+2023-12-18 19:43:02,664 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:43:02,664 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17815)
+2023-12-18 19:43:03,600 - Dissertation_Project - Connection from ('127.0.0.1', 17817) registered.
+2023-12-18 19:43:03,857 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:43:03,857 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:43:03,860 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:43:04,121 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:43:30,490 - Dissertation_Project - Closed connection with ('127.0.0.1', 17817)
+2023-12-18 19:43:30,487 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:43:30,490 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:43:30,498 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:43:30,499 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:43:30,499 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:43:30,507 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:43:30,538 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:43:30,664 - Dissertation_Project - Closed connection with ('127.0.0.1', 17706)
+2023-12-18 19:45:04,632 - Dissertation_Project - Connection from ('127.0.0.1', 17870) registered.
+2023-12-18 19:45:15,326 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:45:15,326 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17979)
+2023-12-18 19:45:16,242 - Dissertation_Project - Connection from ('127.0.0.1', 17980) registered.
+2023-12-18 19:45:16,487 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:45:16,487 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:45:16,489 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:45:16,758 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:45:21,405 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test"], "Victim": ["test"]}\n'
+2023-12-18 19:45:41,058 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test"], "Victim": ["test", "bass", "test"]}\n'
+2023-12-18 19:48:23,104 - Dissertation_Project - Closed connection with ('127.0.0.1', 17980)
+2023-12-18 19:48:23,108 - Dissertation_Project - Closed connection with ('127.0.0.1', 17870)
+2023-12-18 19:48:44,978 - Dissertation_Project - Connection from ('127.0.0.1', 18103) registered.
+2023-12-18 19:48:55,916 - py4j.java_gateway - Callback Server Starting
+2023-12-18 19:48:55,916 - py4j.java_gateway - Socket listening on ('127.0.0.1', 18219)
+2023-12-18 19:48:56,827 - Dissertation_Project - Connection from ('127.0.0.1', 18256) registered.
+2023-12-18 19:48:57,063 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 19:48:57,063 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:48:57,065 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 19:48:57,300 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 19:49:00,832 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test"], "Victim": ["test"]}\n'
+2023-12-18 19:49:01,212 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:49:01,214 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-18 19:49:01,385 - Dissertation_Project - Batch ID: 1, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.50469780160486...|
++----------+--------------------+
+
+2023-12-18 19:49:08,014 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "togeth", "forev"], "Victim": ["test", "togeth", "forev"]}\n'
+2023-12-18 19:49:08,375 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:49:08,377 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-18 19:49:08,463 - Dissertation_Project - Batch ID: 2, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.46034888159052...|
++----------+--------------------+
+
+2023-12-18 19:49:24,685 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "togeth", "forev", "i", "appreci", "that", "loui", "target", "affair"], "Victim": ["test", "togeth", "forev", "i", "appreci", "that", "you", "are", "stuck", "at", "the", "fair"]}\n'
+2023-12-18 19:49:25,068 - py4j.clientserver - Received command c on object id p0
+2023-12-18 19:49:25,070 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-18 19:49:25,151 - Dissertation_Project - Batch ID: 3, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.38926973015995...|
++----------+--------------------+
+
+2023-12-18 19:49:36,200 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-18 19:49:36,197 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:49:36,200 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 19:49:36,206 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:49:36,207 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:49:36,207 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 19:49:36,215 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:49:36,245 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 19:49:36,371 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-18 20:01:44,779 - py4j.java_gateway - Callback Server Starting
+2023-12-18 20:01:44,779 - py4j.java_gateway - Socket listening on ('127.0.0.1', 18810)
+2023-12-18 20:01:45,997 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 20:01:45,997 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:01:45,999 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 20:01:46,248 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 20:01:58,794 - Dissertation_Project - Middleware_Server - streaming data back: {"Attacker_Helper": ["test", "test", "test", "test"], "Victim": ["test", "test", "test", "test"]}
+
+2023-12-18 20:01:58,794 - Dissertation_Project - Error sending to one of the clients from 127.0.0.1: 'NoneType' object has no attribute 'sendall'
+2023-12-18 20:02:01,508 - Dissertation_Project - Middleware_Server - streaming data back: {"Attacker_Helper": ["test", "test", "test", "test", "test", "test", "test"], "Victim": ["test", "test", "test", "test", "there", "no", "more"]}
+
+2023-12-18 20:02:01,509 - Dissertation_Project - Error sending to one of the clients from 127.0.0.1: 'NoneType' object has no attribute 'sendall'
+2023-12-18 20:03:03,811 - Dissertation_Project - Middleware_Server - streaming data back: {"Attacker_Helper": ["test", "test", "test", "test", "test", "test", "test", "thi", "number"], "Victim": ["test", "test", "test", "test", "there", "no", "more", "helluva"]}
+
+2023-12-18 20:03:03,811 - Dissertation_Project - Error sending to one of the clients from 127.0.0.1: 'NoneType' object has no attribute 'sendall'
+2023-12-18 20:03:13,099 - py4j.clientserver - Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 20:03:13,102 - py4j.clientserver - Error while python server was waiting fora message
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
+    command = smart_decode(self.stream.readline())[:-1]
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-18 20:03:13,110 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 20:03:13,110 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 20:03:13,111 - root - Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2023-12-18 20:03:13,119 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 20:03:13,157 - py4j.clientserver - Closing down clientserver connection
+2023-12-18 20:03:56,861 - Dissertation_Project - Connection from ('127.0.0.1', 18933) registered.
+2023-12-18 20:04:07,673 - py4j.java_gateway - Callback Server Starting
+2023-12-18 20:04:07,674 - py4j.java_gateway - Socket listening on ('127.0.0.1', 19043)
+2023-12-18 20:04:08,615 - Dissertation_Project - Connection from ('127.0.0.1', 19044) registered.
+2023-12-18 20:04:08,818 - py4j.clientserver - Python Server ready to receive messages
+2023-12-18 20:04:08,818 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:08,821 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-18 20:04:09,060 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-18 20:04:13,407 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder"], "Victim": ["fast", "hello", "there"]}\n'
+2023-12-18 20:04:13,789 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:13,793 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-18 20:04:13,964 - Dissertation_Project - Batch ID: 1, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.39236775673492...|
++----------+--------------------+
+
+2023-12-18 20:04:20,555 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat"]}\n'
+2023-12-18 20:04:20,979 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:20,981 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-18 20:04:21,097 - Dissertation_Project - Batch ID: 2, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.35014295493391...|
++----------+--------------------+
+
+2023-12-18 20:04:31,481 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu"]}\n'
+2023-12-18 20:04:31,895 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:31,897 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-18 20:04:31,994 - Dissertation_Project - Batch ID: 3, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.30561875070941...|
++----------+--------------------+
+
+2023-12-18 20:04:38,639 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last"]}\n'
+2023-12-18 20:04:39,001 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:39,003 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-18 20:04:39,092 - Dissertation_Project - Batch ID: 4, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.34943622308459...|
++----------+--------------------+
+
+2023-12-18 20:04:48,443 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter"]}\n'
+2023-12-18 20:04:48,788 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:48,790 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-18 20:04:48,882 - Dissertation_Project - Batch ID: 5, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.49924094253938...|
++----------+--------------------+
+
+2023-12-18 20:04:51,462 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear"]}\n'
+2023-12-18 20:04:51,811 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:04:51,813 - Dissertation_Project - Batch ID: 6, --Data has been received--
+2023-12-18 20:04:51,902 - Dissertation_Project - Batch ID: 6, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.68510951477587...|
++----------+--------------------+
+
+2023-12-18 20:05:04,741 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon"]}\n'
+2023-12-18 20:05:05,139 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:05,141 - Dissertation_Project - Batch ID: 7, --Data has been received--
+2023-12-18 20:05:05,214 - Dissertation_Project - Batch ID: 7, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.46494200347561...|
++----------+--------------------+
+
+2023-12-18 20:05:07,259 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar"]}\n'
+2023-12-18 20:05:07,608 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:07,610 - Dissertation_Project - Batch ID: 8, --Data has been received--
+2023-12-18 20:05:07,687 - Dissertation_Project - Batch ID: 8, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.36514562283280...|
++----------+--------------------+
+
+2023-12-18 20:05:16,145 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish"]}\n'
+2023-12-18 20:05:16,497 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:16,500 - Dissertation_Project - Batch ID: 9, --Data has been received--
+2023-12-18 20:05:16,603 - Dissertation_Project - Batch ID: 9, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.28363165330664...|
++----------+--------------------+
+
+2023-12-18 20:05:29,769 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess"]}\n'
+2023-12-18 20:05:30,112 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:30,114 - Dissertation_Project - Batch ID: 10, --Data has been received--
+2023-12-18 20:05:30,193 - Dissertation_Project - Batch ID: 10, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.25026798858399...|
++----------+--------------------+
+
+2023-12-18 20:05:36,306 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip"]}\n'
+2023-12-18 20:05:36,658 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:36,660 - Dissertation_Project - Batch ID: 11, --Data has been received--
+2023-12-18 20:05:36,732 - Dissertation_Project - Batch ID: 11, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.47856093400070...|
++----------+--------------------+
+
+2023-12-18 20:05:46,901 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess", "nation", "shoe", "clip"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip", "adex", "xrd", "avenu"]}\n'
+2023-12-18 20:05:47,259 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:47,260 - Dissertation_Project - Batch ID: 12, --Data has been received--
+2023-12-18 20:05:47,332 - Dissertation_Project - Batch ID: 12, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.63107798078491...|
++----------+--------------------+
+
+2023-12-18 20:05:50,174 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess", "nation", "shoe", "clip", "hey", "duck", "eat", "orovil"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip", "adex", "xrd", "avenu", "he", "mad", "money", "monaco", "tequila"]}\n'
+2023-12-18 20:05:50,524 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:50,527 - Dissertation_Project - Batch ID: 13, --Data has been received--
+2023-12-18 20:05:50,593 - Dissertation_Project - Batch ID: 13, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.77905374599668...|
++----------+--------------------+
+
+2023-12-18 20:05:54,997 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess", "nation", "shoe", "clip", "hey", "duck", "eat", "orovil", "a", "mad", "monday", "morn"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip", "adex", "xrd", "avenu", "he", "mad", "money", "monaco", "tequila", "enough", "is", "enough"]}\n'
+2023-12-18 20:05:55,385 - py4j.clientserver - Received command c on object id p0
+2023-12-18 20:05:55,388 - Dissertation_Project - Batch ID: 14, --Data has been received--
+2023-12-18 20:05:55,479 - Dissertation_Project - Batch ID: 14, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.89058567608931...|
++----------+--------------------+
+
