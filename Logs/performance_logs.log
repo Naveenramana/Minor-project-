@@ -1,17 +1,353 @@
-2023-12-18 19:02:58,939 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:02:58,939 - py4j.java_gateway - Socket listening on ('127.0.0.1', 15386)
-2023-12-18 19:03:00,100 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:03:00,100 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:03:00,102 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:03:00,339 - Dissertation_Project - Batch ID: 0, Data:
+2023-12-20 12:51:35,887 - Dissertation_Project - Connection from ('127.0.0.1', 33121) registered.
+2023-12-20 12:52:04,083 - py4j.java_gateway - Callback Server Starting
+2023-12-20 12:52:04,084 - py4j.java_gateway - Socket listening on ('127.0.0.1', 33240)
+2023-12-20 12:52:04,997 - Dissertation_Project - Connection from ('127.0.0.1', 33288) registered.
+2023-12-20 12:52:05,187 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 12:52:05,187 - py4j.clientserver - Received command c on object id p0
+2023-12-20 12:52:05,189 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 12:52:05,428 - Dissertation_Project - Batch ID: 0, Data:
 +----------+-----------+
 |Prediction|probability|
 +----------+-----------+
 +----------+-----------+
 
-2023-12-18 19:03:05,459 - Dissertation_Project - Registered streaming application from ('127.0.0.1', 15275)
-2023-12-18 19:03:10,841 - Dissertation_Project - Closed connection: ('127.0.0.1', 15275)
-2023-12-18 19:04:14,195 - py4j.clientserver - Error while receiving.
+2023-12-20 12:52:33,966 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "some", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today"], "Victim": ["ye", "i", "made", "that", "purcha", "thank", "you", "for", "check", "befor", "verifi"]}\n'
+2023-12-20 12:52:34,337 - py4j.clientserver - Received command c on object id p0
+2023-12-20 12:52:34,338 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 12:52:34,524 - Dissertation_Project - Batch ID: 1, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.83129048260577...|
++----------+--------------------+
+
+2023-12-20 12:53:06,251 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "some", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea"], "Victim": ["ye", "i", "made", "that", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method"]}\n'
+2023-12-20 12:53:06,608 - py4j.clientserver - Received command c on object id p0
+2023-12-20 12:53:06,610 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 12:53:06,734 - Dissertation_Project - Batch ID: 2, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.80189306840612...|
++----------+--------------------+
+
+2023-12-20 12:53:31,015 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "some", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "you", "a", "secur", "link", "via", "email", "to", "complet"], "Victim": ["ye", "i", "made", "that", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist"]}\n'
+2023-12-20 12:53:31,389 - py4j.clientserver - Received command c on object id p0
+2023-12-20 12:53:31,392 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 12:53:31,479 - Dissertation_Project - Batch ID: 3, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.81256539128414...|
++----------+--------------------+
+
+2023-12-20 12:53:58,417 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "some", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "you", "a", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to"], "Victim": ["ye", "i", "made", "that", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your'
+2023-12-20 12:53:58,418 - Dissertation_Project - Middleware_Server - streaming data back: b'", "assist", "got", "it", "ill", "check", "my", "email", "and", "complet", "the", "verif", "promptli", "thank", "again", "for", "your", "help"]}\n'
+2023-12-20 12:53:58,773 - py4j.clientserver - Received command c on object id p0
+2023-12-20 12:53:58,776 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 12:53:58,879 - Dissertation_Project - Batch ID: 4, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.82487904133210...|
++----------+--------------------+
+
+2023-12-20 12:54:19,919 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "some", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "you", "a", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to", "your", "welcom", "plea", "check", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "the", "verif"], "Victim": ["ye", "i", "made", "that", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "in'
+2023-12-20 12:54:19,920 - Dissertation_Project - Middleware_Server - streaming data back: b'form", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "ill", "check", "my", "email", "and", "complet", "the", "verif", "promptli", "thank", "again", "for", "your", "help", "thank", "you", "so", "much", "for", "your", "support", "have", "a", "wonder", "day", "too"]}\n'
+2023-12-20 12:54:20,272 - py4j.clientserver - Received command c on object id p0
+2023-12-20 12:54:20,274 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 12:54:20,373 - Dissertation_Project - Batch ID: 5, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.80104584782309...|
++----------+--------------------+
+
+2023-12-20 13:07:53,543 - Dissertation_Project - Connection from ('127.0.0.1', 33663) registered.
+2023-12-20 13:08:04,190 - py4j.java_gateway - Callback Server Starting
+2023-12-20 13:08:04,190 - py4j.java_gateway - Socket listening on ('127.0.0.1', 33772)
+2023-12-20 13:08:05,109 - Dissertation_Project - Connection from ('127.0.0.1', 33806) registered.
+2023-12-20 13:08:05,343 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 13:08:05,343 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:08:05,345 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 13:08:05,607 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-20 13:08:21,108 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'all', 'of', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe']}
+2023-12-20 13:08:21,108 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "all", "of", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe"]}\n'
+2023-12-20 13:08:21,475 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:08:21,477 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 13:08:21,641 - Dissertation_Project - Batch ID: 1, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.53476542104071...|
++----------+--------------------+
+
+2023-12-20 13:08:39,135 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'all', 'of', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'us', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'would', 'have', 'to', 'take', 'legal', 'action', 'against', 'you'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount']}
+2023-12-20 13:08:39,135 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "all", "of", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "us", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "would", "have", "to", "take", "legal", "action", "against", "you"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount"]}\n'
+2023-12-20 13:08:39,479 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:08:39,481 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 13:08:39,568 - Dissertation_Project - Batch ID: 2, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.42314979088742...|
++----------+--------------------+
+
+2023-12-20 13:09:00,114 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'all', 'of', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'us', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'would', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform']}
+2023-12-20 13:09:00,114 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "all", "of", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "us", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "would", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform"]}\n'
+2023-12-20 13:09:00,454 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:09:00,456 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 13:09:00,552 - Dissertation_Project - Batch ID: 3, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.35408916342841...|
++----------+--------------------+
+
+2023-12-20 13:09:21,233 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'all', 'of', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'us', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'would', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed', 'no', 'you', 'can', 'call', 'us', 'back', 'you', 'need', 'to', 'make', 'the', 'payment', 'now', 'or', 'face', 'the', 'consequ'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform', 'i', 'am', 'sorri', 'but', 'i', 'dont', 'feel', 'comfort', 'pay', 'over', 'the', 'phone', 'i', 'need', 'to', 'verifi', 'thi', 'inform', 'with', 'the', 'ir', 'directli']}
+2023-12-20 13:09:21,233 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "all", "of", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "us", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "would", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed", "no", "you", "can", "call", "us", "back", "you", "need", "to", "make", "the", "payment", "now", "or", "face", "the", "consequ"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform", "i", "am", "sorri", "but", "i", "dont", "feel", "comfort", "pay", "over", "the", "phone", "i", "need", "to", "verifi", "thi", "inform", "with", "the", "ir", "directli"]}\n'
+2023-12-20 13:09:21,570 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:09:21,572 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 13:09:21,675 - Dissertation_Project - Batch ID: 4, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.16625508410478...|
++----------+--------------------+
+
+2023-12-20 13:09:45,667 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'all', 'of', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'us', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'would', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed', 'no', 'you', 'can', 'call', 'us', 'back', 'you', 'need', 'to', 'make', 'the', 'payment', 'now', 'or', 'face', 'the', 'consequ', 'you', 'dont', 'have', 'time', 'for', 'that', 'you', 'need', 'to', 'pay', 'immedi', 'or', 'well', 'have', 'to', 'take', 'action', 'against', 'you'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform', 'i', 'am', 'sorri', 'but', 'i', 'dont', 'feel', 'comfort', 'pay', 'over', 'the', 'phone', 'i', 'need', 'to', 'verifi', 'thi', 'inform', 'with', 'the', 'ir', 'directli', 'i', 'am', 'sorri', 'but', 'i', 'will', 'not', 'be', 'pay', 'anyth', 'over', 'the', 'phone', 'i', 'will', 'wait', 'for', 'the', 'notic', 'in', 'the', 'mail', 'to', 'verifi', 'thi', 'inform']}
+2023-12-20 13:09:45,667 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "all", "of", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "us", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "would", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed", "no", "you", "can", "call", "us", "back", "you", "need", "to", "make", "the", "payment", "now", "or", "face", "the", "consequ", "you", "dont", "have", "time", "for", "that", "you", "need", "to", "pay", "immedi", "or", "well", "have", "to", "take", "action", "against", "you"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform", "i", "am", "sorri", "but", "i", "dont", "feel", "comfort", "pay", "over", "the", "phone", "i", "need", "to", "verifi", "thi", "inform", "with", "the", "ir", "directli", "i", "am", "sorri", "but", "i", "will", "not", "be", "pay", "anyth", "over", "the", "phone", "i", "will", "wait", "for", "the", "notic", "in", "the", "mail", "to", "verifi", "thi", "inform"]}\n'
+2023-12-20 13:09:46,012 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:09:46,014 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 13:09:46,105 - Dissertation_Project - Batch ID: 5, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.08778603087637...|
++----------+--------------------+
+
+2023-12-20 13:20:55,193 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 13:20:55,196 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 13:21:10,912 - Dissertation_Project - Connection from ('127.0.0.1', 34402) registered.
+2023-12-20 13:21:22,689 - py4j.java_gateway - Callback Server Starting
+2023-12-20 13:21:22,689 - py4j.java_gateway - Socket listening on ('127.0.0.1', 34512)
+2023-12-20 13:21:23,616 - Dissertation_Project - Connection from ('127.0.0.1', 34545) registered.
+2023-12-20 13:21:23,823 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 13:21:23,823 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:21:23,825 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 13:21:24,100 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-20 13:21:45,700 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi']}
+2023-12-20 13:21:45,700 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "a", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi"]}\n'
+2023-12-20 13:21:46,084 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:21:46,086 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 13:21:46,331 - Dissertation_Project - Batch ID: 1, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.64180742857449...|
++----------+--------------------+
+
+2023-12-20 13:22:10,844 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method']}
+2023-12-20 13:22:10,844 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "a", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method"]}\n'
+2023-12-20 13:22:11,203 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:22:11,205 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 13:22:11,358 - Dissertation_Project - Batch ID: 2, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.84840424022960...|
++----------+--------------------+
+
+2023-12-20 13:22:30,778 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist']}
+2023-12-20 13:22:30,778 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "a", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist"]}\n'
+2023-12-20 13:22:31,144 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:22:31,146 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 13:22:31,316 - Dissertation_Project - Batch ID: 3, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.84188891550740...|
++----------+--------------------+
+
+2023-12-20 13:22:51,536 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to', 'you', 'are', 'welcom', 'plea', 'check', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'a', 'certif'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'promptli', 'thank', 'you', 'again', 'for', 'your', 'help']}
+2023-12-20 13:22:51,536 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "a", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to", "you", "are", "welcom", "plea", "check", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "a", "certif"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "i", "will", "check", "my", "email", "and", "complet", "the", "verif", "promptli", "thank", "you", "again", "for", "your", "help"]}\n'
+2023-12-20 13:22:51,889 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:22:51,891 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 13:22:52,064 - Dissertation_Project - Batch ID: 4, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.79409514199382...|
++----------+--------------------+
+
+2023-12-20 13:23:10,382 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to', 'you', 'are', 'welcom', 'plea', 'check', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'a', 'certif', 'my', 'pleasur', 'wa', 'complet', 'the', 'verif', 'your', 'account', 'will', 'be', 'secur', 'should', 'you', 'have', 'ani', 'further', 'question', 'feel', 'free', 'to', 'reach', 'out', 'have', 'a', 'great', 'day'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'promptli', 'thank', 'you', 'again', 'for', 'your', 'help', 'thank', 'you', 'so', 'much', 'for', 'your', 'support', 'have', 'a', 'wonder', 'day', 'too']}
+2023-12-20 13:23:10,382 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "a", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "the", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to", "you", "are", "welcom", "plea", "check", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "a", "certif", "my", "pleasur", "wa", "complet", "the", "verif", "your", "account", "will", "be", "secur", "should", "you", "have", "ani", "further", "question", "feel", "free", "to", "reach", "out", "have", "a", "great", "day"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "i", "will", "check", "my", "email", "and", "complet", "the", "verif", "promptli", "thank", "you", "again", "for", "your", "help", "thank", "you", "so", "much", "for", "your", "support", "have", "a", "wonder", "day", "too"]}\n'
+2023-12-20 13:23:10,741 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:23:10,743 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 13:23:10,905 - Dissertation_Project - Batch ID: 5, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       0.0|[0.70318301744319...|
++----------+--------------------+
+
+2023-12-20 13:25:16,474 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 13:25:16,476 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 13:26:40,754 - Dissertation_Project - Connection from ('127.0.0.1', 34675) registered.
+2023-12-20 13:26:52,405 - Dissertation_Project - Using prediction model: RandomForestClassificationModel: uid=RandomForestClassifier_9848a1ef1acf, numTrees=100, numClasses=2, numFeatures=36
+2023-12-20 13:26:52,768 - py4j.java_gateway - Callback Server Starting
+2023-12-20 13:26:52,768 - py4j.java_gateway - Socket listening on ('127.0.0.1', 34786)
+2023-12-20 13:26:53,759 - Dissertation_Project - Connection from ('127.0.0.1', 34790) registered.
+2023-12-20 13:26:54,025 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 13:26:54,025 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:26:54,028 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 13:26:54,330 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-20 13:27:11,541 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'over', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe']}
+2023-12-20 13:27:11,541 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "over", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe"]}\n'
+2023-12-20 13:27:11,924 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:27:11,926 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 13:27:12,160 - Dissertation_Project - Batch ID: 1, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.28041645390036...|
++----------+--------------------+
+
+2023-12-20 13:27:30,779 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'over', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'we', 'have', 'to', 'take', 'legal', 'action', 'against', 'you'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount']}
+2023-12-20 13:27:30,779 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "over", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "we", "have", "to", "take", "legal", "action", "against", "you"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount"]}\n'
+2023-12-20 13:27:31,132 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:27:31,134 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 13:27:31,302 - Dissertation_Project - Batch ID: 2, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.23477661712345...|
++----------+--------------------+
+
+2023-12-20 13:27:50,096 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'over', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'we', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform']}
+2023-12-20 13:27:50,096 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "over", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "we", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform"]}\n'
+2023-12-20 13:27:50,448 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:27:50,450 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 13:27:50,618 - Dissertation_Project - Batch ID: 3, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.34519272201977...|
++----------+--------------------+
+
+2023-12-20 13:28:10,346 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'over', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'we', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed', 'no', 'you', 'cant', 'call', 'us', 'back', 'if', 'you', 'need', 'to', 'make', 'the', 'payment', 'now', 'or', 'face', 'the', 'consequ'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform', 'i', 'am', 'sorri', 'but', 'i', 'do', 'not', 'feel', 'comfort', 'pay', 'over', 'the', 'phone', 'i', 'need', 'to', 'verifi', 'thi', 'inform', 'with', 'the', 'ir', 'directli']}
+2023-12-20 13:28:10,346 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "over", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "we", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed", "no", "you", "cant", "call", "us", "back", "if", "you", "need", "to", "make", "the", "payment", "now", "or", "face", "the", "consequ"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform", "i", "am", "sorri", "but", "i", "do", "not", "feel", "comfort", "pay", "over", "the", "phone", "i", "need", "to", "verifi", "thi", "inform", "with", "the", "ir", "directli"]}\n'
+2023-12-20 13:28:10,692 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:28:10,694 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 13:28:10,840 - Dissertation_Project - Batch ID: 4, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.33455059971897...|
++----------+--------------------+
+
+2023-12-20 13:28:34,027 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'over', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'immedi', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'we', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed', 'no', 'you', 'cant', 'call', 'us', 'back', 'if', 'you', 'need', 'to', 'make', 'the', 'payment', 'now', 'or', 'face', 'the', 'consequ', 'you', 'dont', 'have', 'time', 'for', 'that', 'you', 'need', 'to', 'pay', 'immedi', 'or', 'we', 'will', 'have', 'to', 'take', 'action'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform', 'i', 'am', 'sorri', 'but', 'i', 'do', 'not', 'feel', 'comfort', 'pay', 'over', 'the', 'phone', 'i', 'need', 'to', 'verifi', 'thi', 'inform', 'with', 'the', 'ir', 'directli', 'i', 'am', 'sorri', 'but', 'i', 'will', 'not', 'be', 'pay', 'anyth', 'over', 'the', 'phone', 'i', 'will', 'wait', 'for', 'the', 'notic', 'in', 'the', 'mail', 'to', 'verifi', 'thi', 'inform']}
+2023-12-20 13:28:34,027 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "over", "us", "money", "and", "we", "need", "you", "to", "pay", "immedi", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "we", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed", "no", "you", "cant", "call", "us", "back", "if", "you", "need", "to", "make", "the", "payment", "now", "or", "face", "the", "consequ", "you", "dont", "have", "time", "for", "that", "you", "need", "to", "pay", "immedi", "or", "we", "will", "have", "to", "take", "action"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform", "i", "am", "sorri", "but", "i", "do", "not", "feel", "comfort", "pay", "over", "the", "phone", "i", "need", "to", "verifi", "thi", "inform", "with", "the", "ir", "directli", "i", "am", "sorri", "but", "i", "will", "not", "be", "pay", "anyth", "over", "the", "phone", "i", "will", "wait", "for", "the", "notic", "in", "the", "mail", "to", "verifi", "thi", "inform"]}\n'
+2023-12-20 13:28:34,377 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:28:34,380 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 13:28:34,521 - Dissertation_Project - Batch ID: 5, Data:
++----------+--------------------+
+|Prediction|         probability|
++----------+--------------------+
+|       1.0|[0.17587612221316...|
++----------+--------------------+
+
+2023-12-20 13:41:00,644 - Dissertation_Project - Connection from ('127.0.0.1', 35179) registered.
+2023-12-20 13:41:26,924 - py4j.clientserver - Closing down clientserver connection
+2023-12-20 13:42:28,227 - Dissertation_Project - Connection from ('127.0.0.1', 35323) registered.
+2023-12-20 13:42:38,373 - Dissertation_Project - Using prediction model: LinearSVCModel: uid=LinearSVC_640d527ddca5, numClasses=2, numFeatures=36
+2023-12-20 13:42:38,863 - py4j.clientserver - Closing down clientserver connection
+2023-12-20 13:45:18,207 - Dissertation_Project - Connection from ('127.0.0.1', 35517) registered.
+2023-12-20 13:45:29,504 - Dissertation_Project - Using prediction model: GBTClassificationModel: uid = GBTClassifier_961b4751de9c, numTrees=100, numClasses=2, numFeatures=36
+2023-12-20 13:45:29,865 - py4j.java_gateway - Callback Server Starting
+2023-12-20 13:45:29,865 - py4j.java_gateway - Socket listening on ('127.0.0.1', 35629)
+2023-12-20 13:45:30,815 - Dissertation_Project - Connection from ('127.0.0.1', 35669) registered.
+2023-12-20 13:45:30,995 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 13:45:30,996 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:45:30,998 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 13:45:31,309 - Dissertation_Project - Batch ID: 0, Data:
++----------+-----------+
+|Prediction|probability|
++----------+-----------+
++----------+-----------+
+
+2023-12-20 13:45:52,878 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'on', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi']}
+2023-12-20 13:45:52,878 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "a", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi"]}\n'
+2023-12-20 13:45:53,246 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:45:53,248 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 13:45:53,506 - Dissertation_Project - Batch ID: 1, Data:
++----------+---------------------------------------+
+|Prediction|                            probability|
++----------+---------------------------------------+
+|       0.0|[0.7951205458081685,0.2048794541918315]|
++----------+---------------------------------------+
+
+2023-12-20 13:46:18,643 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'on', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'in', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method']}
+2023-12-20 13:46:18,643 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "a", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "in", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method"]}\n'
+2023-12-20 13:46:19,002 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:46:19,004 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 13:46:19,159 - Dissertation_Project - Batch ID: 2, Data:
++----------+------------------------------------------+
+|Prediction|                               probability|
++----------+------------------------------------------+
+|       0.0|[0.9973004663381215,0.0026995336618784727]|
++----------+------------------------------------------+
+
+2023-12-20 13:46:38,953 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'on', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'in', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist']}
+2023-12-20 13:46:38,953 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "a", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "in", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist"]}\n'
+2023-12-20 13:46:39,311 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:46:39,313 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 13:46:39,445 - Dissertation_Project - Batch ID: 3, Data:
++----------+------------------------------------------+
+|Prediction|                               probability|
++----------+------------------------------------------+
+|       0.0|[0.9985319550421252,0.0014680449578747812]|
++----------+------------------------------------------+
+
+2023-12-20 13:47:00,603 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'on', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'in', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to', 'your', 'welcom', 'plea', 'plea', 'check', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'a', 'verif'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'from', 't', 'thank', 'again']}
+2023-12-20 13:47:00,603 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "a", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "in", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to", "your", "welcom", "plea", "plea", "check", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "a", "verif"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "i", "will", "check", "my", "email", "and", "complet", "the", "verif", "from", "t", "thank", "again"]}\n'
+2023-12-20 13:47:00,951 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:47:00,953 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 13:47:01,079 - Dissertation_Project - Batch ID: 4, Data:
++----------+------------------------------------------+
+|Prediction|                               probability|
++----------+------------------------------------------+
+|       0.0|[0.9970926995309369,0.0029073004690630677]|
++----------+------------------------------------------+
+
+2023-12-20 13:47:19,919 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'abc', 'bank', 'we', 'notic', 'a', 'suspici', 'activ', 'on', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'in', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to', 'your', 'welcom', 'plea', 'plea', 'check', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'a', 'verif', 'my', 'pleasur', 'onc', 'youv', 'complet', 'the', 'verif', 'your', 'account', 'will', 'be', 'secur', 'should', 'you', 'have', 'ani', 'further', 'question', 'feel', 'free', 'to', 'reach', 'out', 'have', 'a', 'great', 'day'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'from', 't', 'thank', 'again', 'and', 'for', 'yourself']}
+2023-12-20 13:47:19,919 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "abc", "bank", "we", "notic", "a", "suspici", "activ", "on", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "in", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "should", "we", "send", "it", "to", "your", "welcom", "plea", "plea", "check", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "a", "verif", "my", "pleasur", "onc", "youv", "complet", "the", "verif", "your", "account", "will", "be", "secur", "should", "you", "have", "ani", "further", "question", "feel", "free", "to", "reach", "out", "have", "a", "great", "day"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "i", "will", "check", "my", "email", "and", "complet", "the", "verif", "from", "t", "thank", "again", "and", "for", "yourself"]}\n'
+2023-12-20 13:47:20,282 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:47:20,284 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 13:47:20,408 - Dissertation_Project - Batch ID: 5, Data:
++----------+-----------------------------------------+
+|Prediction|                              probability|
++----------+-----------------------------------------+
+|       0.0|[0.9988184611826577,0.001181538817342287]|
++----------+-----------------------------------------+
+
+2023-12-20 13:48:03,602 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 13:48:03,598 - py4j.clientserver - Error while receiving.
 Traceback (most recent call last):
   File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
     answer = smart_decode(self.stream.readline()[:-1])
@@ -20,7 +356,7 @@ Traceback (most recent call last):
     return self._sock.recv_into(b)
            ^^^^^^^^^^^^^^^^^^^^^^^
 ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:04:14,198 - py4j.clientserver - Error while python server was waiting fora message
+2023-12-20 13:48:03,602 - py4j.clientserver - Error while python server was waiting fora message
 Traceback (most recent call last):
   File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
     command = smart_decode(self.stream.readline())[:-1]
@@ -29,9 +365,9 @@ Traceback (most recent call last):
     return self._sock.recv_into(b)
            ^^^^^^^^^^^^^^^^^^^^^^^
 ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:04:14,205 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:04:14,205 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:04:14,205 - root - Exception while sending command.
+2023-12-20 13:48:03,609 - py4j.clientserver - Closing down clientserver connection
+2023-12-20 13:48:03,609 - py4j.clientserver - Closing down clientserver connection
+2023-12-20 13:48:03,610 - root - Exception while sending command.
 Traceback (most recent call last):
   File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
     answer = smart_decode(self.stream.readline()[:-1])
@@ -50,698 +386,162 @@ Traceback (most recent call last):
   File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
     raise Py4JNetworkError(
 py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:04:14,211 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:04:14,241 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:04:52,465 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:04:52,465 - py4j.java_gateway - Socket listening on ('127.0.0.1', 15590)
-2023-12-18 19:04:53,614 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:04:53,614 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:04:53,616 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:04:53,870 - Dissertation_Project - Batch ID: 0, Data:
+2023-12-20 13:48:03,617 - py4j.clientserver - Closing down clientserver connection
+2023-12-20 13:48:03,649 - py4j.clientserver - Closing down clientserver connection
+2023-12-20 13:48:03,770 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 13:48:31,034 - Dissertation_Project - Connection from ('127.0.0.1', 35765) registered.
+2023-12-20 13:48:42,167 - Dissertation_Project - Using prediction model: GBTClassificationModel: uid = GBTClassifier_961b4751de9c, numTrees=100, numClasses=2, numFeatures=36
+2023-12-20 13:48:42,541 - py4j.java_gateway - Callback Server Starting
+2023-12-20 13:48:42,541 - py4j.java_gateway - Socket listening on ('127.0.0.1', 35876)
+2023-12-20 13:48:43,496 - Dissertation_Project - Connection from ('127.0.0.1', 35885) registered.
+2023-12-20 13:48:43,691 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 13:48:43,691 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:48:43,694 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 13:48:43,993 - Dissertation_Project - Batch ID: 0, Data:
 +----------+-----------+
 |Prediction|probability|
 +----------+-----------+
 +----------+-----------+
 
-2023-12-18 19:05:00,978 - Dissertation_Project - Registered streaming application from ('127.0.0.1', 15480)
-2023-12-18 19:05:07,025 - Dissertation_Project - Middleware_Server - streaming data back: b'SSTT:{"Attacker_Helper": ["astra", "motor", "pretti", "la", "maceta"], "Victim": ["best", "remot", "to", "speedi", "la", "maceta"]}\n'
-2023-12-18 19:05:12,143 - Dissertation_Project - Middleware_Server - streaming data back: b'SSTT:{"Attacker_Helper": ["astra", "motor", "pretti", "la", "maceta", "i", "miss", "etta"], "Victim": ["best", "remot", "to", "speedi", "la", "maceta", "guy", "miss", "etta"]}\n'
-2023-12-18 19:05:25,183 - Dissertation_Project - Middleware_Server - streaming data back: b'SSTT:{"Attacker_Helper": ["astra", "motor", "pretti", "la", "maceta", "i", "miss", "etta", "motor", "speed", "aikido"], "Victim": ["best", "remot", "to", "speedi", "la", "maceta", "guy", "miss", "etta", "yeah", "motor", "speed", "aikido"]}\n'
-2023-12-18 19:05:51,069 - Dissertation_Project - Closed connection: ('127.0.0.1', 15591)
-2023-12-18 19:05:51,066 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:05:51,069 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:05:51,076 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:05:51,076 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:05:51,077 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-20 13:49:04,389 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi']}
+2023-12-20 13:49:04,389 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "some", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi"]}\n'
+2023-12-20 13:49:04,889 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:49:04,893 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 13:49:05,152 - Dissertation_Project - Batch ID: 1, Data:
++----------+---------------------------------------+
+|Prediction|                            probability|
++----------+---------------------------------------+
+|       0.0|[0.7951205458081685,0.2048794541918315]|
++----------+---------------------------------------+
 
-During handling of the above exception, another exception occurred:
+2023-12-20 13:49:26,503 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method']}
+2023-12-20 13:49:26,503 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "some", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method"]}\n'
+2023-12-20 13:49:27,018 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:49:27,020 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 13:49:27,175 - Dissertation_Project - Batch ID: 2, Data:
++----------+------------------------------------------+
+|Prediction|                               probability|
++----------+------------------------------------------+
+|       0.0|[0.9973004663381215,0.0026995336618784727]|
++----------+------------------------------------------+
 
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:05:51,083 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:05:51,113 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:05:51,247 - Dissertation_Project - Closed connection: ('127.0.0.1', 15480)
-2023-12-18 19:25:20,573 - Dissertation_Project - Connection from ('127.0.0.1', 16369) registered.
-2023-12-18 19:25:48,048 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:25:48,048 - py4j.java_gateway - Socket listening on ('127.0.0.1', 16487)
-2023-12-18 19:25:48,938 - Dissertation_Project - Connection from ('127.0.0.1', 16523) registered.
-2023-12-18 19:25:49,119 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:25:49,119 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:25:49,121 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:25:49,372 - Dissertation_Project - Batch ID: 0, Data:
+2023-12-20 13:49:46,300 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'you', 'do', 'send', 'it', 'to'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist']}
+2023-12-20 13:49:46,300 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "some", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "you", "do", "send", "it", "to"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist"]}\n'
+2023-12-20 13:49:46,671 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:49:46,673 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 13:49:46,817 - Dissertation_Project - Batch ID: 3, Data:
++----------+-----------------------------------------+
+|Prediction|                              probability|
++----------+-----------------------------------------+
+|       0.0|[0.998625372233112,0.0013746277668880147]|
++----------+-----------------------------------------+
+
+2023-12-20 13:50:03,565 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'you', 'do', 'send', 'it', 'to', 'your', 'welcom', 'plea', 'take', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'the', 'verif'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'promptli', 'thank', 'again', 'for', 'your', 'help']}
+2023-12-20 13:50:03,565 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "some", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "you", "do", "send", "it", "to", "your", "welcom", "plea", "take", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "the", "verif"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "i", "will", "check", "my", "email", "and", "complet", "the", "verif", "promptli", "thank", "again", "for", "your", "help"]}\n'
+2023-12-20 13:50:03,926 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:50:03,928 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 13:50:04,055 - Dissertation_Project - Batch ID: 4, Data:
++----------+----------------------------------------+
+|Prediction|                             probability|
++----------+----------------------------------------+
+|       0.0|[0.9304666531938289,0.06953334680617107]|
++----------+----------------------------------------+
+
+2023-12-20 13:50:20,469 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'a', 'purcha', 'of', 'xxx', 'at', 'an', 'onlin', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'the', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'you', 'do', 'send', 'it', 'to', 'your', 'welcom', 'plea', 'take', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'the', 'verif', 'my', 'pleasur', 'one', 'complet', 'the', 'verif', 'your', 'account', 'will', 'be', 'secur', 'should', 'you', 'have', 'ani', 'further', 'question', 'feel', 'free', 'to', 'reach', 'out', 'and', 'have', 'a', 'great', 'day'], 'Victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'promptli', 'thank', 'again', 'for', 'your', 'help', 'thank', 'you', 'so', 'much', 'for', 'your', 'support', 'have', 'a', 'wonder', 'day', 'too']}
+2023-12-20 13:50:20,469 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "john", "from", "the", "abc", "bank", "we", "notic", "some", "suspici", "activ", "in", "your", "account", "can", "i", "confirm", "if", "you", "made", "a", "purcha", "of", "xxx", "at", "an", "onlin", "store", "today", "thank", "you", "for", "confirm", "to", "ensur", "your", "account", "secur", "i", "need", "you", "to", "verifi", "your", "date", "of", "birth", "and", "the", "last", "x", "digit", "of", "your", "social", "secur", "number", "plea", "absolut", "we", "can", "send", "the", "secur", "link", "via", "email", "to", "complet", "the", "verif", "process", "which", "email", "address", "you", "do", "send", "it", "to", "your", "welcom", "plea", "take", "your", "inbox", "and", "onc", "you", "receiv", "it", "click", "on", "the", "link", "to", "proceed", "with", "the", "verif", "my", "pleasur", "one", "complet", "the", "verif", "your", "account", "will", "be", "secur", "should", "you", "have", "ani", "further", "question", "feel", "free", "to", "reach", "out", "and", "have", "a", "great", "day"], "Victim": ["ye", "i", "made", "the", "purcha", "thank", "you", "for", "check", "befor", "verifi", "i", "appreci", "the", "caution", "but", "i", "prefer", "not", "to", "share", "that", "sensit", "inform", "over", "the", "phone", "can", "we", "verifi", "through", "anoth", "method", "plea", "send", "it", "to", "email", "protect", "thank", "you", "for", "your", "assist", "got", "it", "i", "will", "check", "my", "email", "and", "complet", "the", "verif", "promptli", "thank", "again", "for", "your", "help", "thank", "you", "so", "much", "for", "your", "support", "have", "a", "wonder", "day", "too"]}\n'
+2023-12-20 13:50:20,834 - py4j.clientserver - Received command c on object id p0
+2023-12-20 13:50:20,836 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 13:50:20,958 - Dissertation_Project - Batch ID: 5, Data:
++----------+-----------------------------------------+
+|Prediction|                              probability|
++----------+-----------------------------------------+
+|       0.0|[0.9933595882018222,0.006640411798177759]|
++----------+-----------------------------------------+
+
+2023-12-20 14:06:00,401 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 14:06:00,402 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 14:27:59,763 - Dissertation_Project - Connection from ('127.0.0.1', 37316) registered.
+2023-12-20 14:28:27,241 - Dissertation_Project - Using prediction model: GBTClassificationModel: uid = GBTClassifier_961b4751de9c, numTrees=100, numClasses=2, numFeatures=36
+2023-12-20 14:28:27,626 - py4j.java_gateway - Callback Server Starting
+2023-12-20 14:28:27,626 - py4j.java_gateway - Socket listening on ('127.0.0.1', 37448)
+2023-12-20 14:28:28,524 - Dissertation_Project - Connection from ('127.0.0.1', 37482) registered.
+2023-12-20 14:28:28,704 - py4j.clientserver - Python Server ready to receive messages
+2023-12-20 14:28:28,704 - py4j.clientserver - Received command c on object id p0
+2023-12-20 14:28:28,706 - Dissertation_Project - Batch ID: 0, --Data has been received--
+2023-12-20 14:28:28,995 - Dissertation_Project - Batch ID: 0, Data:
 +----------+-----------+
 |Prediction|probability|
 +----------+-----------+
 +----------+-----------+
 
-2023-12-18 19:25:55,374 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test"], "Victim": ["test", "test", "test"]}\n'
-2023-12-18 19:26:08,841 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "best"], "Victim": ["test", "test", "test", "fast"]}\n'
-2023-12-18 19:26:51,244 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "best", "test", "test", "test", "test"], "Victim": ["test", "test", "test", "fast", "test", "test", "test", "test"]}\n'
-2023-12-18 19:27:38,636 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:27:38,638 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:27:38,644 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:27:38,645 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:27:38,645 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-20 14:28:45,621 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'owe', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'me', 'deepli'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe']}
+2023-12-20 14:28:45,622 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "owe", "us", "money", "and", "we", "need", "you", "to", "pay", "me", "deepli"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe"]}\n'
+2023-12-20 14:28:45,994 - py4j.clientserver - Received command c on object id p0
+2023-12-20 14:28:45,996 - Dissertation_Project - Batch ID: 1, --Data has been received--
+2023-12-20 14:28:46,251 - Dissertation_Project - Batch ID: 1, Data:
++----------+---------------------------------------+
+|Prediction|                            probability|
++----------+---------------------------------------+
+|       0.0|[0.5049152302359605,0.4950847697640395]|
++----------+---------------------------------------+
 
-During handling of the above exception, another exception occurred:
+2023-12-20 14:29:02,632 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'owe', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'me', 'deepli', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'will', 'have', 'to', 'take', 'legal', 'action', 'against', 'you'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount']}
+2023-12-20 14:29:02,632 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "owe", "us", "money", "and", "we", "need", "you", "to", "pay", "me", "deepli", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "will", "have", "to", "take", "legal", "action", "against", "you"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount"]}\n'
+2023-12-20 14:29:02,985 - py4j.clientserver - Received command c on object id p0
+2023-12-20 14:29:02,986 - Dissertation_Project - Batch ID: 2, --Data has been received--
+2023-12-20 14:29:03,135 - Dissertation_Project - Batch ID: 2, Data:
++----------+-----------------------------------------+
+|Prediction|                              probability|
++----------+-----------------------------------------+
+|       1.0|[0.030854557832132277,0.9691454421678677]|
++----------+-----------------------------------------+
 
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:27:38,653 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:27:38,685 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:30:28,527 - Dissertation_Project - Connection from ('127.0.0.1', 16677) registered.
-2023-12-18 19:30:39,453 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:30:39,454 - py4j.java_gateway - Socket listening on ('127.0.0.1', 16786)
-2023-12-18 19:30:40,360 - Dissertation_Project - Connection from ('127.0.0.1', 16788) registered.
-2023-12-18 19:30:40,594 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:30:40,595 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:30:40,597 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:30:40,831 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
+2023-12-20 14:29:24,600 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'owe', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'me', 'deepli', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'will', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform']}
+2023-12-20 14:29:24,600 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "owe", "us", "money", "and", "we", "need", "you", "to", "pay", "me", "deepli", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "will", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform"]}\n'
+2023-12-20 14:29:24,945 - py4j.clientserver - Received command c on object id p0
+2023-12-20 14:29:24,948 - Dissertation_Project - Batch ID: 3, --Data has been received--
+2023-12-20 14:29:25,077 - Dissertation_Project - Batch ID: 3, Data:
++----------+---------------------------------------+
+|Prediction|                            probability|
++----------+---------------------------------------+
+|       1.0|[0.1037377840292051,0.8962622159707949]|
++----------+---------------------------------------+
 
-2023-12-18 19:30:47,472 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test"], "Victim": ["test", "test", "test"]}\n'
-2023-12-18 19:30:54,834 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "im", "go", "to", "speed", "it", "up"], "Victim": ["test", "test", "test", "a", "motor", "speed", "is", "a", "bracket"]}\n'
-2023-12-18 19:31:07,339 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test", "im", "go", "to", "speed", "it", "up", "tom", "griffin", "mcelroy"], "Victim": ["test", "test", "test", "a", "motor", "speed", "is", "a", "bracket", "dont", "go", "for", "mccoy"]}\n'
-2023-12-18 19:33:45,283 - Dissertation_Project - Closed connection with ('127.0.0.1', 16788)
-2023-12-18 19:33:45,280 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:33:45,283 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:33:45,290 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:33:45,291 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:33:45,291 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-12-20 14:29:42,600 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'owe', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'me', 'deepli', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'will', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed', 'no', 'you', 'can', 'not', 'call', 'us', 'back', 'you', 'need', 'to', 'make', 'the', 'payment', 'now', 'or', 'face', 'the', 'consequ'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform', 'i', 'am', 'sorri', 'but', 'i', 'did', 'not', 'feel', 'comfort', 'pay', 'over', 'the', 'phone', 'i', 'need', 'to', 'verifi', 'thi', 'inform', 'with', 'the', 'ir', 'directli']}
+2023-12-20 14:29:42,600 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "owe", "us", "money", "and", "we", "need", "you", "to", "pay", "me", "deepli", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "will", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed", "no", "you", "can", "not", "call", "us", "back", "you", "need", "to", "make", "the", "payment", "now", "or", "face", "the", "consequ"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform", "i", "am", "sorri", "but", "i", "did", "not", "feel", "comfort", "pay", "over", "the", "phone", "i", "need", "to", "verifi", "thi", "inform", "with", "the", "ir", "directli"]}\n'
+2023-12-20 14:29:42,950 - py4j.clientserver - Received command c on object id p0
+2023-12-20 14:29:42,952 - Dissertation_Project - Batch ID: 4, --Data has been received--
+2023-12-20 14:29:43,078 - Dissertation_Project - Batch ID: 4, Data:
++----------+----------------------------------------+
+|Prediction|                             probability|
++----------+----------------------------------------+
+|       1.0|[0.06772687619103834,0.9322731238089617]|
++----------+----------------------------------------+
 
-During handling of the above exception, another exception occurred:
+2023-12-20 14:30:02,592 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['hello', 'thi', 'is', 'the', 'ir', 'call', 'you', 'owe', 'us', 'money', 'and', 'we', 'need', 'you', 'to', 'pay', 'me', 'deepli', 'you', 'owe', 'xxxx', 'if', 'you', 'do', 'not', 'pay', 'now', 'we', 'will', 'have', 'to', 'take', 'legal', 'action', 'against', 'you', 'ye', 'we', 'have', 'all', 'the', 'evid', 'we', 'need', 'to', 'take', 'you', 'to', 'court', 'but', 'if', 'you', 'pay', 'now', 'we', 'can', 'resolv', 'thi', 'issu', 'without', 'ani', 'legal', 'proceed', 'no', 'you', 'can', 'not', 'call', 'us', 'back', 'you', 'need', 'to', 'make', 'the', 'payment', 'now', 'or', 'face', 'the', 'consequ', 'you', 'do', 'not', 'have', 'time', 'for', 'that', 'you', 'need', 'to', 'pay', 'mediat', 'all', 'we', 'have', 'we', 'will', 'have', 'to', 'take', 'legal', 'action', 'again'], 'Victim': ['oh', 'realli', 'how', 'much', 'do', 'i', 'owe', 'that', 'a', 'lot', 'of', 'money', 'can', 'you', 'prove', 'that', 'i', 'owe', 'thi', 'amount', 'i', 'am', 'not', 'sure', 'can', 'i', 'call', 'you', 'back', 'to', 'verifi', 'thi', 'inform', 'i', 'am', 'sorri', 'but', 'i', 'did', 'not', 'feel', 'comfort', 'pay', 'over', 'the', 'phone', 'i', 'need', 'to', 'verifi', 'thi', 'inform', 'with', 'the', 'ir', 'directli', 'i', 'am', 'sorri', 'but', 'i', 'wont', 'be', 'pay', 'anyth', 'over', 'the', 'phone', 'ill', 'wait', 'for', 'the', 'notic', 'in', 'the', 'mail', 'to', 'verifi', 'thi', 'inform']}
+2023-12-20 14:30:02,592 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "thi", "is", "the", "ir", "call", "you", "owe", "us", "money", "and", "we", "need", "you", "to", "pay", "me", "deepli", "you", "owe", "xxxx", "if", "you", "do", "not", "pay", "now", "we", "will", "have", "to", "take", "legal", "action", "against", "you", "ye", "we", "have", "all", "the", "evid", "we", "need", "to", "take", "you", "to", "court", "but", "if", "you", "pay", "now", "we", "can", "resolv", "thi", "issu", "without", "ani", "legal", "proceed", "no", "you", "can", "not", "call", "us", "back", "you", "need", "to", "make", "the", "payment", "now", "or", "face", "the", "consequ", "you", "do", "not", "have", "time", "for", "that", "you", "need", "to", "pay", "mediat", "all", "we", "have", "we", "will", "have", "to", "take", "legal", "action", "again"], "Victim": ["oh", "realli", "how", "much", "do", "i", "owe", "that", "a", "lot", "of", "money", "can", "you", "prove", "that", "i", "owe", "thi", "amount", "i", "am", "not", "sure", "can", "i", "call", "you", "back", "to", "verifi", "thi", "inform", "i", "am", "sorri", "but", "i", "did", "not", "feel", "comfort", "pay", "over", "the", "phone", "i", "need", "to", "verifi", "thi", "inform", "with", "the", "ir", "directli", "i", "am", "sorri", "but", "i", "wont", "be", "pay", "anyth", "over", "the", "phone", "ill", "wait", "for", "the", "notic", "in", "the", "mail", "to", "verifi", "thi", "inform"]}\n'
+2023-12-20 14:30:02,942 - py4j.clientserver - Received command c on object id p0
+2023-12-20 14:30:02,944 - Dissertation_Project - Batch ID: 5, --Data has been received--
+2023-12-20 14:30:03,069 - Dissertation_Project - Batch ID: 5, Data:
++----------+----------------------------------------+
+|Prediction|                             probability|
++----------+----------------------------------------+
+|       1.0|[0.04015058922690302,0.9598494107730969]|
++----------+----------------------------------------+
 
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:33:45,298 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:33:45,350 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:33:45,499 - Dissertation_Project - Closed connection with ('127.0.0.1', 16677)
-2023-12-18 19:36:11,196 - Dissertation_Project - Connection from ('127.0.0.1', 17011) registered.
-2023-12-18 19:36:38,303 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:36:38,303 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17128)
-2023-12-18 19:36:39,192 - Dissertation_Project - Connection from ('127.0.0.1', 17163) registered.
-2023-12-18 19:36:39,372 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:36:39,372 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:36:39,374 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:36:39,614 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
+2023-12-20 14:32:35,339 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 14:32:35,342 - Dissertation_Project - Closed connection with 127.0.0.1
+2023-12-20 15:03:27,107 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['test', 'test', 'hello', 'hello'], 'Victim': ['test', 'test', 'hello', 'hello']}
+2023-12-20 15:03:36,652 - Dissertation_Project - Sending data to Middleware server. Data: {'Attacker_Helper': ['test', 'test', 'hello', 'hello', 'hello', 'can', 'you', 'hear', 'me', 'test'], 'Victim': ['test', 'test', 'hello', 'hello', 'hello', 'can', 'you', 'hear', 'me', 'test']}
 
-2023-12-18 19:36:44,179 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "hello"], "Victim": ["test", "test", "hello"]}\n'
-2023-12-18 19:36:44,179 - Dissertation_Project - Error sending to one of the clients from ('127.0.0.1', 17011): can't concat str to bytes
-2023-12-18 19:38:11,205 - Dissertation_Project - Closed connection with ('127.0.0.1', 17163)
-2023-12-18 19:38:11,206 - Dissertation_Project - Closed connection with ('127.0.0.1', 17011)
-2023-12-18 19:38:43,207 - Dissertation_Project - Connection from ('127.0.0.1', 17244) registered.
-2023-12-18 19:38:54,145 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:38:54,145 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17357)
-2023-12-18 19:38:55,059 - Dissertation_Project - Connection from ('127.0.0.1', 17358) registered.
-2023-12-18 19:38:55,289 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:38:55,289 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:38:55,292 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:38:55,541 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 19:39:24,452 - Dissertation_Project - Closed connection with ('127.0.0.1', 17358)
-2023-12-18 19:39:24,449 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:39:24,452 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:39:24,459 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:39:24,459 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:39:24,459 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:39:24,467 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:39:24,500 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:39:24,640 - Dissertation_Project - Closed connection with ('127.0.0.1', 17244)
-2023-12-18 19:40:21,270 - Dissertation_Project - Connection from ('127.0.0.1', 17418) registered.
-2023-12-18 19:40:32,156 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:40:32,156 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17528)
-2023-12-18 19:40:33,118 - Dissertation_Project - Connection from ('127.0.0.1', 17529) registered.
-2023-12-18 19:40:33,353 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:40:33,353 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:40:33,354 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:40:33,628 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 19:40:37,591 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["stair", "stair", "stair"], "Victim": ["that", "that", "that"]}\n'
-2023-12-18 19:40:44,809 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["stair", "stair", "stair", "yeah", "motor", "speedway"], "Victim": ["that", "that", "that", "yeah", "motor", "speedway"]}\n'
-2023-12-18 19:40:50,803 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["stair", "stair", "stair", "yeah", "motor", "speedway", "remot", "hospit"], "Victim": ["that", "that", "that", "yeah", "motor", "speedway", "promot", "fatigu", "issu"]}\n'
-2023-12-18 19:41:19,628 - Dissertation_Project - Closed connection with ('127.0.0.1', 17529)
-2023-12-18 19:41:19,625 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:41:19,628 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:41:19,635 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:41:19,635 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:41:19,635 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:41:19,643 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:41:19,674 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:41:19,817 - Dissertation_Project - Closed connection with ('127.0.0.1', 17418)
-2023-12-18 19:41:36,373 - Dissertation_Project - Connection from ('127.0.0.1', 17565) registered.
-2023-12-18 19:41:47,444 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:41:47,444 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17676)
-2023-12-18 19:41:48,396 - Dissertation_Project - Connection from ('127.0.0.1', 17677) registered.
-2023-12-18 19:41:48,649 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:41:48,649 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:41:48,651 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:41:48,905 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 19:41:54,325 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["hello", "test"], "Victim": ["halo", "test"]}\n'
-2023-12-18 19:42:51,960 - Dissertation_Project - Connection from ('127.0.0.1', 17706) registered.
-2023-12-18 19:43:02,664 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:43:02,664 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17815)
-2023-12-18 19:43:03,600 - Dissertation_Project - Connection from ('127.0.0.1', 17817) registered.
-2023-12-18 19:43:03,857 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:43:03,857 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:43:03,860 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:43:04,121 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 19:43:30,490 - Dissertation_Project - Closed connection with ('127.0.0.1', 17817)
-2023-12-18 19:43:30,487 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:43:30,490 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:43:30,498 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:43:30,499 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:43:30,499 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:43:30,507 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:43:30,538 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:43:30,664 - Dissertation_Project - Closed connection with ('127.0.0.1', 17706)
-2023-12-18 19:45:04,632 - Dissertation_Project - Connection from ('127.0.0.1', 17870) registered.
-2023-12-18 19:45:15,326 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:45:15,326 - py4j.java_gateway - Socket listening on ('127.0.0.1', 17979)
-2023-12-18 19:45:16,242 - Dissertation_Project - Connection from ('127.0.0.1', 17980) registered.
-2023-12-18 19:45:16,487 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:45:16,487 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:45:16,489 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:45:16,758 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 19:45:21,405 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test"], "Victim": ["test"]}\n'
-2023-12-18 19:45:41,058 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "test", "test"], "Victim": ["test", "bass", "test"]}\n'
-2023-12-18 19:48:23,104 - Dissertation_Project - Closed connection with ('127.0.0.1', 17980)
-2023-12-18 19:48:23,108 - Dissertation_Project - Closed connection with ('127.0.0.1', 17870)
-2023-12-18 19:48:44,978 - Dissertation_Project - Connection from ('127.0.0.1', 18103) registered.
-2023-12-18 19:48:55,916 - py4j.java_gateway - Callback Server Starting
-2023-12-18 19:48:55,916 - py4j.java_gateway - Socket listening on ('127.0.0.1', 18219)
-2023-12-18 19:48:56,827 - Dissertation_Project - Connection from ('127.0.0.1', 18256) registered.
-2023-12-18 19:48:57,063 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 19:48:57,063 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:48:57,065 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 19:48:57,300 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 19:49:00,832 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test"], "Victim": ["test"]}\n'
-2023-12-18 19:49:01,212 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:49:01,214 - Dissertation_Project - Batch ID: 1, --Data has been received--
-2023-12-18 19:49:01,385 - Dissertation_Project - Batch ID: 1, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       0.0|[0.50469780160486...|
-+----------+--------------------+
-
-2023-12-18 19:49:08,014 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "togeth", "forev"], "Victim": ["test", "togeth", "forev"]}\n'
-2023-12-18 19:49:08,375 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:49:08,377 - Dissertation_Project - Batch ID: 2, --Data has been received--
-2023-12-18 19:49:08,463 - Dissertation_Project - Batch ID: 2, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.46034888159052...|
-+----------+--------------------+
-
-2023-12-18 19:49:24,685 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["test", "togeth", "forev", "i", "appreci", "that", "loui", "target", "affair"], "Victim": ["test", "togeth", "forev", "i", "appreci", "that", "you", "are", "stuck", "at", "the", "fair"]}\n'
-2023-12-18 19:49:25,068 - py4j.clientserver - Received command c on object id p0
-2023-12-18 19:49:25,070 - Dissertation_Project - Batch ID: 3, --Data has been received--
-2023-12-18 19:49:25,151 - Dissertation_Project - Batch ID: 3, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.38926973015995...|
-+----------+--------------------+
-
-2023-12-18 19:49:36,200 - Dissertation_Project - Closed connection with 127.0.0.1
-2023-12-18 19:49:36,197 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:49:36,200 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 19:49:36,206 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:49:36,207 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:49:36,207 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 19:49:36,215 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:49:36,245 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 19:49:36,371 - Dissertation_Project - Closed connection with 127.0.0.1
-2023-12-18 20:01:44,779 - py4j.java_gateway - Callback Server Starting
-2023-12-18 20:01:44,779 - py4j.java_gateway - Socket listening on ('127.0.0.1', 18810)
-2023-12-18 20:01:45,997 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 20:01:45,997 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:01:45,999 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 20:01:46,248 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 20:01:58,794 - Dissertation_Project - Middleware_Server - streaming data back: {"Attacker_Helper": ["test", "test", "test", "test"], "Victim": ["test", "test", "test", "test"]}
-
-2023-12-18 20:01:58,794 - Dissertation_Project - Error sending to one of the clients from 127.0.0.1: 'NoneType' object has no attribute 'sendall'
-2023-12-18 20:02:01,508 - Dissertation_Project - Middleware_Server - streaming data back: {"Attacker_Helper": ["test", "test", "test", "test", "test", "test", "test"], "Victim": ["test", "test", "test", "test", "there", "no", "more"]}
-
-2023-12-18 20:02:01,509 - Dissertation_Project - Error sending to one of the clients from 127.0.0.1: 'NoneType' object has no attribute 'sendall'
-2023-12-18 20:03:03,811 - Dissertation_Project - Middleware_Server - streaming data back: {"Attacker_Helper": ["test", "test", "test", "test", "test", "test", "test", "thi", "number"], "Victim": ["test", "test", "test", "test", "there", "no", "more", "helluva"]}
-
-2023-12-18 20:03:03,811 - Dissertation_Project - Error sending to one of the clients from 127.0.0.1: 'NoneType' object has no attribute 'sendall'
-2023-12-18 20:03:13,099 - py4j.clientserver - Error while receiving.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 20:03:13,102 - py4j.clientserver - Error while python server was waiting fora message
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 566, in wait_for_commands
-    command = smart_decode(self.stream.readline())[:-1]
-                           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2023-12-18 20:03:13,110 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 20:03:13,110 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 20:03:13,111 - root - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\johns\AppData\Local\Programs\Python\Python311\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-2023-12-18 20:03:13,119 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 20:03:13,157 - py4j.clientserver - Closing down clientserver connection
-2023-12-18 20:03:56,861 - Dissertation_Project - Connection from ('127.0.0.1', 18933) registered.
-2023-12-18 20:04:07,673 - py4j.java_gateway - Callback Server Starting
-2023-12-18 20:04:07,674 - py4j.java_gateway - Socket listening on ('127.0.0.1', 19043)
-2023-12-18 20:04:08,615 - Dissertation_Project - Connection from ('127.0.0.1', 19044) registered.
-2023-12-18 20:04:08,818 - py4j.clientserver - Python Server ready to receive messages
-2023-12-18 20:04:08,818 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:08,821 - Dissertation_Project - Batch ID: 0, --Data has been received--
-2023-12-18 20:04:09,060 - Dissertation_Project - Batch ID: 0, Data:
-+----------+-----------+
-|Prediction|probability|
-+----------+-----------+
-+----------+-----------+
-
-2023-12-18 20:04:13,407 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder"], "Victim": ["fast", "hello", "there"]}\n'
-2023-12-18 20:04:13,789 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:13,793 - Dissertation_Project - Batch ID: 1, --Data has been received--
-2023-12-18 20:04:13,964 - Dissertation_Project - Batch ID: 1, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.39236775673492...|
-+----------+--------------------+
-
-2023-12-18 20:04:20,555 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat"]}\n'
-2023-12-18 20:04:20,979 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:20,981 - Dissertation_Project - Batch ID: 2, --Data has been received--
-2023-12-18 20:04:21,097 - Dissertation_Project - Batch ID: 2, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.35014295493391...|
-+----------+--------------------+
-
-2023-12-18 20:04:31,481 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu"]}\n'
-2023-12-18 20:04:31,895 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:31,897 - Dissertation_Project - Batch ID: 3, --Data has been received--
-2023-12-18 20:04:31,994 - Dissertation_Project - Batch ID: 3, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.30561875070941...|
-+----------+--------------------+
-
-2023-12-18 20:04:38,639 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last"]}\n'
-2023-12-18 20:04:39,001 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:39,003 - Dissertation_Project - Batch ID: 4, --Data has been received--
-2023-12-18 20:04:39,092 - Dissertation_Project - Batch ID: 4, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.34943622308459...|
-+----------+--------------------+
-
-2023-12-18 20:04:48,443 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter"]}\n'
-2023-12-18 20:04:48,788 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:48,790 - Dissertation_Project - Batch ID: 5, --Data has been received--
-2023-12-18 20:04:48,882 - Dissertation_Project - Batch ID: 5, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.49924094253938...|
-+----------+--------------------+
-
-2023-12-18 20:04:51,462 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear"]}\n'
-2023-12-18 20:04:51,811 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:04:51,813 - Dissertation_Project - Batch ID: 6, --Data has been received--
-2023-12-18 20:04:51,902 - Dissertation_Project - Batch ID: 6, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       0.0|[0.68510951477587...|
-+----------+--------------------+
-
-2023-12-18 20:05:04,741 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon"]}\n'
-2023-12-18 20:05:05,139 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:05,141 - Dissertation_Project - Batch ID: 7, --Data has been received--
-2023-12-18 20:05:05,214 - Dissertation_Project - Batch ID: 7, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.46494200347561...|
-+----------+--------------------+
-
-2023-12-18 20:05:07,259 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar"]}\n'
-2023-12-18 20:05:07,608 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:07,610 - Dissertation_Project - Batch ID: 8, --Data has been received--
-2023-12-18 20:05:07,687 - Dissertation_Project - Batch ID: 8, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.36514562283280...|
-+----------+--------------------+
-
-2023-12-18 20:05:16,145 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish"]}\n'
-2023-12-18 20:05:16,497 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:16,500 - Dissertation_Project - Batch ID: 9, --Data has been received--
-2023-12-18 20:05:16,603 - Dissertation_Project - Batch ID: 9, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.28363165330664...|
-+----------+--------------------+
-
-2023-12-18 20:05:29,769 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess"]}\n'
-2023-12-18 20:05:30,112 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:30,114 - Dissertation_Project - Batch ID: 10, --Data has been received--
-2023-12-18 20:05:30,193 - Dissertation_Project - Batch ID: 10, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.25026798858399...|
-+----------+--------------------+
-
-2023-12-18 20:05:36,306 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip"]}\n'
-2023-12-18 20:05:36,658 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:36,660 - Dissertation_Project - Batch ID: 11, --Data has been received--
-2023-12-18 20:05:36,732 - Dissertation_Project - Batch ID: 11, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       1.0|[0.47856093400070...|
-+----------+--------------------+
-
-2023-12-18 20:05:46,901 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess", "nation", "shoe", "clip"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip", "adex", "xrd", "avenu"]}\n'
-2023-12-18 20:05:47,259 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:47,260 - Dissertation_Project - Batch ID: 12, --Data has been received--
-2023-12-18 20:05:47,332 - Dissertation_Project - Batch ID: 12, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       0.0|[0.63107798078491...|
-+----------+--------------------+
-
-2023-12-18 20:05:50,174 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess", "nation", "shoe", "clip", "hey", "duck", "eat", "orovil"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip", "adex", "xrd", "avenu", "he", "mad", "money", "monaco", "tequila"]}\n'
-2023-12-18 20:05:50,524 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:50,527 - Dissertation_Project - Batch ID: 13, --Data has been received--
-2023-12-18 20:05:50,593 - Dissertation_Project - Batch ID: 13, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       0.0|[0.77905374599668...|
-+----------+--------------------+
-
-2023-12-18 20:05:54,997 - Dissertation_Project - Middleware_Server - streaming data back: b'{"Attacker_Helper": ["est", "lauder", "now", "that", "a", "diplomat", "ocean", "lyric", "with", "the", "develop", "avon", "have", "a", "better", "notion", "of", "alexia", "never", "ever", "sinc", "she", "got", "me", "last", "got", "the", "traffic", "delay", "in", "alabama", "alexa", "el", "dorado", "view", "my", "girlfriend", "about", "to", "head", "out", "osha", "de", "natalia", "barulich", "oyster", "on", "the", "profess", "nation", "shoe", "clip", "hey", "duck", "eat", "orovil", "a", "mad", "monday", "morn"], "Victim": ["fast", "hello", "there", "now", "that", "a", "diplomat", "how", "is", "justic", "leagu", "citi", "campu", "never", "ever", "sinc", "she", "got", "me", "last", "got", "ta", "graffiti", "letter", "i", "love", "to", "the", "bear", "el", "dorado", "view", "microphon", "about", "the", "sitar", "okay", "natalia", "polish", "i", "wish", "i", "wa", "unprofess", "nation", "shoe", "clip", "adex", "xrd", "avenu", "he", "mad", "money", "monaco", "tequila", "enough", "is", "enough"]}\n'
-2023-12-18 20:05:55,385 - py4j.clientserver - Received command c on object id p0
-2023-12-18 20:05:55,388 - Dissertation_Project - Batch ID: 14, --Data has been received--
-2023-12-18 20:05:55,479 - Dissertation_Project - Batch ID: 14, Data:
-+----------+--------------------+
-|Prediction|         probability|
-+----------+--------------------+
-|       0.0|[0.89058567608931...|
-+----------+--------------------+
-
+2023-12-20 15:49:29,251 - Dissertation_Project - Using prediction model: <keras.src.engine.sequential.Sequential object at 0x000001340C89BF50>
+2023-12-20 15:50:00,995 - Dissertation_Project - Received: {'attacker_helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'the', 'northland', 'store', 'today'], 'victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi']}, implementing prediction.
+2023-12-20 15:50:01,116 - Dissertation_Project - Normal conversation detected with probability: 0.8005272746086121
+2023-12-20 15:50:25,843 - Dissertation_Project - Received: {'attacker_helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'the', 'northland', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea'], 'victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method']}, implementing prediction.
+2023-12-20 15:50:25,883 - Dissertation_Project - Normal conversation detected with probability: 0.7804771661758423
+2023-12-20 15:50:43,581 - Dissertation_Project - Received: {'attacker_helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'the', 'northland', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'you', 'a', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to'], 'victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist']}, implementing prediction.
+2023-12-20 15:50:43,620 - Dissertation_Project - Normal conversation detected with probability: 0.7781277298927307
+2023-12-20 15:51:01,519 - Dissertation_Project - Received: {'attacker_helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'the', 'northland', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'you', 'a', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to', 'you', 'are', 'welcom', 'plea', 'check', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'a', 'verif'], 'victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'promptli', 'thank', 'again', 'for', 'the', 'help']}, implementing prediction.
+2023-12-20 15:51:01,560 - Dissertation_Project - Normal conversation detected with probability: 0.7296870946884155
+2023-12-20 15:51:18,441 - Dissertation_Project - Received: {'attacker_helper': ['hello', 'thi', 'is', 'john', 'from', 'the', 'abc', 'bank', 'we', 'notic', 'some', 'suspici', 'activ', 'in', 'your', 'account', 'can', 'i', 'confirm', 'if', 'you', 'made', 'the', 'purcha', 'of', 'xxx', 'at', 'the', 'northland', 'store', 'today', 'thank', 'you', 'for', 'confirm', 'to', 'ensur', 'your', 'account', 'secur', 'i', 'need', 'you', 'to', 'verifi', 'your', 'date', 'of', 'birth', 'and', 'the', 'last', 'x', 'digit', 'of', 'your', 'social', 'secur', 'number', 'plea', 'absolut', 'we', 'can', 'send', 'you', 'a', 'secur', 'link', 'via', 'email', 'to', 'complet', 'the', 'verif', 'process', 'which', 'email', 'address', 'should', 'we', 'send', 'it', 'to', 'you', 'are', 'welcom', 'plea', 'check', 'your', 'inbox', 'and', 'onc', 'you', 'receiv', 'it', 'click', 'on', 'the', 'link', 'to', 'proceed', 'with', 'a', 'verif', 'my', 'pleasur', 'onc', 'you', 'complet', 'the', 'verif', 'your', 'account', 'will', 'be', 'secur', 'should', 'you', 'have', 'ani', 'further', 'question', 'feel', 'free', 'to', 'reach', 'out', 'and', 'have', 'a', 'great', 'day'], 'victim': ['ye', 'i', 'made', 'the', 'purcha', 'thank', 'you', 'for', 'check', 'befor', 'verifi', 'i', 'appreci', 'the', 'caution', 'but', 'i', 'prefer', 'not', 'to', 'share', 'that', 'sensit', 'inform', 'over', 'the', 'phone', 'can', 'we', 'verifi', 'through', 'anoth', 'method', 'plea', 'send', 'it', 'to', 'email', 'protect', 'thank', 'you', 'for', 'your', 'assist', 'got', 'it', 'i', 'will', 'check', 'my', 'email', 'and', 'complet', 'the', 'verif', 'promptli', 'thank', 'again', 'for', 'the', 'help', 'thank', 'you', 'so', 'much', 'for', 'your', 'support', 'have', 'a', 'wonder', 'day', 'too']}, implementing prediction.
+2023-12-20 15:51:18,484 - Dissertation_Project - Normal conversation detected with probability: 0.8051127791404724

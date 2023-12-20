@@ -9,7 +9,7 @@ clients = {}
 def client_handler(client_socket, client_ip, logger):
     try:
         while True:
-            full_data = client_socket.recv(1024)
+            full_data = client_socket.recv(8192)
             if not full_data:
                 break
             # We assume that after the first message, all following data does not contain the identifier

@@ -10,28 +10,31 @@ from pyspark.sql.types import StructType, StructField, StringType
 from pyspark.ml.classification import *
 from pyspark.ml import PipelineModel
 from tensorflow.keras.models import load_model
+from sklearn.feature_extraction.text import HashingVectorizer, TfidfTransformer
+from scipy.sparse import hstack
 import pandas
 import socket
 import logging
 import json
 import sys
 
+
 sys.path.append("G:\Dissertation_Project")
+
+# Setting up logging
+log_format = "%(asctime)s - %(name)s - %(message)s"
+logging.basicConfig(filename="G:\\Dissertation_Project\\Logs\\performance_logs.log",
+                    level=logging.INFO, format=log_format)
+logger = logging.getLogger("Dissertation_Project")
+logger.setLevel(logging.INFO)
+
+py4j_logger = logging.getLogger('py4J')
+py4j_logger.setLevel(logging.ERROR)
 
 
 def initializer():
 
     print("\n\n-----------------------INITIALIZATION RUNNING----------------------\n")
-
-    # Setting up logging
-    log_format = "%(asctime)s - %(name)s - %(message)s"
-    logging.basicConfig(filename="G:\\Dissertation_Project\\Logs\\performance_logs.log",
-                        level=logging.INFO, format=log_format)
-    logger = logging.getLogger("Dissertation_Project")
-    logger.setLevel(logging.INFO)
-
-    py4j_logger = logging.getLogger('py4J')
-    py4j_logger.setLevel(logging.ERROR)
 
     # Finding spark
     findspark.init()
@@ -52,7 +55,7 @@ def initializer():
 
     print("\n----------------------INITIALIZATION COMPLETED----------------------\n")
 
-    return spark, logger
+    return spark
 
 
 def load_prediction_model(model_id):
@@ -89,7 +92,7 @@ def load_prediction_model(model_id):
                 return model
 
             case "SupportVectorMachine_TFIDF":
-                model = LinearSVCModel.load(model[model_id])
+                model = LinearSVCModel.load(models[model_id])
                 return model
 
             case "NeuralNetwork_TFIDF":
@@ -146,25 +149,23 @@ def send_data_to_server(socket_connection, data):
     socket_connection.sendall(message.encode())
 
 
-def initiate_spark_streaming():
-    # For help, not to be used in code
-    preprocessing_modes = {
-        "TF_IDF": 1,
-        "NN_TF_IDF": 2,
-        "LSTM_NN_TF_IDF": 3
-    }
+def initiate_spark_streaming(preprocessing_mode):
+
+    # Do not open connection with middleware server if preprocessing mode is not 1 since streaming will not be required
+    if (preprocessing_mode != 1):
+        return
 
     try:
-        preprocessing_mode = 1
         # Initializing spark and other things necessary
-        spark, logger = initializer()
+        spark = initializer()
 
         # Loading the preprocessing pipeline
         pipeline_path = "G:\\Dissertation_Project\\src\\Models\\Pipelines\\Prediction_Pipeline"
         pipeline_model = PipelineModel.load(pipeline_path)
 
         # Loading the prediction model
-        prediction_model = load_prediction_model("LogisticRegression_TFIDF")
+        prediction_model = load_prediction_model("GradientBoosted_TFIDF")
+        logger.info("Using prediction model: {}".format(prediction_model))
 
         # Define the schema of the data
         schema = StructType([
@@ -182,67 +183,25 @@ def initiate_spark_streaming():
         parsed_df = raw_stream_df.select(
             from_json(col("value"), schema).alias("data")).select("data.*")
 
-        if preprocessing_mode == 1:
+        def process_and_log_batch(batch_df, batch_id):
+            logger.info(
+                f"Batch ID: {batch_id}, --Data has been received--")
+            if batch_df:
+                # Log the batch
+                batch_string = batch_df._jdf.showString(1, 50, False)
+                logger.info(f"Batch ID: {batch_id}, Data:\n{batch_string}")
+                # Print to console
+                batch_df.show(truncate=False)
 
-            def process_and_log_batch(batch_df, batch_id):
-                logger.info(
-                    f"Batch ID: {batch_id}, --Data has been received--")
+        preprocessed_df = pipeline_model.transform(parsed_df)
 
-                if batch_df:
-                    # Log the batch
-                    batch_string = batch_df._jdf.showString(1, 20, False)
-                    logger.info(f"Batch ID: {batch_id}, Data:\n{batch_string}")
-
-                    # Print to console
-                    batch_df.show(truncate=False)
-
-            preprocessed_df = pipeline_model.transform(parsed_df)
-
-            # Prediction
-            predictions = prediction_model.transform(
-                preprocessed_df).select("Prediction", "probability")
-
-            query = predictions.writeStream \
-                .outputMode("append") \
-                .foreachBatch(process_and_log_batch) \
-                .start()
-
-        elif preprocessing_mode == 2:
-
-            @pandas_udf('array<float>', PandasUDFType.SCALAR)
-            def predict_udf(feature_series):
-                # Convert the feature_series (which is a Pandas Series of lists) to a 2D numpy array
-                feature_array = np.stack(feature_series)
-                # Get predictions from the Keras model, assuming it returns probabilities
-                predictions = prediction_model.predict(feature_array)
-                # Return predictions as a Pandas Series of arrays
-                return pandas.Series(list(predictions))
-
-            def process_and_log_batch(batch_df, batch_id):
-
-                logger.info(
-                    f"Batch ID: {batch_id}, --Data has been received--")
-
-                if batch_df:
-                    # This will create a column of arrays where each array contains class probabilities
-                    predictions_df = batch_df.withColumn(
-                        'probabilities', predict_udf(col('combined_features')))
-
-                    # Log the batch
-                    batch_string = predictions_df._jdf.showString(1, 20, False)
-                    logger.info(f"Batch ID: {batch_id}, Data:\n{batch_string}")
-
-                    # Print to console
-                    predictions_df.show(truncate=False)
-
-            preprocessed_df = pipeline_model.transform(parsed_df)
-
-            query = preprocessed_df.writeStream \
-                .outputMode("append") \
-                .foreachBatch(process_and_log_batch) \
-                .start()
-        else:
-            pass
+        # Prediction
+        predictions = prediction_model.transform(
+            preprocessed_df).select("Prediction", "probability")
+        query = predictions.writeStream \
+            .outputMode("append") \
+            .foreachBatch(process_and_log_batch) \
+            .start()
 
         # Await termination to keep the streaming application running
         query.awaitTermination()
@@ -257,7 +216,7 @@ def initiate_spark_streaming():
             spark.stop()
 
 
-def run_main_application():
+def run_main_application(preprocessing_mode):
     private_key_file_path = 'Environment\speech-to-text.json'
 
     microphone_queue = Queue()
@@ -272,29 +231,116 @@ def run_main_application():
     process_microphone.start()
     process_loopback.start()
 
-    # Connect to middleware server
-    socket_connection = connect_to_middleware_server('localhost', 9999)
+    if (preprocessing_mode == 1):
+        # Connect to middleware server
+        socket_connection = connect_to_middleware_server('localhost', 9999)
 
-    while True:
-        if not microphone_queue.empty() and not loopback_queue.empty():
-            microphone_data = microphone_queue.get()
-            loopback_data = loopback_queue.get()
+        while True:
+            if not microphone_queue.empty() and not loopback_queue.empty():
+                microphone_data = microphone_queue.get()
+                loopback_data = loopback_queue.get()
 
-            # constructing the request object
-            data_for_prediction = {
-                "Attacker_Helper": loopback_data,
-                "Victim": microphone_data
-            }
+                # constructing the request object
+                data_for_prediction = {
+                    "Attacker_Helper": loopback_data,
+                    "Victim": microphone_data
+                }
 
             send_data_to_server(
                 socket_connection=socket_connection, data=data_for_prediction)
 
+            logger.info("Sending data to Middleware server. Data: {}".format(
+                data_for_prediction))
+
+    elif (preprocessing_mode == 2):
+
+        prediction_model = load_prediction_model("NeuralNetwork_TFIDF")
+        logger.info("Using prediction model: {}".format(prediction_model))
+
+        while True:
+            if not microphone_queue.empty() and not loopback_queue.empty():
+                microphone_data = microphone_queue.get()
+                loopback_data = loopback_queue.get()
+
+                data_for_logs = {
+                    "attacker_helper": loopback_data,
+                    "victim": microphone_data
+                }
+
+                logger.info(
+                    "Received: {}, implementing prediction.".format(data_for_logs))
+
+                # Concatenate texts
+                concatenated_microphone_data = ' '.join(microphone_data)
+                concatenated_loopback_data = ' '.join(loopback_data)
+
+                # Handle preprocessing for the neural network
+                num_features = 18
+
+                # Initialize HashingVectorizer to do the hashing trick
+                hashing_vectorizer_ah = HashingVectorizer(
+                    n_features=num_features, alternate_sign=False)
+                hashing_vectorizer_v = HashingVectorizer(
+                    n_features=num_features, alternate_sign=False)
+
+                # Implementing the hashing trick
+                V_hashed_features = hashing_vectorizer_v.fit_transform(
+                    [concatenated_microphone_data])
+
+                AH_hashed_features = hashing_vectorizer_ah.fit_transform(
+                    [concatenated_loopback_data])
+
+                # Initialize TfidfTransformer
+                tfidf_transformer = TfidfTransformer()
+
+                # Apply IDF scaling
+                AH_tfidf_scaled = tfidf_transformer.fit_transform(
+                    AH_hashed_features)
+                V_tfidf_scaled = tfidf_transformer.fit_transform(
+                    V_hashed_features)
+
+                # Combining features
+                combined_features = hstack(
+                    [AH_tfidf_scaled, V_tfidf_scaled])
+
+                # Convert to dense array and flatten
+                combined_features_dense = combined_features.toarray().flatten()
+
+                # Reshape the flattened array to (1, 36)
+                combined_features_reshaped = np.reshape(
+                    combined_features_dense, (1, -1))
+
+                predictions = prediction_model.predict(
+                    combined_features_reshaped)
+
+                if ((1-predictions[0][0]) > 0.5):
+                    print("Scam detected with probability: {}".format(
+                        (1-predictions[0][0])))
+                    logger.info("Scam detected with probability: {}".format(
+                        (1-predictions[0][0])))
+                else:
+                    print("Normal conversation detected with probability: {}".format(
+                        predictions[0][0]))
+                    logger.info("Normal conversation detected with probability: {}".format(
+                        predictions[0][0]))
+
 
 if __name__ == "__main__":
 
+    # For help, not to be used in code
+    preprocessing_modes = {
+        "TF_IDF": 1,
+        "NN_TF_IDF": 2,
+        "LSTM_NN_TF_IDF": 3
+    }
+
+    # Define preprocessing mode
+    preprocessing_mode = 2
+
     # Starting streaming thread
-    spark_streaming_thread = Thread(target=initiate_spark_streaming)
+    spark_streaming_thread = Thread(
+        target=initiate_spark_streaming, args=[preprocessing_mode])
     spark_streaming_thread.start()
 
     # Run main application
-    run_main_application()
+    run_main_application(preprocessing_mode=preprocessing_mode)
