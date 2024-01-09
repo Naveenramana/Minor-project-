@@ -275,7 +275,7 @@ def run_main_application(preprocessing_mode):
                 concatenated_loopback_data = ' '.join(loopback_data)
 
                 # Handle preprocessing for the neural network
-                num_features = 18
+                num_features = 200
 
                 # Initialize HashingVectorizer to do the hashing trick
                 hashing_vectorizer_ah = HashingVectorizer(
@@ -306,7 +306,7 @@ def run_main_application(preprocessing_mode):
                 # Convert to dense array and flatten
                 combined_features_dense = combined_features.toarray().flatten()
 
-                # Reshape the flattened array to (1, 36)
+                # Reshape the flattened array to (1, 400)
                 combined_features_reshaped = np.reshape(
                     combined_features_dense, (1, -1))
 
@@ -346,7 +346,7 @@ def run_main_application(preprocessing_mode):
                 concatenated_loopback_data = ' '.join(loopback_data)
 
                 # Handle preprocessing for the neural network
-                num_features = 18
+                num_features = 200
 
                 # Initialize HashingVectorizer to do the hashing trick
                 hashing_vectorizer_ah = HashingVectorizer(
@@ -377,7 +377,7 @@ def run_main_application(preprocessing_mode):
                 # Convert to dense array and flatten
                 combined_features_dense = combined_features.toarray().flatten()
 
-                # Reshape the flattened array to (1, 36)
+                # Reshape the flattened array to (1, 400)
                 combined_features_reshaped = np.reshape(
                     combined_features_dense, (1, -1))
 

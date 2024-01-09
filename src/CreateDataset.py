@@ -94,6 +94,8 @@ def execute_functionality():
         'I want you to act like 2 people in a conversation with yourself.  \
         I want you to only give me the conversation. \
         The conversation will include a person which is trying to phone scam the other person. \
+        The theme of the scam can be anything, like hospital scams, kidnapping scams, money scams, tech support scams, fake selling things, and more. Choose one theme for the conversation.\
+        When constructing the conversation, be clever, the victim can notice the scam, can be suspicious but fall for it or can fall for it without understanding it. \
         A normal human being of an age which would probably be targeted by phone scammers. \
         I want the numbers to match when one answers to the other. I want those numbers to express how the conversation went back and forth. \
         I want the whole conversation to be at the most 10 sentences long. \
@@ -104,7 +106,7 @@ def execute_functionality():
 
         'I want you to act like 2 people in a conversation with yourself.  \
         I want you to only give me the conversation. \
-        The conversation will include a person which is calling for some legitimate reason from a bank or another institution that is generally the reason phone scammers call victims. \
+        The conversation will include a person which is calling for some legitimate reason from an institution that is generally the reason phone scammers call victims. e.g. hospital, irs, bank, tech support, internet provider. \
         A normal human being of an age which would probably be targeted by phone scammers. \
         I want the numbers to match when one answers to the other. I want those numbers to express how the conversation went back and forth. \
         I want the whole conversation to be at the most 10 sentences long. \
@@ -165,6 +167,6 @@ async def functionality_runner(threads):
 
 if __name__ == "__main__":
 
-    threads = 4
+    threads = 40
 
     asyncio.run(functionality_runner(threads))
