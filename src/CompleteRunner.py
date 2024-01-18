@@ -18,8 +18,8 @@ import logging
 import json
 import sys
 
-
 sys.path.append("G:\Dissertation_Project")
+
 
 # Setting up logging
 log_format = "%(asctime)s - %(name)s - %(message)s"
@@ -65,7 +65,8 @@ def load_prediction_model(model_id):
         "GradientBoosted_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\GradientBoostedTrees\\bestModel",
         "SupportVectorMachine_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\SupportVectorMachine\\bestModel",
         "NeuralNetwork_TFIDF": "G:\\Dissertation_Project\\src\Models\\Trained_Models\\NeuralNetwork_TFIDF\\NeuralNetwork_TFIDF.keras",
-        "LSTM_NeuralNetwork_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\LSTM_NeuralNetwork_TFIDF\\LSTM_NeuralNetwork_TFIDF.keras"
+        "LSTM_NeuralNetwork_TFIDF": "G:\\Dissertation_Project\\src\\Models\\Trained_Models\\LSTM_NeuralNetwork_TFIDF\\LSTM_NeuralNetwork_TFIDF.keras",
+        "NeuralNetwork_TEST_TFIDF": "G:\\Dissertation_Project\\src\Models\\Trained_Models\\NeuralNetwork_TFIDF\\NN_TEST_TFIDF.keras"
     }
 
     print("<--LOADING PREDICTION MODEL : {} , From location : {}-->\n".format(
@@ -96,11 +97,15 @@ def load_prediction_model(model_id):
                 return model
 
             case "NeuralNetwork_TFIDF":
-                model = load_model(models[model_id])
+                from src.CustomNNMetrics import F1Score
+                model = load_model(models[model_id], custom_objects={
+                                   'F1Score': F1Score})
                 return model
 
             case "LSTM_NeuralNetwork_TFIDF":
-                model = load_model(models[model_id])
+                from src.CustomNNMetrics import F1Score
+                model = load_model(models[model_id], custom_objects={
+                                   'F1Score': F1Score})
                 return model
 
             case _:
@@ -164,7 +169,7 @@ def initiate_spark_streaming(preprocessing_mode):
         pipeline_model = PipelineModel.load(pipeline_path)
 
         # Loading the prediction model
-        prediction_model = load_prediction_model("RandomForest_TFIDF")
+        prediction_model = load_prediction_model("GradientBoosted_TFIDF")
         logger.info("Using prediction model: {}".format(prediction_model))
 
         # Define the schema of the data
@@ -226,7 +231,7 @@ def run_main_application(preprocessing_mode):
         private_key_file_path, microphone_queue, 1, 44100, 1,))
 
     process_loopback = Process(target=run_process_stream, args=(
-        private_key_file_path, loopback_queue, 1, 44100, 3,))
+        private_key_file_path, loopback_queue, 1, 44100, 2,))
 
     process_microphone.start()
     process_loopback.start()
@@ -291,7 +296,8 @@ def run_main_application(preprocessing_mode):
                     [concatenated_loopback_data])
 
                 # Initialize TfidfTransformer
-                tfidf_transformer = TfidfTransformer()
+                tfidf_transformer = TfidfTransformer(
+                    use_idf=True, norm=None, smooth_idf=True)
 
                 # Apply IDF scaling
                 AH_tfidf_scaled = tfidf_transformer.fit_transform(
@@ -312,6 +318,7 @@ def run_main_application(preprocessing_mode):
 
                 predictions = prediction_model.predict(
                     combined_features_reshaped)
+                print("Predictions", predictions)
 
                 if ((1-predictions[0][0]) > 0.5):
                     print("Scam detected with probability: {}".format(
@@ -362,7 +369,8 @@ def run_main_application(preprocessing_mode):
                     [concatenated_loopback_data])
 
                 # Initialize TfidfTransformer
-                tfidf_transformer = TfidfTransformer()
+                tfidf_transformer = TfidfTransformer(
+                    use_idf=True, norm=None, smooth_idf=True)
 
                 # Apply IDF scaling
                 AH_tfidf_scaled = tfidf_transformer.fit_transform(
@@ -387,6 +395,8 @@ def run_main_application(preprocessing_mode):
                 predictions = prediction_model.predict(
                     combined_features_final)
 
+                print("Predictions", predictions)
+
                 if ((1-predictions[0][0]) > 0.5):
                     print("Scam detected with probability: {}".format(
                         (1-predictions[0][0])))
@@ -409,7 +419,7 @@ if __name__ == "__main__":
     }
 
     # Define preprocessing mode
-    preprocessing_mode = 1
+    preprocessing_mode = 3
 
     # Starting streaming thread
     spark_streaming_thread = Thread(

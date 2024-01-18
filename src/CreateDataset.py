@@ -167,6 +167,6 @@ async def functionality_runner(threads):
 
 if __name__ == "__main__":
 
-    threads = 40
+    threads = 1
 
     asyncio.run(functionality_runner(threads))
