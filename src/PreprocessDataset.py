@@ -158,23 +158,40 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
     result_data = []
 
     for conversation_id in dataframe['Conversation_ID'].unique():
+
+        # Searching for the exact conversation_dictionary
         conversation_dictionary = search_dataframe(
             dataframe, 'Conversation_ID', conversation_id, conversation_columns)
 
+        # print("Conversation Dictionary -> {}".format(conversation_dictionary))
+        # print("\n")
+
         conversation_data = {}
 
-        for column in columns:
-            if column == 'Conversation_ID':
-                conversation_data[column] = conversation_id
-            elif column in conversation_columns:
-                preprocessed_string = preprocess_strings(
-                    conversation_dictionary[column])
+        # Passing the Conversation ID
+        conversation_data['Conversation_ID'] = conversation_dictionary['Conversation_ID']
 
-                stemmed_string = stem_strings(preprocessed_string, language)
-                conversation_data[column] = [
-                    string_to_list_of_words(s) for s in stemmed_string]
-            else:
-                conversation_data[column] = conversation_dictionary[column]
+        # Constructing the Final Attacker Helper List
+        attacker_helper_list = conversation_dictionary['Attacker_Helper']
+        attacker_preprocessed_string = preprocess_strings(
+            attacker_helper_list)
+        attacker_stemmed_string = stem_strings(
+            attacker_preprocessed_string, language)
+        final_attacker_list = [
+            string_to_list_of_words(s) for s in attacker_stemmed_string]
+        conversation_data['Attacker_Helper'] = final_attacker_list.copy()
+
+        # Constructing The Final Victim List
+        victim_list = conversation_dictionary['Victim']
+        victim_preprocessed_string = preprocess_strings(victim_list)
+        victim_stemmed_string = stem_strings(
+            victim_preprocessed_string, language)
+        final_victim_list = [
+            string_to_list_of_words(s) for s in victim_stemmed_string]
+        conversation_data['Victim'] = final_victim_list.copy()
+
+        # Passing the Conversation Type
+        conversation_data['Conversation_Type'] = conversation_dictionary['Conversation_Type']
 
         result_data.append(conversation_data)
 
@@ -190,7 +207,7 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
 
 
 if __name__ == '__main__':
-    file_path = 'Data/Custom_Datasets/conversation_datasets_GPT.csv'
-    output_file_path = 'Data/Preprocessed_Datasets/GPT_dataset_preprocessed.csv'
+    file_path = 'Data/Custom_Datasets/conversations_dataset_enhanced_GPT.csv'
+    output_file_path = 'Data/Preprocessed_Datasets/GPT_dataset_preprocessed_Fixed.csv'
     resulting_dataframe = execute_complete_preprocess_workflow(
         file_path, output_file_path=output_file_path)
