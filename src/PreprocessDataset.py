@@ -207,7 +207,7 @@ def execute_complete_preprocess_workflow(csv_file_path, output_file_path):
 
 
 if __name__ == '__main__':
-    file_path = 'Data/Custom_Datasets/conversations_dataset_enhanced_GPT.csv'
-    output_file_path = 'Data/Preprocessed_Datasets/GPT_dataset_preprocessed_Fixed.csv'
+    file_path = 'Data/Final_Datasets/DATASET_FINAL.csv'
+    output_file_path = 'Data/Preprocessed_Datasets/DATASET_FINAL_PREPROCESSED.csv'
     resulting_dataframe = execute_complete_preprocess_workflow(
         file_path, output_file_path=output_file_path)
