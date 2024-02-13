@@ -151,7 +151,7 @@ if __name__ == "__main__":
     private_key_file_path = 'Environment\speech-to-text.json'
 
     microphone_speech_to_text = SpeechToText(
-        private_key_file_path=private_key_file_path, CHANNELS=1, RATE=44100, device_index=3)
+        private_key_file_path=private_key_file_path, CHANNELS=1, RATE=44100, device_index=1)
 
     # print(microphone_speech_to_text.get_output_device_info())
 
